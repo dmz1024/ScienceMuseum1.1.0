@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextImage">
+        <attr name="TextImage_seat" format="integer"></attr>
+        <attr name="TextImage_drawable" format="reference"></attr>
+        <attr name="TextImage_height" format="dimension" />
+        <attr name="TextImage_width" format="dimension" />
+    </declare-styleable>
+</resources>

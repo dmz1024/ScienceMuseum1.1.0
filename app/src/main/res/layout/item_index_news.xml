@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size10">
+
+    <com.shoudukejiguan.www.view.TextImage
+        android:id="@+id/tv_title"
+        style="@style/TextSize12Color666"
+        android:drawablePadding="@dimen/size10"
+        android:ellipsize="end"
+        android:maxEms="15"
+        android:text="温馨提示温馨提示温馨提示"
+        tool:TextImage_drawable="@mipmap/icon_slide_selected"
+        tool:TextImage_height="@dimen/size4"
+        tool:TextImage_seat="1"
+        tool:TextImage_width="@dimen/size4" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/TextSize12Color999"
+        android:layout_alignParentRight="true"
+        android:text="2015-09-06" />
+</RelativeLayout>

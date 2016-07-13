@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size20"
+        android:background="#00abbb"
+        android:visibility="gone"></FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size47"
+        android:layout_below="@id/fg_bar"
+        android:background="#00abbb">
+
+        <ImageView
+            android:id="@+id/bar_left"
+            android:layout_width="@dimen/size45"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/size5"
+            android:paddingLeft="@dimen/size10"
+            android:paddingTop="@dimen/size5"
+            android:src="@mipmap/icon_back"
+             />
+
+
+        <ImageView
+            android:id="@+id/bar_right"
+            android:layout_width="@dimen/size21"
+            android:layout_height="@dimen/size21"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size12"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bar_title"
+            android:maxEms="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:ellipsize="end"
+            android:textSize="@dimen/sp17" />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/size12"
+            android:layout_alignParentRight="true"
+            android:id="@+id/bar_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp15" />
+    </RelativeLayout>
+</RelativeLayout>

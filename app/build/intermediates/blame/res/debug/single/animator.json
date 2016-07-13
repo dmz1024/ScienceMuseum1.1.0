@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/animator/scale_with_alpha.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/exploded-aar/me.relex/circleindicator/1.2.1/res/animator/scale_with_alpha.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/animator/scale_with_alpha.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/me.relex/circleindicator/1.2.1/res/animator/scale_with_alpha.xml"
+    }
+]

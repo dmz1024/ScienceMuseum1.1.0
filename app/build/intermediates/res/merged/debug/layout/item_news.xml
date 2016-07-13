@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="@dimen/size5">
+
+    <RelativeLayout
+        android:id="@+id/rl_time"
+        android:layout_width="@dimen/size52"
+        android:layout_height="@dimen/size52"
+        android:background="@drawable/round_white">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size5"
+            android:layout_marginRight="@dimen/size5"
+            android:background="#333" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            style="@style/TextSize15Color333"
+            android:layout_above="@id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/size3"
+            android:text="06" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            style="@style/TextSize10Color333"
+            android:layout_below="@id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size3"
+            android:text="2015.09" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="北京科学中心装修改造项目矩形开工仪式"
+        android:layout_marginTop="@dimen/size5"
+        android:ellipsize="end"
+        android:singleLine="true"
+        style="@style/TextSize12Color333"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_toRightOf="@id/rl_time" />
+    <TextView
+        android:id="@+id/tv_content"
+        android:text="北京科学中心装修改造项目矩形开工仪式\n北京科学中心装修改造项目矩形开工仪式"
+        android:layout_marginTop="@dimen/size5"
+        android:ellipsize="end"
+        android:layout_below="@id/tv_title"
+        android:lines="2"
+        style="@style/TextSize10Color999"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_toRightOf="@id/rl_time" />
+    <View
+        android:layout_below="@id/rl_time"
+        android:background="#eee"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"/>
+</RelativeLayout>

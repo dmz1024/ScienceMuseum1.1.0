@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <com.shoudukejiguan.www.view.TextImage
+        android:id="@+id/tv_center"
+        style="@style/TextSize13Color333"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:drawablePadding="@dimen/size10"
+        android:gravity="center"
+        tool:TextImage_height="@dimen/size50"
+        tool:TextImage_width="@dimen/size50">
+    </com.shoudukejiguan.www.view.TextImage>
+</RelativeLayout>
+
