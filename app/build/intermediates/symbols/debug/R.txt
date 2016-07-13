@@ -928,11 +928,12 @@ int drawable abc_textfield_default_mtrl_alpha 0x7f020047
 int drawable abc_textfield_search_activated_mtrl_alpha 0x7f020048
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f020049
 int drawable abc_textfield_search_material 0x7f02004a
-int drawable notification_template_icon_bg 0x7f02004f
-int drawable round_white 0x7f02004b
-int drawable white_radius 0x7f02004c
-int drawable xrefresh_ok 0x7f02004d
-int drawable xrefreshview_arrow 0x7f02004e
+int drawable notification_template_icon_bg 0x7f020050
+int drawable rectangle_03abee 0x7f02004b
+int drawable round_white 0x7f02004c
+int drawable white_radius 0x7f02004d
+int drawable xrefresh_ok 0x7f02004e
+int drawable xrefreshview_arrow 0x7f02004f
 int id BLOCK 0x7f0e0013
 int id BOTTOM 0x7f0e0011
 int id LEFT 0x7f0e0031

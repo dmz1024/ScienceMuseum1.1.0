@@ -18,6 +18,7 @@
         android:layout_marginLeft="@dimen/size10"
         android:layout_marginTop="@dimen/size5"
         android:layout_toRightOf="@id/iv_img"
+        android:maxEms="15"
         android:singleLine="true"
         android:text="《飞行之梦》" />
 
@@ -28,6 +29,7 @@
         android:layout_below="@id/tv_title"
         android:layout_marginTop="@dimen/size5"
         android:singleLine="true"
+        android:maxEms="15"
         android:text="男孩坚持己见并努力追求飞行梦想的故事" />
 
     <TextView
@@ -37,6 +39,7 @@
         android:layout_below="@id/tv_content"
         android:layout_marginTop="@dimen/size5"
         android:singleLine="true"
+        android:maxEms="15"
         android:text="导演：会飞的花花" />
 
     <com.hedgehog.ratingbar.RatingBar
@@ -63,11 +66,12 @@
 
     <Button
         android:id="@+id/bt_order"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size25"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/size10"
+        android:background="@drawable/rectangle_03abee"
         android:padding="@dimen/size1"
         android:text="购票"
         android:textColor="#03abee"

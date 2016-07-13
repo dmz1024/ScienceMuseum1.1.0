@@ -66,11 +66,12 @@
 
     <Button
         android:id="@+id/bt_order"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size25"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/size10"
+        android:background="@drawable/rectangle_03abee"
         android:padding="@dimen/size1"
         android:text="购票"
         android:textColor="#03abee"
