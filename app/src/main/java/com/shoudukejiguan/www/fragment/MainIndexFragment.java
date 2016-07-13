@@ -71,7 +71,7 @@ public class MainIndexFragment extends MainBaseFragment {
 
         List<IndexNews> listNews = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            IndexNews indexNews = new IndexNews("标题：" + i, "2016-09-016");
+            IndexNews indexNews = new IndexNews("标题：" + i, "2016-09-16");
             listNews.add(indexNews);
         }
         lv_news.setAdapter(new IndexNewsAdapter(getContext(), listNews));
