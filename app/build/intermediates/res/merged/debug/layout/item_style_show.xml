@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="@dimen/size5">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/size106"
+        android:layout_height="@dimen/size80"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSize12Color333"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_toRightOf="@id/iv_img"
+        android:maxEms="15"
+        android:singleLine="true"
+        android:text="深度体验实验室" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextSize10Color999"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/size5"
+        android:lines="3"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4dp"
+
+        android:text="男孩坚持己见并努力追求飞行梦想的故事\n男孩坚持己见并努力追求飞行梦想的故事\n男孩坚持己见并努力追求飞行梦想的故事\n" />
+
+    <View
+        android:layout_below="@id/iv_img"
+        android:background="#eee"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_alignLeft="@id/iv_img"
+        android:layout_alignRight="@id/bt_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"/>
+</RelativeLayout>

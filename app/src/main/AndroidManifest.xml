@@ -29,7 +29,8 @@
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".activity.WebViewActivity" />
-        <activity android:name=".activity.CinemaActivity"></activity>
+        <activity android:name=".activity.CinemaActivity" />
+        <activity android:name=".activity.EducationActivity"></activity>
     </application>
 
 </manifest>
