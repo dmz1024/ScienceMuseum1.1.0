@@ -1,6 +1,5 @@
 package com.shoudukejiguan.www.fragment;
 
-import android.content.Intent;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -10,7 +9,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
+import com.google.zxing.integration.android.IntentIntegrator;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.activity.CaptureActivity;
 import com.shoudukejiguan.www.activity.MoreNewsActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.adapter.IndexEducationAdapter;
@@ -41,6 +42,7 @@ public class MainIndexFragment extends MainBaseFragment {
     private TipView tip_notice;
     private String[] titles = {"新闻资讯", "票务预订", "参观指引", "扫一扫"};
     private int[] images = {R.mipmap.index_menu_news, R.mipmap.index_menu_booktic, R.mipmap.index_menu_map, R.mipmap.index_menu_sao};
+    private boolean isFirstSao1Sao;
 
     @Override
     protected boolean isInit() {
@@ -61,7 +63,7 @@ public class MainIndexFragment extends MainBaseFragment {
         gv_center.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                switch (i){
+                switch (i) {
                     case 3:
                         sao1sao();
                         break;
@@ -87,10 +89,15 @@ public class MainIndexFragment extends MainBaseFragment {
      * 扫一扫
      */
     private void sao1sao() {
-        // 调用ZXIng开源项目源码  扫描二维码
-//        Intent openCameraIntent = new Intent(getContext(),
-//                QRcodeActivity.class);
-//        startActivityForResult(openCameraIntent, 0);
+        if (!isFirstSao1Sao) {
+            IntentIntegrator.forSupportFragment(this);
+        } else {
+            isFirstSao1Sao = true;
+        }
+        IntentIntegrator integrator = new IntentIntegrator(getActivity());
+        integrator.setCaptureActivity(CaptureActivity.class);
+        integrator.setOrientationLocked(false);
+        integrator.initiateScan();
     }
 
     @Override
@@ -194,4 +201,6 @@ public class MainIndexFragment extends MainBaseFragment {
         rv_education.setLayoutManager(layoutManager);
         rv_education.setAdapter(new IndexEducationAdapter(urlList));
     }
+
+
 }
