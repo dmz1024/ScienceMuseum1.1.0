@@ -52,25 +52,25 @@ public final class R {
 		public static final int tl_underline_height = 0x7f01001f;
 	}
 	public static final class id {
-		public static final int BLOCK = 0x7f0d000c;
-		public static final int BOTTOM = 0x7f0d000a;
-		public static final int LEFT = 0x7f0d002a;
-		public static final int NORMAL = 0x7f0d000d;
-		public static final int RIGHT = 0x7f0d002b;
-		public static final int TOP = 0x7f0d000b;
-		public static final int TRIANGLE = 0x7f0d000e;
-		public static final int iv_tab_icon = 0x7f0d009d;
-		public static final int ll_tap = 0x7f0d009c;
-		public static final int rtv_msg_tip = 0x7f0d009b;
-		public static final int tv_tab_title = 0x7f0d009a;
+		public static final int BLOCK = 0x7f0e0013;
+		public static final int BOTTOM = 0x7f0e0011;
+		public static final int LEFT = 0x7f0e0031;
+		public static final int NORMAL = 0x7f0e0014;
+		public static final int RIGHT = 0x7f0e0032;
+		public static final int TOP = 0x7f0e0012;
+		public static final int TRIANGLE = 0x7f0e0015;
+		public static final int iv_tab_icon = 0x7f0e00a4;
+		public static final int ll_tap = 0x7f0e00a3;
+		public static final int rtv_msg_tip = 0x7f0e00a2;
+		public static final int tv_tab_title = 0x7f0e00a1;
 	}
 	public static final class layout {
-		public static final int layout_tab = 0x7f040027;
-		public static final int layout_tab_bottom = 0x7f040028;
-		public static final int layout_tab_left = 0x7f040029;
-		public static final int layout_tab_right = 0x7f04002a;
-		public static final int layout_tab_segment = 0x7f04002b;
-		public static final int layout_tab_top = 0x7f04002c;
+		public static final int layout_tab = 0x7f040028;
+		public static final int layout_tab_bottom = 0x7f040029;
+		public static final int layout_tab_left = 0x7f04002a;
+		public static final int layout_tab_right = 0x7f04002b;
+		public static final int layout_tab_segment = 0x7f04002c;
+		public static final int layout_tab_top = 0x7f04002d;
 	}
 	public static final class styleable {
 		public static final int[] CommonTabLayout = { 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f0100ba, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd, 0x7f0100be };

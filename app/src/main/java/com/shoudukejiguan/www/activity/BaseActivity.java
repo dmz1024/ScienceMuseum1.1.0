@@ -65,7 +65,6 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         if (rid != 0) {
             setContentView(rid);
         }
-
         initView();
         if (getIsInit()) {
             handler.postDelayed(new Runnable() {

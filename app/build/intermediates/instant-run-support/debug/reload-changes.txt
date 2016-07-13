@@ -1,0 +1,4 @@
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/MainIndexFragment$1$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/MainIndexFragment$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/activity/MainActivity$override.class

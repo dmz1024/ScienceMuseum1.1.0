@@ -284,6 +284,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/fragment_main_order.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/zxing_capture.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/res/layout/zxing_capture.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
     },
@@ -406,6 +410,14 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_web_view.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_web_view.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/zxing_barcode_scanner.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/res/layout/zxing_barcode_scanner.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",

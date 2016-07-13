@@ -5,14 +5,18 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.flyco.tablayout.listener.OnTabSelectListener;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
 import com.shoudukejiguan.www.fragment.MainBaseFragment;
@@ -20,6 +24,7 @@ import com.shoudukejiguan.www.fragment.MainIndexFragment;
 import com.shoudukejiguan.www.fragment.MainOrderFragment;
 import com.shoudukejiguan.www.fragment.MainPeosonalFragment;
 import com.shoudukejiguan.www.fragment.MainVisitFragment;
+import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.NoScrollViewPager;
 import com.shoudukejiguan.www.view.TextImage;
 
@@ -99,4 +104,29 @@ public class MainActivity extends BaseActivity {
         super.onDestroy();
         finishAll();
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
+        if (result != null) {
+            if (result.getContents() != null) {
+                String url = result.getContents();
+                if (url.contains(".")) {
+                    if (!url.startsWith("http")) {
+                        url = "http://" + url;
+                    }
+                    Intent intent = new Intent(this, WebViewActivity.class);
+                    intent.putExtra("url", url);
+                    startActivity(intent);
+                } else {
+                    MyToast.showToast("不可识别的网址：" + url);
+                }
+
+            }
+        } else {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+
+
 }

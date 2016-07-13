@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml
@@ -19,6 +19,7 @@ ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.CAMERA
 ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:6:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:23:5-65
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:6:22-62
 uses-permission#android.permission.VIBRATE
@@ -30,7 +31,7 @@ ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:9:22-66
 application
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:11:5-28:19
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:11:5-32:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -42,6 +43,7 @@ MERGED from [com.huxq17.xrefreshview:xrefreshview:3.1.0] /Users/dengmingzhi/Desk
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:47:5-55:19
 	android:label
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:15:9-41
 	android:supportsRtl
@@ -72,14 +74,20 @@ activity#com.shoudukejiguan.www.activity.MoreNewsActivity
 ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:25:9-63
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:25:19-60
-activity#com.shoudukejiguan.www.activity.VisitActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:26:9-60
+activity#com.shoudukejiguan.www.activity.CaptureActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:26:9-30:63
+	android:screenOrientation
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:28:13-49
+	android:stateNotNeeded
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:29:13-42
+	android:windowSoftInputMode
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:30:13-60
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:26:19-57
-activity#com.shoudukejiguan.www.activity.QRcodeActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:27:9-70
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:27:13-53
+activity#com.shoudukejiguan.www.activity.WebViewActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:31:9-71
 	android:name
-		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:27:19-58
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:31:19-59
 uses-sdk
 INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
@@ -95,6 +103,7 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/d
 MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [me.relex:circleindicator:1.2.1] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/me.relex/circleindicator/1.2.1/AndroidManifest.xml:8:5-10:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:19:5-21:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -103,3 +112,53 @@ MERGED from [me.relex:circleindicator:1.2.1] /Users/dengmingzhi/Desktop/develop/
 	android:minSdkVersion
 		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:26:5-28:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:28:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:27:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:29:5-31:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:31:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:30:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:34:5-36:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:36:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:35:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:37:5-39:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:39:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:38:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:40:5-42:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:42:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:41:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:43:5-45:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:45:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:44:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:48:9-54:63
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:50:13-45
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:51:13-56
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:52:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:54:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:53:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:49:13-74
