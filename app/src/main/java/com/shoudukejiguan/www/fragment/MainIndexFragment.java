@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.activity.CaptureActivity;
+import com.shoudukejiguan.www.activity.CinemaActivity;
 import com.shoudukejiguan.www.activity.MoreNewsActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.adapter.IndexEducationAdapter;
@@ -151,7 +152,7 @@ public class MainIndexFragment extends MainBaseFragment {
      * 更多影院
      */
     private void moreFilm() {
-
+        skip(CinemaActivity.class);
     }
 
     /**

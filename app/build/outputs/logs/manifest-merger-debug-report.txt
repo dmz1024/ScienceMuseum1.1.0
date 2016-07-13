@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml
@@ -31,7 +31,7 @@ ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:9:22-66
 application
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:11:5-32:19
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:11:5-33:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -39,11 +39,19 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/d
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.huxq17.xrefreshview:xrefreshview:3.1.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.huxq17.xrefreshview/xrefreshview/3.1.0/AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:47:5-55:19
+MERGED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:11:5-26:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:15:9-41
 	android:supportsRtl
@@ -85,9 +93,13 @@ ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:27:13-53
 activity#com.shoudukejiguan.www.activity.WebViewActivity
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:31:9-71
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:31:9-62
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:31:19-59
+activity#com.shoudukejiguan.www.activity.CinemaActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:32:9-70
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:32:19-58
 uses-sdk
 INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
@@ -97,13 +109,21 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/d
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.huxq17.xrefreshview:xrefreshview:3.1.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.huxq17.xrefreshview/xrefreshview/3.1.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [me.relex:circleindicator:1.2.1] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/me.relex/circleindicator/1.2.1/AndroidManifest.xml:8:5-10:41
 MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:19:5-21:41
+MERGED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -162,3 +182,9 @@ ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Des
 		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:53:13-54
 	android:name
 		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:49:13-74
+activity#com.hedgehog.ratingbar.MainActivity
+ADDED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:15:9-25:20
+	android:label
+		ADDED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:16:13-63

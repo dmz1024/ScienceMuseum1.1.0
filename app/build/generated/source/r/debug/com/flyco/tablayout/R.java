@@ -14,9 +14,9 @@ public final class R {
 		public static final int mv_isWidthHeightEqual = 0x7f0100d6;
 		public static final int mv_strokeColor = 0x7f0100d4;
 		public static final int mv_strokeWidth = 0x7f0100d3;
-		public static final int tl_bar_color = 0x7f0100ea;
-		public static final int tl_bar_stroke_color = 0x7f0100eb;
-		public static final int tl_bar_stroke_width = 0x7f0100ec;
+		public static final int tl_bar_color = 0x7f0100f0;
+		public static final int tl_bar_stroke_color = 0x7f0100f1;
+		public static final int tl_bar_stroke_width = 0x7f0100f2;
 		public static final int tl_divider_color = 0x7f010004;
 		public static final int tl_divider_padding = 0x7f010005;
 		public static final int tl_divider_width = 0x7f010006;
@@ -59,18 +59,18 @@ public final class R {
 		public static final int RIGHT = 0x7f0e0032;
 		public static final int TOP = 0x7f0e0012;
 		public static final int TRIANGLE = 0x7f0e0015;
-		public static final int iv_tab_icon = 0x7f0e00a4;
-		public static final int ll_tap = 0x7f0e00a3;
-		public static final int rtv_msg_tip = 0x7f0e00a2;
-		public static final int tv_tab_title = 0x7f0e00a1;
+		public static final int iv_tab_icon = 0x7f0e00aa;
+		public static final int ll_tap = 0x7f0e00a9;
+		public static final int rtv_msg_tip = 0x7f0e00a8;
+		public static final int tv_tab_title = 0x7f0e00a7;
 	}
 	public static final class layout {
-		public static final int layout_tab = 0x7f040028;
-		public static final int layout_tab_bottom = 0x7f040029;
-		public static final int layout_tab_left = 0x7f04002a;
-		public static final int layout_tab_right = 0x7f04002b;
-		public static final int layout_tab_segment = 0x7f04002c;
-		public static final int layout_tab_top = 0x7f04002d;
+		public static final int layout_tab = 0x7f04002c;
+		public static final int layout_tab_bottom = 0x7f04002d;
+		public static final int layout_tab_left = 0x7f04002e;
+		public static final int layout_tab_right = 0x7f04002f;
+		public static final int layout_tab_segment = 0x7f040030;
+		public static final int layout_tab_top = 0x7f040031;
 	}
 	public static final class styleable {
 		public static final int[] CommonTabLayout = { 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f0100ba, 0x7f0100bb, 0x7f0100bc, 0x7f0100bd, 0x7f0100be };
@@ -113,7 +113,7 @@ public final class R {
 		public static final int MsgView_mv_isWidthHeightEqual = 5;
 		public static final int MsgView_mv_strokeColor = 3;
 		public static final int MsgView_mv_strokeWidth = 2;
-		public static final int[] SegmentTabLayout = { 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f0100ea, 0x7f0100eb, 0x7f0100ec };
+		public static final int[] SegmentTabLayout = { 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f0100f0, 0x7f0100f1, 0x7f0100f2 };
 		public static final int SegmentTabLayout_tl_bar_color = 21;
 		public static final int SegmentTabLayout_tl_bar_stroke_color = 22;
 		public static final int SegmentTabLayout_tl_bar_stroke_width = 23;
