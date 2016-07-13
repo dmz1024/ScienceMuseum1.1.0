@@ -79,9 +79,9 @@
     <View
         android:layout_below="@id/iv_img"
         android:background="#eee"
-        android:layout_marginTop="@dimen/size5"
-        android:layout_marginLeft="@dimen/size10"
-        android:layout_marginRight="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_alignLeft="@id/iv_img"
+        android:layout_alignRight="@id/bt_order"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0.5"/>
 </RelativeLayout>
