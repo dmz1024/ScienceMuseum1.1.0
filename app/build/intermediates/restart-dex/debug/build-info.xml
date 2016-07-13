@@ -4,47 +4,25 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="1468398062858745000"
-    token="8153124014010657498"
-    verifier="CLASS_ADDED" >
+    timestamp="1468398223897090000"
+    token="8153124014010657498" >
 
     <task
         name="javac"
-        duration="997" />
+        duration="798" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="108" />
+        duration="0" />
     <task
         name="verifier"
-        duration="10" />
+        duration="0" />
 
     <artifact
         location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/resources-debug.ap_"
         type="RESOURCES" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
 
     <build timestamp="1468394676340912000" >
         <artifact
@@ -54,9 +32,6 @@
     <build
         timestamp="1468398062858745000"
         verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />
@@ -78,6 +53,11 @@
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
+    </build>
+    <build timestamp="1468398223897090000" >
+        <artifact
+            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

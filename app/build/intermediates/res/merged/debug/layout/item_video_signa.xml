@@ -47,7 +47,7 @@
         android:layout_below="@id/tv_director"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/size5"
-        tool:clickable="true"
+        tool:clickable="false"
         tool:starCount="5"
         tool:starEmpty="@mipmap/ic_star_empty"
         tool:starFill="@mipmap/ic_star_fill"
