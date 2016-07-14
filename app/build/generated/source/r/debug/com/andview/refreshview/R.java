@@ -21,8 +21,8 @@ public final class R {
 		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f0a004b;
 	}
 	public static final class drawable {
-		public static final int xrefresh_ok = 0x7f020055;
-		public static final int xrefreshview_arrow = 0x7f020056;
+		public static final int xrefresh_ok = 0x7f020051;
+		public static final int xrefreshview_arrow = 0x7f020052;
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0005;

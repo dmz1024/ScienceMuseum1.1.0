@@ -2700,19 +2700,15 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static final int abc_textfield_search_material=0x7f02004a;
-        public static final int icon_time_check=0x7f02004b;
-        public static final int icon_time_checked=0x7f02004c;
-        public static final int notification_template_icon_bg=0x7f020057;
-        public static final int rectangle_03abee=0x7f02004d;
-        public static final int rectangle_eee=0x7f02004e;
-        public static final int rectangle_eee1=0x7f02004f;
-        public static final int rectangle_eee2=0x7f020050;
-        public static final int round_white=0x7f020051;
-        public static final int text_back_00acbb_to_999=0x7f020052;
-        public static final int text_color_00acbb_to_999=0x7f020053;
-        public static final int white_radius=0x7f020054;
-        public static final int xrefresh_ok=0x7f020055;
-        public static final int xrefreshview_arrow=0x7f020056;
+        public static final int notification_template_icon_bg=0x7f020053;
+        public static final int rectangle_03abee=0x7f02004b;
+        public static final int rectangle_eee=0x7f02004c;
+        public static final int rectangle_eee1=0x7f02004d;
+        public static final int rectangle_eee2=0x7f02004e;
+        public static final int round_white=0x7f02004f;
+        public static final int white_radius=0x7f020050;
+        public static final int xrefresh_ok=0x7f020051;
+        public static final int xrefreshview_arrow=0x7f020052;
     }
     public static final class id {
         public static final int BLOCK=0x7f0e0013;

@@ -48,30 +48,31 @@ public class OrderCcAdapter extends RecyclerView.Adapter<OrderCcAdapter.ViewHold
                 if (!map.containsKey(position)) {
                     map.clear();
                     notifyDataSetChanged();
-                    holder.tv_cc.setBackgroundResource(R.mipmap.icon_time_checked);
-                    holder.tv_cc.setTextColor(Util.getApplication().getResources().getColor(R.color.color00acbb));
                     map.put(position, "");
+                    textChange(holder.tv_cc, R.mipmap.icon_time_checked, R.color.color00acbb);
                 } else {
                     if (map.size() > 1) {
-                        holder.tv_cc.setBackgroundResource(R.mipmap.icon_time_check);
-                        holder.tv_cc.setTextColor(Util.getApplication().getResources().getColor(R.color.color666));
+                        textChange(holder.tv_cc, R.mipmap.icon_time_check, R.color.color666);
                         map.remove(position);
                     }
                 }
-
                 mapAll.put(positionAll, map);
             }
         });
 
         if (map.containsKey(position)) {
-            holder.tv_cc.setBackgroundResource(R.mipmap.icon_time_checked);
-            holder.tv_cc.setTextColor(Util.getApplication().getResources().getColor(R.color.color00acbb));
+            textChange(holder.tv_cc, R.mipmap.icon_time_checked, R.color.color00acbb);
+
         } else {
-            holder.tv_cc.setBackgroundResource(R.mipmap.icon_time_check);
-            holder.tv_cc.setTextColor(Util.getApplication().getResources().getColor(R.color.color666));
+            textChange(holder.tv_cc, R.mipmap.icon_time_check, R.color.color666);
         }
 
         holder.tv_cc.setText(urlList.get(position));
+    }
+
+    private void textChange(TextView tv, int bg, int color) {
+        tv.setBackgroundResource(bg);
+        tv.setTextColor(Util.getApplication().getResources().getColor(color));
     }
 
     @Override

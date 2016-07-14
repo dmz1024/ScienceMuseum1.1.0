@@ -78,7 +78,7 @@
         style="@style/TextSize15Color333"
         android:layout_alignBottom="@id/iv_img"
         android:layout_alignLeft="@id/tv_title"
-        android:layout_marginBottom="@dimen/size10"
+        android:layout_marginBottom="@dimen/size5"
         android:text="￥59"
         android:textColor="#f00" />
 
