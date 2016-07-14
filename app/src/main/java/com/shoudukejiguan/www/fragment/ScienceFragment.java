@@ -49,7 +49,7 @@ public class ScienceFragment extends BaseFragment {
 
     private void initData() {
         tv_time.setTextContent("日常 08:00至 20：00,节假日：10:00 至 21:00");
-        tv_address.setTextContent("首都科学技术官D馆3层生命乐章展厅");
+        tv_address.setTextContent("首都科学技术官 D馆3层生命乐章展厅");
         tv_cr_price.setTextContent("￥35");
         tv_et_price.setTextContent("￥17");
         tv_tips.setTextContent("您可以带您的家人一起来感受首都科技馆的氛围,这里是科学殿堂,梦想的开始。一人一票，儿童票半价，一票只可使用一次。");
