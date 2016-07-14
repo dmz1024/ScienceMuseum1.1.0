@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingTop="@dimen/size5">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/size112"
+        android:layout_height="@dimen/size90"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_marginRight="@dimen/size5"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSize13Color333"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_toRightOf="@id/iv_img"
+        android:maxEms="10"
+        android:text="A场馆" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/TextSize10Color999"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginTop="@dimen/size4"
+        android:layout_toRightOf="@id/tv_title"
+        android:background="@drawable/rectangle_03abee"
+        android:paddingBottom="@dimen/size2"
+        android:paddingLeft="@dimen/size3"
+        android:paddingRight="@dimen/size3"
+        android:paddingTop="@dimen/size2"
+        android:text="场馆门票"
+        android:textColor="#00acbb" />
+
+    <com.shoudukejiguan.www.view.TextImage
+        android:id="@+id/tv_open_time"
+        style="@style/TextSize10Color666"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/size10"
+        android:drawablePadding="@dimen/size10"
+        android:gravity="center_vertical"
+        android:text="开放时间：8:00-16:00"
+        android:visibility="gone"
+        tool:TextImage_drawable="@mipmap/icon_tips"
+        tool:TextImage_height="@dimen/size13"
+        tool:TextImage_seat="3"
+        tool:TextImage_width="@dimen/size13" />
+
+
+    <!--<com.zhy.view.flowlayout.TagFlowLayout-->
+        <!--android:id="@+id/id_screening"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="@dimen/size25"-->
+        <!--android:layout_alignLeft="@id/tv_title"-->
+        <!--android:layout_below="@id/tv_title"-->
+        <!--android:layout_marginTop="@dimen/size10"-->
+        <!--tool:max_select="1"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cc"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/TextSize15Color333"
+        android:layout_alignBottom="@id/iv_img"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginBottom="@dimen/size10"
+        android:text="￥59"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/tv_jian"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_alignBottom="@id/tv_price"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_toRightOf="@id/tv_price"
+        android:background="@drawable/rectangle_eee1"
+        android:gravity="center"
+        android:text="—"
+        android:textColor="#999"
+        android:textSize="@dimen/sp17" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="@dimen/size40"
+        android:layout_height="@dimen/size20"
+        android:layout_alignBottom="@id/tv_price"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_toRightOf="@id/tv_jian"
+        android:background="@drawable/rectangle_eee2"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#999"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tv_jia"
+        android:layout_width="@dimen/size20"
+        android:layout_height="@dimen/size20"
+        android:layout_alignBottom="@id/tv_price"
+        android:layout_marginLeft="@dimen/size5"
+        android:layout_toRightOf="@id/tv_count"
+        android:background="@drawable/rectangle_eee1"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="#999"
+        android:textSize="@dimen/sp17" />
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="@dimen/size70"
+        android:layout_height="@dimen/size20"
+        android:layout_alignBottom="@id/tv_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/size10"
+        android:background="#00acbb"
+        android:text="加入购物车"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp11" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size4"
+        android:layout_below="@id/iv_img"
+        android:layout_marginTop="@dimen/size5"
+        android:background="#eee" />
+</RelativeLayout>

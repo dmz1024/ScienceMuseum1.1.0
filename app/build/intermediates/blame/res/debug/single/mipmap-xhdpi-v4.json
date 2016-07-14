@@ -12,10 +12,6 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-xhdpi/star_half.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }

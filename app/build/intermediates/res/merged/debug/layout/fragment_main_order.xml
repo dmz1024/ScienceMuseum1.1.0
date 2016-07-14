@@ -1,13 +1,66 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.shoudukejiguan.www.fragment.MainOrderFragment">
+    android:background="#eee"
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:orientation="vertical">
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="2" />
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingBottom="@dimen/size5"
+        android:paddingLeft="@dimen/size10"
+        android:paddingRight="@dimen/size10"
+        android:paddingTop="@dimen/size5">
 
-</FrameLayout>
+        <com.shoudukejiguan.www.view.TextImage
+            android:id="@+id/tv_fillter"
+            style="@style/TextSize12Color666"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/size4"
+            android:gravity="center_vertical"
+            android:text="全部票种"
+            tools:TextImage_drawable="@mipmap/icon_drop_xia"
+            tools:TextImage_height="@dimen/size5"
+            tools:TextImage_seat="3"
+            tools:TextImage_width="@dimen/size10" />
+
+        <com.shoudukejiguan.www.view.TextImage
+            android:id="@+id/tv_time"
+            style="@style/TextSize13Color333"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rectangle_eee"
+            android:drawablePadding="@dimen/size20"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/size5"
+            android:paddingLeft="@dimen/size10"
+            android:paddingRight="@dimen/size10"
+            android:paddingTop="@dimen/size5"
+            android:text="2016-04-21"
+            tools:TextImage_drawable="@mipmap/icon_calendar"
+            tools:TextImage_height="@dimen/size12"
+            tools:TextImage_seat="3"
+            tools:TextImage_width="@dimen/size20" />
+
+        <Button
+            android:id="@+id/bt_filter"
+            android:layout_width="@dimen/size60"
+            android:layout_height="@dimen/size25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#00acbb"
+            android:text="筛选"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp14" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fg_order"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</LinearLayout>

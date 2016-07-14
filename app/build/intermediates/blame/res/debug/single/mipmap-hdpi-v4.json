@@ -1,15 +1,11 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_sao.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_sao.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_star_fill.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-hdpi/ic_star_fill.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_sao.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_sao.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_sao.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_sao.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_back.png",
@@ -20,20 +16,12 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-hdpi/ic_star_empty.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_personal_center.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_personal_center.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_time_checked.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_time_checked.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_slide_selected.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_slide_selected.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_map.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_map.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_slide_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_slide_selected.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_go.png",
@@ -44,16 +32,8 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_map.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_index.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_index.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_personal_center.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_personal_center.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_passage_order.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_passage_order.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
@@ -64,24 +44,20 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_passage_order.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_home_fill.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-hdpi/ic_home_fill.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_personal_center_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_personal_center_selected.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_index_selected.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_index_selected.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_back.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_back.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_time_check.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_time_check.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_drop_xia.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_drop_xia.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_love_fill.png",
@@ -100,8 +76,8 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_visit_guide.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_booktic.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_booktic.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_tips.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_tips.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_personal_center_selected.png",
@@ -116,24 +92,8 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_slide.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_go.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_go.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_index.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_index.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_slide.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_slide.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_visit_guide_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_visit_guide_selected.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_index_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_index_selected.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_booktic.png",
@@ -148,15 +108,7 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-hdpi/ic_home_empty.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/index_menu_news.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/index_menu_news.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_passage_order_selected.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_passage_order_selected.png"
-    },
-    {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_main_visit_guide.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/MyProject/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_visit_guide.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_calendar.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_calendar.png"
     }
 ]

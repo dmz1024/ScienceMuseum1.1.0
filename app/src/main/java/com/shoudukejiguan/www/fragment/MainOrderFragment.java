@@ -22,7 +22,7 @@ public class MainOrderFragment extends MainBaseFragment {
 
     @Override
     protected void initData() {
-
+        getChildFragmentManager().beginTransaction().add(R.id.fg_order, new OrderFragment()).commit();
     }
 
     @Override
