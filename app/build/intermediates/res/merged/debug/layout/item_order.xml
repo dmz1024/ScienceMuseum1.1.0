@@ -52,18 +52,9 @@
         tool:TextImage_seat="3"
         tool:TextImage_width="@dimen/size13" />
 
-
-    <!--<com.zhy.view.flowlayout.TagFlowLayout-->
-        <!--android:id="@+id/id_screening"-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="@dimen/size25"-->
-        <!--android:layout_alignLeft="@id/tv_title"-->
-        <!--android:layout_below="@id/tv_title"-->
-        <!--android:layout_marginTop="@dimen/size10"-->
-        <!--tool:max_select="1"/>-->
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_cc"
+        android:visibility="gone"
         android:layout_alignLeft="@id/tv_title"
         android:layout_below="@id/tv_title"
         android:layout_marginTop="@dimen/size10"

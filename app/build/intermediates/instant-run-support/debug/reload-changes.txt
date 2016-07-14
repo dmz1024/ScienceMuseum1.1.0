@@ -1,0 +1,5 @@
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/adapter/OrderAdapter$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/OrderFragment$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/MainOrderFragment$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/MainOrderFragment$1$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

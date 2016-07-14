@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxhdpi"
+    abi="x86,armeabi-v7a"
+    api-level="18"
+    density="xhdpi"
     format="7"
-    timestamp="1468482598774104000"
+    timestamp="1468485787461611000"
     token="641474196854331016" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="496" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="62" />
     <task
         name="verifier"
-        duration="0" />
+        duration="5" />
 
-    <build timestamp="1468481802077802000" >
+    <artifact
+        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="1468485787461611000" >
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="1468482591185794000" >
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-    </build>
-    <build timestamp="1468482598774104000" />
 
 </instant-run>
