@@ -30,7 +30,8 @@
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.CinemaActivity" />
-        <activity android:name=".activity.EducationActivity"></activity>
+        <activity android:name=".activity.EducationActivity" />
+        <activity android:name=".activity.ExhibitionActivity"></activity>
     </application>
 
 </manifest>
