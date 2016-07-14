@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="@dimen/size10">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size160"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSize12Color333"
+        android:layout_marginTop="@dimen/size10"
+        android:text="奇妙的变奏主展" />
+
+    <com.shoudukejiguan.www.view.TextImage
+        android:id="@+id/tv_time"
+        style="@style/TextSize12Color666"
+        android:layout_marginTop="@dimen/size10"
+        android:drawablePadding="@dimen/size5"
+        android:text="2016-04-20 至 2016-12-30"
+        tool:TextImage_drawable="@mipmap/icon_science_time"
+        tool:TextImage_height="@dimen/size10"
+        tool:TextImage_seat="1"
+        tool:TextImage_width="@dimen/size10" />
+
+    <com.shoudukejiguan.www.view.TextImage
+        android:id="@+id/tv_address"
+        style="@style/TextSize12Color666"
+        android:layout_marginTop="@dimen/size10"
+        android:drawablePadding="@dimen/size5"
+        android:text="D馆3层"
+        tool:TextImage_drawable="@mipmap/icon_science_pos"
+        tool:TextImage_height="@dimen/size10"
+        tool:TextImage_seat="1"
+        tool:TextImage_width="@dimen/size10" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextSize11Color999"
+        android:layout_marginTop="@dimen/size10"
+        android:lineSpacingMultiplier="1.5"
+        android:text="生命自从诞生开始就一直在演变，那奇妙的变化是我们无法想象的，化茧成蝶的过程是痛苦的，但是蜕变之后是美丽的，也是值得的，无数的生命都在孕育着美妙的开始。在这里，你可以体验生命的升华过程，一切生命的变迁，都在那一瞬间演绎美丽，当时光让生命化身为美丽，那一切都是诗歌的历史。" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#e1e1e1" />
+</LinearLayout>

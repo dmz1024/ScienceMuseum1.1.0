@@ -98,6 +98,10 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         ll_root.setOrientation(LinearLayout.VERTICAL);
         viewGroup.addView(ll_root);
         ll_root.addView(title_bar = new TitleBar(this));
+//        android:focusable="true"
+//        android:focusableInTouchMode="true"
+        title_bar.findFocus();
+        title_bar.isFocusableInTouchMode();
         title_bar.setOnLeftClickListener(this);
         title_bar.setOnRightClickListener(this);
         //透明状态栏

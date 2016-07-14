@@ -14,6 +14,7 @@ import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.activity.CaptureActivity;
 import com.shoudukejiguan.www.activity.CinemaActivity;
 import com.shoudukejiguan.www.activity.EducationActivity;
+import com.shoudukejiguan.www.activity.ExhibitionActivity;
 import com.shoudukejiguan.www.activity.MoreNewsActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.adapter.IndexEducationAdapter;
@@ -160,7 +161,7 @@ public class MainIndexFragment extends MainBaseFragment {
      * 更多展览专区
      */
     private void moreExhibition() {
-
+        skip(ExhibitionActivity.class);
     }
 
     /**

@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="@dimen/size10">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size170"
+                android:scaleType="fitXY" />
+
+            <com.shoudukejiguan.www.view.Color2Text
+                android:id="@+id/tv_title"
+                style="@style/TextSize12Color666"
+                android:layout_marginTop="@dimen/size6"
+                android:lineSpacingMultiplier="1.5"
+                android:text="三生主展:"
+                tool:Color2Text_size="@dimen/sp12" />
+
+            <com.shoudukejiguan.www.view.Color2Text
+                android:id="@+id/tv_open_time"
+                style="@style/TextSize12Color666"
+                android:layout_marginTop="@dimen/size6"
+                android:lineSpacingMultiplier="1.5"
+                android:text="开放时间:"
+                tool:Color2Text_size="@dimen/sp12" />
+
+            <com.shoudukejiguan.www.view.Color2Text
+                android:id="@+id/tv_cr_price"
+                style="@style/TextSize12Color666"
+                android:layout_marginTop="@dimen/size6"
+                android:text="成人票价:"
+                tool:Color2Text_color="#ff9900"
+                tool:Color2Text_size="@dimen/sp12" />
+
+            <com.shoudukejiguan.www.view.Color2Text
+                android:id="@+id/tv_et_price"
+                style="@style/TextSize12Color666"
+                android:layout_marginTop="@dimen/size6"
+                android:text="儿童票价:"
+                tool:Color2Text_color="#ff9900"
+                tool:Color2Text_size="@dimen/sp12" />
+
+            <com.shoudukejiguan.www.view.Color2Text
+                android:id="@+id/tv_tips"
+                style="@style/TextSize12Color666"
+                android:layout_marginTop="@dimen/size6"
+                android:lineSpacingMultiplier="1.5"
+                android:text="温馨提示:"
+                tool:Color2Text_size="@dimen/sp12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_marginTop="@dimen/size12"
+                android:background="#e0e0e0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bt_buy"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size25"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/size10"
+                    android:background="@drawable/rectangle_03abee"
+                    android:text="购票"
+                    android:textColor="#03abee"
+                    android:textSize="@dimen/sp14" />
+
+                <Button
+                    android:id="@+id/bt_collect"
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size25"
+                    android:layout_marginRight="@dimen/size20"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_toLeftOf="@id/bt_buy"
+                    android:background="@drawable/rectangle_c8a063"
+                    android:text="收藏"
+                    android:textColor="#c8a063"
+                    android:textSize="@dimen/sp14" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            tool:tl_indicator_color="#00acbb"
+            tool:tl_indicator_height="@dimen/size2"
+            tool:tl_textSelectColor="#00acbb"
+            tool:tl_textUnselectColor="#999"
+            tool:tl_textsize="@dimen/sp14" />
+
+        <FrameLayout
+            android:id="@+id/fg_juniors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</ScrollView>

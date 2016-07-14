@@ -69,6 +69,11 @@
         <item name="android:textColor">#333</item>
     </style>
 
+    <style name="TextSize11Color666" parent="Text">
+        <item name="android:textSize">@dimen/sp11</item>
+        <item name="android:textColor">#666</item>
+    </style>
+
     <style name="TextSize13Color999" parent="Text">
         <item name="android:textSize">@dimen/sp13</item>
         <item name="android:textColor">#999</item>

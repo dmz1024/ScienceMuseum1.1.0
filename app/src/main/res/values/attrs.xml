@@ -6,4 +6,9 @@
         <attr name="TextImage_height" format="dimension" />
         <attr name="TextImage_width" format="dimension" />
     </declare-styleable>
+
+    <declare-styleable name="Color2Text">
+        <attr name="Color2Text_size" format="dimension"></attr>
+        <attr name="Color2Text_color" format="color"></attr>
+    </declare-styleable>
 </resources>
