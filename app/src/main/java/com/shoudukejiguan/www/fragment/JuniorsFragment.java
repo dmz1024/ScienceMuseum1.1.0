@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.flyco.tablayout.CommonTabLayout;
@@ -27,6 +29,7 @@ public class JuniorsFragment extends BaseFragment {
     private Color2Text tv_et_price;
     private Color2Text tv_tips;
     private CommonTabLayout tl_tab;
+    private LinearLayout ll_top;
 
     @Nullable
     @Override
@@ -47,6 +50,14 @@ public class JuniorsFragment extends BaseFragment {
         tv_et_price = (Color2Text) view.findViewById(R.id.tv_et_price);
         tv_tips = (Color2Text) view.findViewById(R.id.tv_tips);
         tl_tab = (CommonTabLayout) view.findViewById(R.id.tl_tab);
+        ll_top = (LinearLayout) view.findViewById(R.id.ll_top);
+        ll_top.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                return false;
+            }
+        });
     }
 
     private void initData() {
@@ -63,11 +74,10 @@ public class JuniorsFragment extends BaseFragment {
         mTabEntities.add(new TabEntity("生命乐章展厅", 0, 0));
         mTabEntities.add(new TabEntity("生活追梦展厅", 0, 0));
         mTabEntities.add(new TabEntity("生存对话主题展厅", 0, 0));
-        tl_tab.setTabData(mTabEntities);
-//        ArrayList<Fragment> mFragments = new ArrayList<>();
-//        mFragments.add(new JuniorsDataFragment());
-//        mFragments.add(new JuniorsDataFragment());
-//        mFragments.add(new JuniorsDataFragment());
-//        tl_tab.setTabData(mTabEntities, getActivity(), R.id.fg_juniors, mFragments);
+        ArrayList<Fragment> mFragments = new ArrayList<>();
+        mFragments.add(new JuniorsDataFragment());
+        mFragments.add(new JuniorsDataFragment());
+        mFragments.add(new JuniorsDataFragment());
+        tl_tab.setTabData(mTabEntities, getActivity(), R.id.fg_juniors, mFragments);
     }
 }
