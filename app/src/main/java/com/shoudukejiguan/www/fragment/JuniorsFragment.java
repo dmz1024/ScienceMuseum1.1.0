@@ -3,12 +3,16 @@ package com.shoudukejiguan.www.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 import com.flyco.tablayout.CommonTabLayout;
@@ -16,6 +20,7 @@ import com.flyco.tablayout.listener.CustomTabEntity;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
 import com.shoudukejiguan.www.view.Color2Text;
+import com.shoudukejiguan.www.view.TouchLinearLayout;
 
 import java.util.ArrayList;
 
@@ -30,6 +35,10 @@ public class JuniorsFragment extends BaseFragment {
     private Color2Text tv_tips;
     private CommonTabLayout tl_tab;
     private LinearLayout ll_top;
+    private float downY;
+    private int oldPaddingTop;
+    private float deltaY;
+    private View rootView;
 
     @Nullable
     @Override
@@ -42,6 +51,7 @@ public class JuniorsFragment extends BaseFragment {
 
 
     private void initView(View view) {
+        rootView = view;
         ImageView iv = (ImageView) view.findViewById(R.id.iv_img);
         Glide.with(getActivity()).load("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg").into(iv);
         tv_title = (Color2Text) view.findViewById(R.id.tv_title);
@@ -51,13 +61,17 @@ public class JuniorsFragment extends BaseFragment {
         tv_tips = (Color2Text) view.findViewById(R.id.tv_tips);
         tl_tab = (CommonTabLayout) view.findViewById(R.id.tl_tab);
         ll_top = (LinearLayout) view.findViewById(R.id.ll_top);
-        ll_top.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
 
-                return false;
-            }
-        });
+//        ViewTreeObserver vto = ll_top.getViewTreeObserver();
+//        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+//            @Override
+//            public void onGlobalLayout() {
+//                ll_top.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+//                oldPaddingTop = ll_top.getPaddingTop();
+//            }
+//        });
+
+        ll_top.setOnTouchListener(getListener());
     }
 
     private void initData() {
@@ -75,9 +89,80 @@ public class JuniorsFragment extends BaseFragment {
         mTabEntities.add(new TabEntity("生活追梦展厅", 0, 0));
         mTabEntities.add(new TabEntity("生存对话主题展厅", 0, 0));
         ArrayList<Fragment> mFragments = new ArrayList<>();
-        mFragments.add(new JuniorsDataFragment());
-        mFragments.add(new JuniorsDataFragment());
-        mFragments.add(new JuniorsDataFragment());
+//        tl_tab.setTabData(mTabEntities);
+        mFragments.add(new JuniorsDataFragment() {
+            @Override
+            public View.OnTouchListener setListener() {
+                return getListener();
+            }
+        });
+
+        mFragments.add(new JuniorsDataFragment() {
+            @Override
+            public View.OnTouchListener setListener() {
+                return getListener();
+            }
+        });
+        mFragments.add(new JuniorsDataFragment() {
+            @Override
+            public View.OnTouchListener setListener() {
+                return getListener();
+            }
+        });
+
         tl_tab.setTabData(mTabEntities, getActivity(), R.id.fg_juniors, mFragments);
+
+    }
+
+
+    private View.OnTouchListener getListener() {
+        return new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                Log.d("运行", "fff");
+                switch (motionEvent.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        downY = motionEvent.getY();
+                        oldPaddingTop = rootView.getPaddingTop();
+                        return false;
+                    case MotionEvent.ACTION_MOVE:
+                        float tab_y = tl_tab.getY();
+                        Log.d("运行", tab_y + "");
+                        Log.d("deltaY", deltaY + "");
+                        deltaY = motionEvent.getY() - downY;
+                        if (deltaY >= 0) {
+                            if (tab_y > 0) {
+//                                if (rootView.getPaddingTop() >= 0) {
+//                                    rootView.setPadding(rootView.getPaddingLeft(), 0, rootView.getPaddingRight(), rootView.getPaddingBottom());
+//                                    return true;
+//                                }
+                                rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
+                                return true;
+                            }
+
+                        } else {
+                            if (tab_y <= 0) {
+                                return false;
+                            } else {
+                                rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
+                                return true;
+                            }
+
+                        }
+
+                    case MotionEvent.ACTION_UP:
+                        if (deltaY >= 0 && rootView.getPaddingTop() >= 0) {
+                            rootView.setPadding(rootView.getPaddingLeft(), 0, rootView.getPaddingRight(), rootView.getPaddingBottom());
+                            return true;
+                        }
+                        return false;
+                }
+
+                return false;
+            }
+
+        };
     }
 }
+

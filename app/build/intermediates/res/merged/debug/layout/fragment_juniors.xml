@@ -94,13 +94,13 @@
         </RelativeLayout>
     </LinearLayout>
 
-
     <com.flyco.tablayout.CommonTabLayout
         android:id="@+id/tl_tab"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size40"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/size10"
+
         android:background="#fff"
         tool:tl_indicator_color="#00acbb"
         tool:tl_indicator_height="@dimen/size2"
@@ -112,5 +112,7 @@
         android:id="@+id/fg_juniors"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+
 </LinearLayout>
 

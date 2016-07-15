@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,6 +53,7 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Log.d("这里","哈哈哈");
         return initView();
     }
 
@@ -92,6 +94,7 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
                 }, 300);
             }
         });
+
 
         tv_nodata = (TextView) view.findViewById(R.id.tv_nodata);
         setxRefresh();
@@ -197,6 +200,23 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
         rv_base.setAdapter(mAdapter = getAdapter(getContext(), totalList));
 //        xRefreshView.setAutoLoadMore(true);
         //设置刷新完成以后，headerview固定的时间
+        rv_base.setOnTouchListener(getOnTouchListener());
+        rv_base.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                Log.d("onScrollStateChanged", newState + "");
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                Log.d("onScrolled", dy + "-" + dx);
+
+                super.onScrolled(recyclerView, dx, dy);
+            }
+        });
+
+
         xRefreshView.setPinnedTime(1000);
         xRefreshView.setMoveForHorizontal(true);
         //设置静默加载时提前加载的item个数
@@ -204,6 +224,10 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
         xRefreshView.setPullRefreshEnable(getRefresh());
         xRefreshView.setPullLoadEnable(getLoad());
 //        xRefreshView.setCustomHeaderView(new XrefreshHeaderView(getContext()));
+    }
+
+    protected View.OnTouchListener getOnTouchListener() {
+        return null;
     }
 
     protected RecyclerView.LayoutManager getLayoutManager() {

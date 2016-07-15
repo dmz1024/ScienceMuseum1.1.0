@@ -1,6 +1,9 @@
 package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 
 import com.shoudukejiguan.www.adapter.JuniorsAdapter;
 import com.shoudukejiguan.www.adapter.StyleShowAdapter;
@@ -13,7 +16,9 @@ import java.util.Map;
 /**
  *
  */
-public class JuniorsDataFragment extends ListDataBaseFragment<Juniors, Juniors.Data, JuniorsAdapter> {
+public abstract class JuniorsDataFragment extends ListDataBaseFragment<Juniors, Juniors.Data, JuniorsAdapter> {
+    private View.OnTouchListener listener;
+
     @Override
     protected JuniorsAdapter getAdapter(Context context, List<Juniors.Data> totalList) {
         return new JuniorsAdapter(totalList);
@@ -33,4 +38,18 @@ public class JuniorsDataFragment extends ListDataBaseFragment<Juniors, Juniors.D
     protected Map<String, String> getMap(Map<String, String> map) {
         return map;
     }
+
+
+    @Override
+    protected boolean getRefresh() {
+        return false;
+    }
+
+    @Override
+    protected View.OnTouchListener getOnTouchListener() {
+        return setListener();
+    }
+
+
+    public abstract View.OnTouchListener setListener();
 }
