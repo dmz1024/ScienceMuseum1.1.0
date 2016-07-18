@@ -119,7 +119,6 @@ public class JuniorsFragment extends BaseFragment {
         return new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-
                 Log.d("运行", "fff");
                 switch (motionEvent.getAction()) {
                     case MotionEvent.ACTION_DOWN:
@@ -130,26 +129,27 @@ public class JuniorsFragment extends BaseFragment {
                         float tab_y = tl_tab.getY();
                         Log.d("运行", tab_y + "");
                         Log.d("deltaY", deltaY + "");
-                        deltaY = motionEvent.getY() - downY;
-                        if (deltaY >= 0) {
-                            if (tab_y > 0) {
-//                                if (rootView.getPaddingTop() >= 0) {
-//                                    rootView.setPadding(rootView.getPaddingLeft(), 0, rootView.getPaddingRight(), rootView.getPaddingBottom());
-//                                    return true;
-//                                }
-                                rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
-                                return true;
-                            }
+                            deltaY = motionEvent.getY() - downY;
+                            if (deltaY >= 0) {
+                                if (tab_y > 0) {
+//                                    if (rootView.getPaddingTop() >= 0) {
+//                                        rootView.setPadding(rootView.getPaddingLeft(), 0, rootView.getPaddingRight(), rootView.getPaddingBottom());
+//                                        return true;
+//                                    }
+                                    rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
+                                    return true;
+                                }
 
-                        } else {
-                            if (tab_y <= 0) {
-                                return false;
                             } else {
-                                rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
-                                return true;
-                            }
+                                if (tab_y <= 0) {
+                                    return false;
+                                } else {
+                                    rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
+                                    return true;
+                                }
 
-                        }
+                            }
+                        break;
 
                     case MotionEvent.ACTION_UP:
                         if (deltaY >= 0 && rootView.getPaddingTop() >= 0) {
@@ -159,7 +159,7 @@ public class JuniorsFragment extends BaseFragment {
                         return false;
                 }
 
-                return false;
+                return true;
             }
 
         };

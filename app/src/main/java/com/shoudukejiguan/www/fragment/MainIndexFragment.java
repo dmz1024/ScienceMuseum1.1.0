@@ -23,6 +23,7 @@ import com.shoudukejiguan.www.entity.IndexNews;
 import com.shoudukejiguan.www.util.Util;
 import com.shoudukejiguan.www.view.MaxGridView;
 import com.shoudukejiguan.www.view.MaxListView;
+import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.RotationRelativeLayout;
 import com.shoudukejiguan.www.view.TipView;
 
@@ -70,6 +71,12 @@ public class MainIndexFragment extends MainBaseFragment {
                     case 3:
                         sao1sao();
                         break;
+                    case 0:
+                    case 1:
+                    case 2:
+
+                        break;
+
                 }
             }
         });

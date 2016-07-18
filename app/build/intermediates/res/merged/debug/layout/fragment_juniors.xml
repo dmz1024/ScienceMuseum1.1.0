@@ -100,7 +100,6 @@
         android:layout_height="@dimen/size40"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/size10"
-
         android:background="#fff"
         tool:tl_indicator_color="#00acbb"
         tool:tl_indicator_height="@dimen/size2"
