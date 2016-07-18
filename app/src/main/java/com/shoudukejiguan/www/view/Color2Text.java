@@ -38,7 +38,7 @@ public class Color2Text extends TextView {
 
     private void init(AttributeSet attrs) {
         TypedArray typedArray = getContext().obtainStyledAttributes(attrs,R.styleable.Color2Text);
-        size = typedArray.getDimensionPixelSize(R.styleable.Color2Text_Color2Text_size,R.dimen.size60);
+        size = typedArray.getDimensionPixelSize(R.styleable.Color2Text_Color2Text_size,R.dimen.sp12);
         color = typedArray.getColor(R.styleable.Color2Text_Color2Text_color,getResources().getColor(R.color.color333));
         typedArray.recycle();
     }

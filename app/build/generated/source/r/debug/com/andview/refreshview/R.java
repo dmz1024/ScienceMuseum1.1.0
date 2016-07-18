@@ -8,10 +8,10 @@ package com.andview.refreshview;
 
 public final class R {
 	public static final class attr {
-		public static final int autoLoadMore = 0x7f010128;
-		public static final int autoRefresh = 0x7f010127;
-		public static final int isHeightMatchParent = 0x7f010125;
-		public static final int isWidthMatchParent = 0x7f010126;
+		public static final int autoLoadMore = 0x7f010129;
+		public static final int autoRefresh = 0x7f010128;
+		public static final int isHeightMatchParent = 0x7f010126;
+		public static final int isWidthMatchParent = 0x7f010127;
 		public static final int layoutManager = 0x7f0100e5;
 		public static final int reverseLayout = 0x7f0100e7;
 		public static final int spanCount = 0x7f0100e6;
@@ -26,22 +26,22 @@ public final class R {
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0005;
-		public static final int left_images = 0x7f0e00e5;
-		public static final int right_text = 0x7f0e00e9;
-		public static final int xrefreshview_footer_click_textview = 0x7f0e00e3;
-		public static final int xrefreshview_footer_content = 0x7f0e00e0;
-		public static final int xrefreshview_footer_hint_textview = 0x7f0e00e2;
-		public static final int xrefreshview_footer_progressbar = 0x7f0e00e1;
-		public static final int xrefreshview_header_arrow = 0x7f0e00e6;
-		public static final int xrefreshview_header_hint_textview = 0x7f0e00ea;
-		public static final int xrefreshview_header_ok = 0x7f0e00e8;
-		public static final int xrefreshview_header_progressbar = 0x7f0e00e7;
-		public static final int xrefreshview_header_text = 0x7f0e00e4;
-		public static final int xrefreshview_header_time = 0x7f0e00eb;
+		public static final int left_images = 0x7f0e00fe;
+		public static final int right_text = 0x7f0e0102;
+		public static final int xrefreshview_footer_click_textview = 0x7f0e00fc;
+		public static final int xrefreshview_footer_content = 0x7f0e00f9;
+		public static final int xrefreshview_footer_hint_textview = 0x7f0e00fb;
+		public static final int xrefreshview_footer_progressbar = 0x7f0e00fa;
+		public static final int xrefreshview_header_arrow = 0x7f0e00ff;
+		public static final int xrefreshview_header_hint_textview = 0x7f0e0103;
+		public static final int xrefreshview_header_ok = 0x7f0e0101;
+		public static final int xrefreshview_header_progressbar = 0x7f0e0100;
+		public static final int xrefreshview_header_text = 0x7f0e00fd;
+		public static final int xrefreshview_header_time = 0x7f0e0104;
 	}
 	public static final class layout {
-		public static final int xrefreshview_footer = 0x7f04004b;
-		public static final int xrefreshview_header = 0x7f04004c;
+		public static final int xrefreshview_footer = 0x7f04004e;
+		public static final int xrefreshview_header = 0x7f04004f;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f080019;
@@ -70,7 +70,7 @@ public final class R {
 		public static final int RecyclerView_reverseLayout = 3;
 		public static final int RecyclerView_spanCount = 2;
 		public static final int RecyclerView_stackFromEnd = 4;
-		public static final int[] XRefreshView = { 0x7f010125, 0x7f010126, 0x7f010127, 0x7f010128 };
+		public static final int[] XRefreshView = { 0x7f010126, 0x7f010127, 0x7f010128, 0x7f010129 };
 		public static final int XRefreshView_autoLoadMore = 3;
 		public static final int XRefreshView_autoRefresh = 2;
 		public static final int XRefreshView_isHeightMatchParent = 0;

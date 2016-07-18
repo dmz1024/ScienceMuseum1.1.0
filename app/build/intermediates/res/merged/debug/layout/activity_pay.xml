@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="@dimen/size15">
+
+        <com.shoudukejiguan.www.view.TextImage
+            style="@style/TextSize12Color333"
+            android:drawablePadding="@dimen/size5"
+            android:text="提交成功，请您于"
+            tool:TextImage_drawable="@mipmap/icon_tjok"
+            tool:TextImage_height="@dimen/size15"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size15" />
+
+        <TextView
+            style="@style/TextSize12Color333"
+            android:text="30分钟内"
+            android:textColor="#ff9900" />
+
+        <TextView
+            style="@style/TextSize12Color333"
+            android:text="完成支付" />
+
+        <TextView
+            style="@style/TextSize12Color333"
+            android:text="(逾期订单将被取消)"
+            android:textSize="@dimen/sp8" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_tip"
+        android:layout_marginTop="@dimen/size5"
+        android:background="#fff"
+        android:paddingBottom="@dimen/size15"
+        android:paddingLeft="@dimen/size15"
+        android:paddingRight="@dimen/size15">
+
+        <com.shoudukejiguan.www.view.TextImage
+            style="@style/TextSize14Color333"
+            android:layout_marginTop="@dimen/size15"
+            android:drawablePadding="@dimen/size12"
+            android:text="支付宝支付"
+            tool:TextImage_drawable="@mipmap/icon_pay_zhi"
+            tool:TextImage_height="@dimen/size20"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size20" />
+
+        <ImageView
+            android:id="@+id/iv_zhi"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size5"
+            android:layout_marginTop="@dimen/size15"
+            android:src="@mipmap/icon_pay_checked" />
+
+        <View
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_jian" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_zhi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:layout_below="@id/rl_zhi"
+        android:layout_marginLeft="@dimen/size15"
+        android:layout_marginRight="@dimen/size15"
+        android:background="#eee" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_zhi"
+        android:background="#fff"
+        android:paddingBottom="@dimen/size15"
+        android:paddingLeft="@dimen/size15"
+        android:paddingRight="@dimen/size15">
+
+        <com.shoudukejiguan.www.view.TextImage
+            style="@style/TextSize14Color333"
+            android:layout_marginTop="@dimen/size15"
+            android:drawablePadding="@dimen/size12"
+            android:text="微信支付"
+            tool:TextImage_drawable="@mipmap/icon_pay_wei"
+            tool:TextImage_height="@dimen/size20"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size20" />
+
+        <ImageView
+            android:id="@+id/iv_wei"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size5"
+            android:layout_marginTop="@dimen/size15"
+            android:src="@mipmap/icon_pay_check" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_wei"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:layout_below="@id/rl_wei"
+        android:layout_marginLeft="@dimen/size15"
+        android:layout_marginRight="@dimen/size15"
+        android:background="#eee" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_wei"
+        android:layout_marginBottom="@dimen/size60"
+        android:background="#fff"
+        android:paddingLeft="@dimen/size15"
+        android:paddingRight="@dimen/size15">
+
+        <com.shoudukejiguan.www.view.TextImage
+            style="@style/TextSize14Color333"
+            android:layout_marginTop="@dimen/size15"
+            android:drawablePadding="@dimen/size12"
+            android:text="线下支付"
+            tool:TextImage_drawable="@mipmap/icon_pay_outline"
+            tool:TextImage_height="@dimen/size20"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size20" />
+
+        <ImageView
+            android:id="@+id/iv_outline"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size5"
+            android:layout_marginTop="@dimen/size15"
+            android:src="@mipmap/icon_pay_check" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f6f6f6"
+        android:paddingLeft="@dimen/size15">
+
+        <com.shoudukejiguan.www.view.Color2Text
+            android:id="@+id/tv_money"
+            style="@style/TextSize13Color333"
+            android:layout_centerVertical="true"
+            android:text="总计："
+            tool:Color2Text_color="#f00" />
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="@dimen/size90"
+            android:layout_height="@dimen/size36"
+            android:layout_alignParentRight="true"
+            android:background="#00abbb"
+            android:text="支付"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp13" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

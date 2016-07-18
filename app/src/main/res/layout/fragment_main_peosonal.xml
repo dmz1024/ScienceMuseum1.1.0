@@ -134,5 +134,5 @@
         android:numColumns="4"
         android:paddingBottom="@dimen/size10"
         android:horizontalSpacing="@dimen/size0.5"
-        android:verticalSpacing="@dimen/size1" />
+        android:verticalSpacing="@dimen/size0.5" />
 </LinearLayout>

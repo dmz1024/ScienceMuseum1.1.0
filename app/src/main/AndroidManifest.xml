@@ -31,7 +31,16 @@
         <activity android:name=".activity.WebViewActivity" />
         <activity android:name=".activity.CinemaActivity" />
         <activity android:name=".activity.EducationActivity" />
-        <activity android:name=".activity.ExhibitionActivity"></activity>
+        <activity android:name=".activity.ExhibitionActivity" />
+        <activity android:name=".activity.SetActivity" />
+        <activity android:name=".activity.UserInfoActivity" />
+        <activity android:name=".activity.PayActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

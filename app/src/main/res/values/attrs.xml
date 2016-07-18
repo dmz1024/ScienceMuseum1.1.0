@@ -24,6 +24,7 @@
         <attr name="TitleRelativeLayout_view_visi" format="boolean"></attr>
         <attr name="TitleRelativeLayout_content_visi" format="boolean"></attr>
         <attr name="TitleRelativeLayout_show_view" format="integer"></attr>
+        <attr name="TitleRelativeLayout_content_image_visi" format="boolean"></attr>
     </declare-styleable>
 
 </resources>

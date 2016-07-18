@@ -5,6 +5,7 @@ import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.activity.SetActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.view.MaxGridView;
 import com.shoudukejiguan.www.view.TextImage;
@@ -54,7 +55,8 @@ public class MainPeosonalFragment extends MainBaseFragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.view_set:
-                set();
+//                set();
+                skip(SetActivity.class);
                 break;
         }
     }

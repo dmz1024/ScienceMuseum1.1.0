@@ -52,6 +52,7 @@ public class TitleRelativeLayout extends RelativeLayout {
         boolean content_visi = typedArray.getBoolean(R.styleable.TitleRelativeLayout_TitleRelativeLayout_content_visi, true);
         String title = typedArray.getString(R.styleable.TitleRelativeLayout_TitleRelativeLayout_title);
         String content = typedArray.getString(R.styleable.TitleRelativeLayout_TitleRelativeLayout_content);
+        boolean content_image_visi=typedArray.getBoolean(R.styleable.TitleRelativeLayout_TitleRelativeLayout_content_image_visi, true);
         typedArray.recycle();
         tv_title.setTextAppearance(getContext(), title_style);
         tv_content.setTextAppearance(getContext(), content_style);
@@ -59,6 +60,10 @@ public class TitleRelativeLayout extends RelativeLayout {
             tv_title.setDrawable(title_image, title_w, title_h);
         } else if (title_image != 0) {
             tv_title.setDrawable(title_image);
+        }
+
+        if(!content_image_visi){
+            tv_content.drawable(false);
         }
 
         tv_title.setText(title);

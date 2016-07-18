@@ -60,6 +60,15 @@
         <activity android:name="com.shoudukejiguan.www.activity.CinemaActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.EducationActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.ExhibitionActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.SetActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.UserInfoActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.PayActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"
