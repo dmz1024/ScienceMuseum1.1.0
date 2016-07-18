@@ -13,8 +13,8 @@
         android:layout_centerInParent="true"
         android:drawablePadding="@dimen/size10"
         android:gravity="center"
-        tool:TextImage_height="@dimen/size50"
-        tool:TextImage_width="@dimen/size50">
+        tool:TextImage_height="@dimen/size30"
+        tool:TextImage_width="@dimen/size30">
     </com.shoudukejiguan.www.view.TextImage>
 </RelativeLayout>
 

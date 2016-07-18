@@ -15,6 +15,7 @@ import com.shoudukejiguan.www.activity.CaptureActivity;
 import com.shoudukejiguan.www.activity.CinemaActivity;
 import com.shoudukejiguan.www.activity.EducationActivity;
 import com.shoudukejiguan.www.activity.ExhibitionActivity;
+import com.shoudukejiguan.www.activity.MainActivity;
 import com.shoudukejiguan.www.activity.MoreNewsActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.adapter.IndexEducationAdapter;
@@ -72,9 +73,10 @@ public class MainIndexFragment extends MainBaseFragment {
                         sao1sao();
                         break;
                     case 0:
+                        skip(MoreNewsActivity.class);
                     case 1:
                     case 2:
-
+                        ((MainActivity) getActivity()).onTabSelect(i);
                         break;
 
                 }

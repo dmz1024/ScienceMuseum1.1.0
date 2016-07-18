@@ -78,6 +78,8 @@ public class MainActivity extends BaseActivity {
             }
         });
 
+
+
         vp_main.setOffscreenPageLimit(3);
         vp_main.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -90,6 +92,13 @@ public class MainActivity extends BaseActivity {
                 return 4;
             }
         });
+    }
+
+
+    public void onTabSelect(int position){
+        vp_main.setCurrentItem(position, false);
+        fragments.get(position).init();
+        tab_bottom.setCurrentTab(position);
     }
 
     @Override

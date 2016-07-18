@@ -8,13 +8,10 @@
     <com.shoudukejiguan.www.view.RotationViewPager
         android:id="@+id/rvp_rotation"
         android:clipChildren="false"
-        android:layout_marginRight="@dimen/size30"
-        android:layout_marginLeft="@dimen/size30"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size199" />
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/indicator"
-
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
