@@ -167,6 +167,7 @@
             style="@style/TextSize13Color333"
             android:layout_centerVertical="true"
             android:text="总计："
+            tool:Color2Text_size="@dimen/sp13"
             tool:Color2Text_color="#f00" />
 
         <Button

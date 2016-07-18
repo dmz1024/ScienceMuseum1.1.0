@@ -155,6 +155,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -166,6 +167,7 @@
             style="@style/TextSize13Color333"
             android:layout_centerVertical="true"
             android:text="总计："
+            tool:Color2Text_size="@dimen/sp13"
             tool:Color2Text_color="#f00" />
 
         <Button
