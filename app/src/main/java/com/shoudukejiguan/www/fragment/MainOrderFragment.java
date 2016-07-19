@@ -46,6 +46,12 @@ public class MainOrderFragment extends MainBaseFragment {
     }
 
     @Override
+    protected void titleBar() {
+        super.titleBar();
+        titleBar.setlLeftVisi(false);
+    }
+
+    @Override
     protected int getRid() {
         return R.layout.fragment_main_order;
     }

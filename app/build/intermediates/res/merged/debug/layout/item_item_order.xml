@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/size8"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/size73"
+        android:layout_height="@dimen/size64"
+        android:layout_marginTop="@dimen/size8"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSize15Color333"
+        android:layout_marginLeft="@dimen/size12"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_toRightOf="@id/iv_img"
+        android:text="生命生存生活主题展厅" />
+
+    <TextView
+        android:id="@+id/tv_mp"
+
+        style="@style/TextSize12Color999"
+        android:layout_alignBottom="@id/iv_img"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_toRightOf="@id/iv_img"
+        android:text="送门票一张" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/size10"
+        style="@style/TextSize12Color333"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_marginBottom="@dimen/size5"
+        android:layout_toRightOf="@id/iv_img"
+        android:text="2016-07-13      10:00-12:00" />
+
+    <TextView
+        android:id="@+id/tv_price"
+
+        style="@style/TextSize12Color333"
+        android:layout_alignBottom="@id/iv_img"
+        android:layout_alignParentRight="true"
+        android:text="￥24 x 3张"
+        android:textColor="#c9a06c" />
+</RelativeLayout>

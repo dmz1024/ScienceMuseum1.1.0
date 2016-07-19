@@ -51,12 +51,15 @@ public class MainIndexFragment extends MainBaseFragment {
 
     @Override
     protected boolean isInit() {
+
         return true;
     }
 
     @Override
     protected void initData() {
-        List<String> urlList = new ArrayList<String>();
+        titleBar.setLeftImage(R.mipmap.icon_more);
+
+        List<String> urlList = new ArrayList<>();
         urlList.add("http://cdn.duitang.com/uploads/item/201412/04/20141204163409_Tdusf.thumb.700_0.jpeg");
         urlList.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
@@ -97,6 +100,12 @@ public class MainIndexFragment extends MainBaseFragment {
         educationView(urlList);
     }
 
+    @Override
+    protected void titleBar() {
+        super.titleBar();
+        titleBar.setlLeftVisi(true);
+    }
+
     /**
      * 扫一扫
      */
@@ -129,6 +138,7 @@ public class MainIndexFragment extends MainBaseFragment {
         rl_exhibition.setOnClickListener(this);
         rl_film.setOnClickListener(this);
         rl_education.setOnClickListener(this);
+
     }
 
 
@@ -214,5 +224,8 @@ public class MainIndexFragment extends MainBaseFragment {
         rv_education.setAdapter(new IndexEducationAdapter(urlList));
     }
 
-
+    @Override
+    public void right() {
+        MyToast.showToast("菜单");
+    }
 }

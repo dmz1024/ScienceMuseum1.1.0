@@ -67,6 +67,11 @@ public class TitleBar extends RelativeLayout implements View.OnClickListener {
         bar_tv_right.setText(content);
     }
 
+
+    public void setLeftImage(int rid) {
+        iv_left.setImageResource(rid);
+    }
+
     /**
      * 获取状态栏高度
      *

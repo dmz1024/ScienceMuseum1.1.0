@@ -69,6 +69,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.shoudukejiguan.www.activity.ServiceGuideActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shoudukejiguan.www.activity.UserLevelActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shoudukejiguan.www.activity.MyOrderActivity" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"

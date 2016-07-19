@@ -15228,12 +15228,12 @@
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
                     "position": {
-                        "startLine": 127,
+                        "startLine": 131,
                         "startColumn": 4,
-                        "startOffset": 4667,
-                        "endLine": 130,
+                        "startOffset": 4846,
+                        "endLine": 134,
                         "endColumn": 12,
-                        "endOffset": 4885
+                        "endOffset": 5064
                     }
                 }
             },
@@ -15249,12 +15249,12 @@
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
                     "position": {
-                        "startLine": 131,
+                        "startLine": 135,
                         "startColumn": 4,
-                        "startOffset": 4890,
-                        "endLine": 134,
+                        "startOffset": 5069,
+                        "endLine": 138,
                         "endColumn": 12,
-                        "endOffset": 5141
+                        "endOffset": 5320
                     }
                 }
             },
@@ -16951,7 +16951,28 @@
                     "startOffset": 137340,
                     "endLine": 1950,
                     "endColumn": 12,
-                    "endOffset": 137508
+                    "endOffset": 137514
+                },
+                "from": {
+                    "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 126,
+                        "startColumn": 4,
+                        "startOffset": 4666,
+                        "endLine": 129,
+                        "endColumn": 12,
+                        "endOffset": 4840
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 1951,
+                    "startColumn": 4,
+                    "startOffset": 137519,
+                    "endLine": 1954,
+                    "endColumn": 12,
+                    "endOffset": 137687
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -16967,12 +16988,12 @@
             },
             {
                 "to": {
-                    "startLine": 1951,
+                    "startLine": 1955,
                     "startColumn": 4,
-                    "startOffset": 137513,
-                    "endLine": 1954,
+                    "startOffset": 137692,
+                    "endLine": 1958,
                     "endColumn": 12,
-                    "endOffset": 137687
+                    "endOffset": 137866
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -16988,12 +17009,12 @@
             },
             {
                 "to": {
-                    "startLine": 1955,
+                    "startLine": 1959,
                     "startColumn": 4,
-                    "startOffset": 137692,
-                    "endLine": 1958,
+                    "startOffset": 137871,
+                    "endLine": 1962,
                     "endColumn": 12,
-                    "endOffset": 137860
+                    "endOffset": 138039
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17009,12 +17030,12 @@
             },
             {
                 "to": {
-                    "startLine": 1959,
+                    "startLine": 1963,
                     "startColumn": 4,
-                    "startOffset": 137865,
-                    "endLine": 1962,
+                    "startOffset": 138044,
+                    "endLine": 1966,
                     "endColumn": 12,
-                    "endOffset": 138033
+                    "endOffset": 138212
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17030,12 +17051,12 @@
             },
             {
                 "to": {
-                    "startLine": 1963,
+                    "startLine": 1967,
                     "startColumn": 4,
-                    "startOffset": 138038,
-                    "endLine": 1966,
+                    "startOffset": 138217,
+                    "endLine": 1970,
                     "endColumn": 12,
-                    "endOffset": 138212
+                    "endOffset": 138391
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17051,12 +17072,12 @@
             },
             {
                 "to": {
-                    "startLine": 1967,
+                    "startLine": 1971,
                     "startColumn": 4,
-                    "startOffset": 138217,
-                    "endLine": 1970,
+                    "startOffset": 138396,
+                    "endLine": 1974,
                     "endColumn": 12,
-                    "endOffset": 138385
+                    "endOffset": 138564
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17072,12 +17093,12 @@
             },
             {
                 "to": {
-                    "startLine": 1971,
+                    "startLine": 1975,
                     "startColumn": 4,
-                    "startOffset": 138390,
-                    "endLine": 1974,
+                    "startOffset": 138569,
+                    "endLine": 1978,
                     "endColumn": 12,
-                    "endOffset": 138558
+                    "endOffset": 138737
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17093,12 +17114,12 @@
             },
             {
                 "to": {
-                    "startLine": 1975,
+                    "startLine": 1979,
                     "startColumn": 4,
-                    "startOffset": 138563,
-                    "endLine": 1978,
+                    "startOffset": 138742,
+                    "endLine": 1982,
                     "endColumn": 12,
-                    "endOffset": 138731
+                    "endOffset": 138910
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17114,12 +17135,12 @@
             },
             {
                 "to": {
-                    "startLine": 1979,
+                    "startLine": 1983,
                     "startColumn": 4,
-                    "startOffset": 138736,
-                    "endLine": 1982,
+                    "startOffset": 138915,
+                    "endLine": 1986,
                     "endColumn": 12,
-                    "endOffset": 138902
+                    "endOffset": 139081
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/values/styles.xml",
@@ -17135,11 +17156,11 @@
             },
             {
                 "to": {
-                    "startLine": 1983,
+                    "startLine": 1987,
                     "startColumn": 4,
-                    "startOffset": 138907,
+                    "startOffset": 139086,
                     "endColumn": 65,
-                    "endOffset": 138968
+                    "endOffset": 139147
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17154,11 +17175,11 @@
             },
             {
                 "to": {
-                    "startLine": 1984,
+                    "startLine": 1988,
                     "startColumn": 4,
-                    "startOffset": 138973,
+                    "startOffset": 139152,
                     "endColumn": 89,
-                    "endOffset": 139058
+                    "endOffset": 139237
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17173,11 +17194,11 @@
             },
             {
                 "to": {
-                    "startLine": 1985,
+                    "startLine": 1989,
                     "startColumn": 4,
-                    "startOffset": 139063,
+                    "startOffset": 139242,
                     "endColumn": 75,
-                    "endOffset": 139134
+                    "endOffset": 139313
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17192,11 +17213,11 @@
             },
             {
                 "to": {
-                    "startLine": 1986,
+                    "startLine": 1990,
                     "startColumn": 4,
-                    "startOffset": 139139,
+                    "startOffset": 139318,
                     "endColumn": 103,
-                    "endOffset": 139238
+                    "endOffset": 139417
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17211,11 +17232,11 @@
             },
             {
                 "to": {
-                    "startLine": 1987,
+                    "startLine": 1991,
                     "startColumn": 4,
-                    "startOffset": 139243,
+                    "startOffset": 139422,
                     "endColumn": 89,
-                    "endOffset": 139328
+                    "endOffset": 139507
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17230,11 +17251,11 @@
             },
             {
                 "to": {
-                    "startLine": 1988,
+                    "startLine": 1992,
                     "startColumn": 4,
-                    "startOffset": 139333,
+                    "startOffset": 139512,
                     "endColumn": 101,
-                    "endOffset": 139430
+                    "endOffset": 139609
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17249,11 +17270,11 @@
             },
             {
                 "to": {
-                    "startLine": 1989,
+                    "startLine": 1993,
                     "startColumn": 4,
-                    "startOffset": 139435,
+                    "startOffset": 139614,
                     "endColumn": 107,
-                    "endOffset": 139538
+                    "endOffset": 139717
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17268,11 +17289,11 @@
             },
             {
                 "to": {
-                    "startLine": 1990,
+                    "startLine": 1994,
                     "startColumn": 4,
-                    "startOffset": 139543,
+                    "startOffset": 139722,
                     "endColumn": 107,
-                    "endOffset": 139646
+                    "endOffset": 139825
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17287,11 +17308,11 @@
             },
             {
                 "to": {
-                    "startLine": 1991,
+                    "startLine": 1995,
                     "startColumn": 4,
-                    "startOffset": 139651,
+                    "startOffset": 139830,
                     "endColumn": 99,
-                    "endOffset": 139746
+                    "endOffset": 139925
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17306,11 +17327,11 @@
             },
             {
                 "to": {
-                    "startLine": 1992,
+                    "startLine": 1996,
                     "startColumn": 4,
-                    "startOffset": 139751,
+                    "startOffset": 139930,
                     "endColumn": 79,
-                    "endOffset": 139826
+                    "endOffset": 140005
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17325,11 +17346,11 @@
             },
             {
                 "to": {
-                    "startLine": 1993,
+                    "startLine": 1997,
                     "startColumn": 4,
-                    "startOffset": 139831,
+                    "startOffset": 140010,
                     "endColumn": 91,
-                    "endOffset": 139918
+                    "endOffset": 140097
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17344,11 +17365,11 @@
             },
             {
                 "to": {
-                    "startLine": 1994,
+                    "startLine": 1998,
                     "startColumn": 4,
-                    "startOffset": 139923,
+                    "startOffset": 140102,
                     "endColumn": 97,
-                    "endOffset": 140016
+                    "endOffset": 140195
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17363,12 +17384,12 @@
             },
             {
                 "to": {
-                    "startLine": 1995,
+                    "startLine": 1999,
                     "startColumn": 4,
-                    "startOffset": 140021,
-                    "endLine": 1996,
+                    "startOffset": 140200,
+                    "endLine": 2000,
                     "endColumn": 12,
-                    "endOffset": 140126
+                    "endOffset": 140305
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17384,11 +17405,11 @@
             },
             {
                 "to": {
-                    "startLine": 1997,
+                    "startLine": 2001,
                     "startColumn": 4,
-                    "startOffset": 140131,
+                    "startOffset": 140310,
                     "endColumn": 77,
-                    "endOffset": 140204
+                    "endOffset": 140383
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17403,11 +17424,11 @@
             },
             {
                 "to": {
-                    "startLine": 1998,
+                    "startLine": 2002,
                     "startColumn": 4,
-                    "startOffset": 140209,
+                    "startOffset": 140388,
                     "endColumn": 105,
-                    "endOffset": 140310
+                    "endOffset": 140489
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17422,11 +17443,11 @@
             },
             {
                 "to": {
-                    "startLine": 1999,
+                    "startLine": 2003,
                     "startColumn": 4,
-                    "startOffset": 140315,
+                    "startOffset": 140494,
                     "endColumn": 91,
-                    "endOffset": 140402
+                    "endOffset": 140581
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17441,11 +17462,11 @@
             },
             {
                 "to": {
-                    "startLine": 2000,
+                    "startLine": 2004,
                     "startColumn": 4,
-                    "startOffset": 140407,
+                    "startOffset": 140586,
                     "endColumn": 103,
-                    "endOffset": 140506
+                    "endOffset": 140685
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17460,11 +17481,11 @@
             },
             {
                 "to": {
-                    "startLine": 2001,
+                    "startLine": 2005,
                     "startColumn": 4,
-                    "startOffset": 140511,
+                    "startOffset": 140690,
                     "endColumn": 109,
-                    "endOffset": 140616
+                    "endOffset": 140795
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17479,12 +17500,12 @@
             },
             {
                 "to": {
-                    "startLine": 2002,
+                    "startLine": 2006,
                     "startColumn": 4,
-                    "startOffset": 140621,
-                    "endLine": 2003,
+                    "startOffset": 140800,
+                    "endLine": 2007,
                     "endColumn": 12,
-                    "endOffset": 140738
+                    "endOffset": 140917
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17500,12 +17521,12 @@
             },
             {
                 "to": {
-                    "startLine": 2004,
+                    "startLine": 2008,
                     "startColumn": 4,
-                    "startOffset": 140743,
-                    "endLine": 2007,
+                    "startOffset": 140922,
+                    "endLine": 2011,
                     "endColumn": 12,
-                    "endOffset": 140901
+                    "endOffset": 141080
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17521,12 +17542,12 @@
             },
             {
                 "to": {
-                    "startLine": 2008,
+                    "startLine": 2012,
                     "startColumn": 4,
-                    "startOffset": 140906,
-                    "endLine": 2011,
+                    "startOffset": 141085,
+                    "endLine": 2015,
                     "endColumn": 12,
-                    "endOffset": 141058
+                    "endOffset": 141237
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17542,11 +17563,11 @@
             },
             {
                 "to": {
-                    "startLine": 2012,
+                    "startLine": 2016,
                     "startColumn": 4,
-                    "startOffset": 141063,
+                    "startOffset": 141242,
                     "endColumn": 79,
-                    "endOffset": 141138
+                    "endOffset": 141317
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17561,11 +17582,11 @@
             },
             {
                 "to": {
-                    "startLine": 2013,
+                    "startLine": 2017,
                     "startColumn": 4,
-                    "startOffset": 141143,
+                    "startOffset": 141322,
                     "endColumn": 99,
-                    "endOffset": 141238
+                    "endOffset": 141417
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17580,11 +17601,11 @@
             },
             {
                 "to": {
-                    "startLine": 2014,
+                    "startLine": 2018,
                     "startColumn": 4,
-                    "startOffset": 141243,
+                    "startOffset": 141422,
                     "endColumn": 89,
-                    "endOffset": 141328
+                    "endOffset": 141507
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17599,11 +17620,11 @@
             },
             {
                 "to": {
-                    "startLine": 2015,
+                    "startLine": 2019,
                     "startColumn": 4,
-                    "startOffset": 141333,
+                    "startOffset": 141512,
                     "endColumn": 109,
-                    "endOffset": 141438
+                    "endOffset": 141617
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17618,11 +17639,11 @@
             },
             {
                 "to": {
-                    "startLine": 2016,
+                    "startLine": 2020,
                     "startColumn": 4,
-                    "startOffset": 141443,
+                    "startOffset": 141622,
                     "endColumn": 91,
-                    "endOffset": 141530
+                    "endOffset": 141709
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17637,12 +17658,12 @@
             },
             {
                 "to": {
-                    "startLine": 2017,
+                    "startLine": 2021,
                     "startColumn": 4,
-                    "startOffset": 141535,
-                    "endLine": 2018,
+                    "startOffset": 141714,
+                    "endLine": 2022,
                     "endColumn": 12,
-                    "endOffset": 141630
+                    "endOffset": 141809
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17658,12 +17679,12 @@
             },
             {
                 "to": {
-                    "startLine": 2019,
+                    "startLine": 2023,
                     "startColumn": 4,
-                    "startOffset": 141635,
-                    "endLine": 2020,
+                    "startOffset": 141814,
+                    "endLine": 2024,
                     "endColumn": 12,
-                    "endOffset": 141742
+                    "endOffset": 141921
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17679,12 +17700,12 @@
             },
             {
                 "to": {
-                    "startLine": 2021,
+                    "startLine": 2025,
                     "startColumn": 4,
-                    "startOffset": 141747,
-                    "endLine": 2022,
+                    "startOffset": 141926,
+                    "endLine": 2026,
                     "endColumn": 12,
-                    "endOffset": 141856
+                    "endOffset": 142035
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17700,12 +17721,12 @@
             },
             {
                 "to": {
-                    "startLine": 2023,
+                    "startLine": 2027,
                     "startColumn": 4,
-                    "startOffset": 141861,
-                    "endLine": 2024,
+                    "startOffset": 142040,
+                    "endLine": 2028,
                     "endColumn": 12,
-                    "endOffset": 141972
+                    "endOffset": 142151
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17721,12 +17742,12 @@
             },
             {
                 "to": {
-                    "startLine": 2025,
+                    "startLine": 2029,
                     "startColumn": 4,
-                    "startOffset": 141977,
-                    "endLine": 2026,
+                    "startOffset": 142156,
+                    "endLine": 2030,
                     "endColumn": 12,
-                    "endOffset": 142088
+                    "endOffset": 142267
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17742,11 +17763,11 @@
             },
             {
                 "to": {
-                    "startLine": 2027,
+                    "startLine": 2031,
                     "startColumn": 4,
-                    "startOffset": 142093,
+                    "startOffset": 142272,
                     "endColumn": 93,
-                    "endOffset": 142182
+                    "endOffset": 142361
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17761,11 +17782,11 @@
             },
             {
                 "to": {
-                    "startLine": 2028,
+                    "startLine": 2032,
                     "startColumn": 4,
-                    "startOffset": 142187,
+                    "startOffset": 142366,
                     "endColumn": 113,
-                    "endOffset": 142296
+                    "endOffset": 142475
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17780,11 +17801,11 @@
             },
             {
                 "to": {
-                    "startLine": 2029,
+                    "startLine": 2033,
                     "startColumn": 4,
-                    "startOffset": 142301,
+                    "startOffset": 142480,
                     "endColumn": 111,
-                    "endOffset": 142408
+                    "endOffset": 142587
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17799,12 +17820,12 @@
             },
             {
                 "to": {
-                    "startLine": 2030,
+                    "startLine": 2034,
                     "startColumn": 4,
-                    "startOffset": 142413,
-                    "endLine": 2031,
+                    "startOffset": 142592,
+                    "endLine": 2035,
                     "endColumn": 12,
-                    "endOffset": 142510
+                    "endOffset": 142689
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17820,12 +17841,12 @@
             },
             {
                 "to": {
-                    "startLine": 2032,
+                    "startLine": 2036,
                     "startColumn": 4,
-                    "startOffset": 142515,
-                    "endLine": 2033,
+                    "startOffset": 142694,
+                    "endLine": 2037,
                     "endColumn": 12,
-                    "endOffset": 142630
+                    "endOffset": 142809
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17841,12 +17862,12 @@
             },
             {
                 "to": {
-                    "startLine": 2034,
+                    "startLine": 2038,
                     "startColumn": 4,
-                    "startOffset": 142635,
-                    "endLine": 2035,
+                    "startOffset": 142814,
+                    "endLine": 2039,
                     "endColumn": 12,
-                    "endOffset": 142752
+                    "endOffset": 142931
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17862,11 +17883,11 @@
             },
             {
                 "to": {
-                    "startLine": 2036,
+                    "startLine": 2040,
                     "startColumn": 4,
-                    "startOffset": 142757,
+                    "startOffset": 142936,
                     "endColumn": 81,
-                    "endOffset": 142834
+                    "endOffset": 143013
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17881,11 +17902,11 @@
             },
             {
                 "to": {
-                    "startLine": 2037,
+                    "startLine": 2041,
                     "startColumn": 4,
-                    "startOffset": 142839,
+                    "startOffset": 143018,
                     "endColumn": 103,
-                    "endOffset": 142938
+                    "endOffset": 143117
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17900,11 +17921,11 @@
             },
             {
                 "to": {
-                    "startLine": 2038,
+                    "startLine": 2042,
                     "startColumn": 4,
-                    "startOffset": 142943,
+                    "startOffset": 143122,
                     "endColumn": 119,
-                    "endOffset": 143058
+                    "endOffset": 143237
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17919,11 +17940,11 @@
             },
             {
                 "to": {
-                    "startLine": 2039,
+                    "startLine": 2043,
                     "startColumn": 4,
-                    "startOffset": 143063,
+                    "startOffset": 143242,
                     "endColumn": 125,
-                    "endOffset": 143184
+                    "endOffset": 143363
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17938,11 +17959,11 @@
             },
             {
                 "to": {
-                    "startLine": 2040,
+                    "startLine": 2044,
                     "startColumn": 4,
-                    "startOffset": 143189,
+                    "startOffset": 143368,
                     "endColumn": 97,
-                    "endOffset": 143282
+                    "endOffset": 143461
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17957,11 +17978,11 @@
             },
             {
                 "to": {
-                    "startLine": 2041,
+                    "startLine": 2045,
                     "startColumn": 4,
-                    "startOffset": 143287,
+                    "startOffset": 143466,
                     "endColumn": 93,
-                    "endOffset": 143376
+                    "endOffset": 143555
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17976,11 +17997,11 @@
             },
             {
                 "to": {
-                    "startLine": 2042,
+                    "startLine": 2046,
                     "startColumn": 4,
-                    "startOffset": 143381,
+                    "startOffset": 143560,
                     "endColumn": 87,
-                    "endOffset": 143464
+                    "endOffset": 143643
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -17995,11 +18016,11 @@
             },
             {
                 "to": {
-                    "startLine": 2043,
+                    "startLine": 2047,
                     "startColumn": 4,
-                    "startOffset": 143469,
+                    "startOffset": 143648,
                     "endColumn": 111,
-                    "endOffset": 143576
+                    "endOffset": 143755
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18014,11 +18035,11 @@
             },
             {
                 "to": {
-                    "startLine": 2044,
+                    "startLine": 2048,
                     "startColumn": 4,
-                    "startOffset": 143581,
+                    "startOffset": 143760,
                     "endColumn": 115,
-                    "endOffset": 143692
+                    "endOffset": 143871
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18033,11 +18054,11 @@
             },
             {
                 "to": {
-                    "startLine": 2045,
+                    "startLine": 2049,
                     "startColumn": 4,
-                    "startOffset": 143697,
+                    "startOffset": 143876,
                     "endColumn": 121,
-                    "endOffset": 143814
+                    "endOffset": 143993
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18052,11 +18073,11 @@
             },
             {
                 "to": {
-                    "startLine": 2046,
+                    "startLine": 2050,
                     "startColumn": 4,
-                    "startOffset": 143819,
+                    "startOffset": 143998,
                     "endColumn": 111,
-                    "endOffset": 143926
+                    "endOffset": 144105
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18071,12 +18092,12 @@
             },
             {
                 "to": {
-                    "startLine": 2047,
+                    "startLine": 2051,
                     "startColumn": 4,
-                    "startOffset": 143931,
-                    "endLine": 2049,
+                    "startOffset": 144110,
+                    "endLine": 2053,
                     "endColumn": 12,
-                    "endOffset": 144101
+                    "endOffset": 144280
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18092,11 +18113,11 @@
             },
             {
                 "to": {
-                    "startLine": 2050,
+                    "startLine": 2054,
                     "startColumn": 4,
-                    "startOffset": 144106,
+                    "startOffset": 144285,
                     "endColumn": 115,
-                    "endOffset": 144217
+                    "endOffset": 144396
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18111,11 +18132,11 @@
             },
             {
                 "to": {
-                    "startLine": 2051,
+                    "startLine": 2055,
                     "startColumn": 4,
-                    "startOffset": 144222,
+                    "startOffset": 144401,
                     "endColumn": 85,
-                    "endOffset": 144303
+                    "endOffset": 144482
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18130,11 +18151,11 @@
             },
             {
                 "to": {
-                    "startLine": 2052,
+                    "startLine": 2056,
                     "startColumn": 4,
-                    "startOffset": 144308,
+                    "startOffset": 144487,
                     "endColumn": 91,
-                    "endOffset": 144395
+                    "endOffset": 144574
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18149,12 +18170,12 @@
             },
             {
                 "to": {
-                    "startLine": 2053,
+                    "startLine": 2057,
                     "startColumn": 4,
-                    "startOffset": 144400,
-                    "endLine": 2054,
+                    "startOffset": 144579,
+                    "endLine": 2058,
                     "endColumn": 12,
-                    "endOffset": 144507
+                    "endOffset": 144686
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18170,12 +18191,12 @@
             },
             {
                 "to": {
-                    "startLine": 2055,
+                    "startLine": 2059,
                     "startColumn": 4,
-                    "startOffset": 144512,
-                    "endLine": 2056,
+                    "startOffset": 144691,
+                    "endLine": 2060,
                     "endColumn": 12,
-                    "endOffset": 144631
+                    "endOffset": 144810
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18191,11 +18212,11 @@
             },
             {
                 "to": {
-                    "startLine": 2057,
+                    "startLine": 2061,
                     "startColumn": 4,
-                    "startOffset": 144636,
+                    "startOffset": 144815,
                     "endColumn": 66,
-                    "endOffset": 144698
+                    "endOffset": 144877
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18210,12 +18231,12 @@
             },
             {
                 "to": {
-                    "startLine": 2058,
+                    "startLine": 2062,
                     "startColumn": 4,
-                    "startOffset": 144703,
-                    "endLine": 2059,
+                    "startOffset": 144882,
+                    "endLine": 2063,
                     "endColumn": 12,
-                    "endOffset": 144824
+                    "endOffset": 145003
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18231,11 +18252,11 @@
             },
             {
                 "to": {
-                    "startLine": 2060,
+                    "startLine": 2064,
                     "startColumn": 4,
-                    "startOffset": 144829,
+                    "startOffset": 145008,
                     "endColumn": 67,
-                    "endOffset": 144892
+                    "endOffset": 145071
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18250,12 +18271,12 @@
             },
             {
                 "to": {
-                    "startLine": 2061,
+                    "startLine": 2065,
                     "startColumn": 4,
-                    "startOffset": 144897,
-                    "endLine": 2062,
+                    "startOffset": 145076,
+                    "endLine": 2066,
                     "endColumn": 12,
-                    "endOffset": 145020
+                    "endOffset": 145199
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18271,12 +18292,12 @@
             },
             {
                 "to": {
-                    "startLine": 2063,
+                    "startLine": 2067,
                     "startColumn": 4,
-                    "startOffset": 145025,
-                    "endLine": 2064,
+                    "startOffset": 145204,
+                    "endLine": 2068,
                     "endColumn": 12,
-                    "endOffset": 145164
+                    "endOffset": 145343
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18292,12 +18313,12 @@
             },
             {
                 "to": {
-                    "startLine": 2065,
+                    "startLine": 2069,
                     "startColumn": 4,
-                    "startOffset": 145169,
-                    "endLine": 2066,
+                    "startOffset": 145348,
+                    "endLine": 2070,
                     "endColumn": 12,
-                    "endOffset": 145292
+                    "endOffset": 145471
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18313,11 +18334,11 @@
             },
             {
                 "to": {
-                    "startLine": 2067,
+                    "startLine": 2071,
                     "startColumn": 4,
-                    "startOffset": 145297,
+                    "startOffset": 145476,
                     "endColumn": 68,
-                    "endOffset": 145361
+                    "endOffset": 145540
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18332,11 +18353,11 @@
             },
             {
                 "to": {
-                    "startLine": 2068,
+                    "startLine": 2072,
                     "startColumn": 4,
-                    "startOffset": 145366,
+                    "startOffset": 145545,
                     "endColumn": 94,
-                    "endOffset": 145456
+                    "endOffset": 145635
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18351,11 +18372,11 @@
             },
             {
                 "to": {
-                    "startLine": 2069,
+                    "startLine": 2073,
                     "startColumn": 4,
-                    "startOffset": 145461,
+                    "startOffset": 145640,
                     "endColumn": 114,
-                    "endOffset": 145571
+                    "endOffset": 145750
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18370,11 +18391,11 @@
             },
             {
                 "to": {
-                    "startLine": 2070,
+                    "startLine": 2074,
                     "startColumn": 4,
-                    "startOffset": 145576,
+                    "startOffset": 145755,
                     "endColumn": 112,
-                    "endOffset": 145684
+                    "endOffset": 145863
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18389,11 +18410,11 @@
             },
             {
                 "to": {
-                    "startLine": 2071,
+                    "startLine": 2075,
                     "startColumn": 4,
-                    "startOffset": 145689,
+                    "startOffset": 145868,
                     "endColumn": 98,
-                    "endOffset": 145783
+                    "endOffset": 145962
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18408,11 +18429,11 @@
             },
             {
                 "to": {
-                    "startLine": 2072,
+                    "startLine": 2076,
                     "startColumn": 4,
-                    "startOffset": 145788,
+                    "startOffset": 145967,
                     "endColumn": 108,
-                    "endOffset": 145892
+                    "endOffset": 146071
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18427,11 +18448,11 @@
             },
             {
                 "to": {
-                    "startLine": 2073,
+                    "startLine": 2077,
                     "startColumn": 4,
-                    "startOffset": 145897,
+                    "startOffset": 146076,
                     "endColumn": 110,
-                    "endOffset": 146003
+                    "endOffset": 146182
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18446,11 +18467,11 @@
             },
             {
                 "to": {
-                    "startLine": 2074,
+                    "startLine": 2078,
                     "startColumn": 4,
-                    "startOffset": 146008,
+                    "startOffset": 146187,
                     "endColumn": 110,
-                    "endOffset": 146114
+                    "endOffset": 146293
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18465,11 +18486,11 @@
             },
             {
                 "to": {
-                    "startLine": 2075,
+                    "startLine": 2079,
                     "startColumn": 4,
-                    "startOffset": 146119,
+                    "startOffset": 146298,
                     "endColumn": 100,
-                    "endOffset": 146215
+                    "endOffset": 146394
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18484,11 +18505,11 @@
             },
             {
                 "to": {
-                    "startLine": 2076,
+                    "startLine": 2080,
                     "startColumn": 4,
-                    "startOffset": 146220,
+                    "startOffset": 146399,
                     "endColumn": 104,
-                    "endOffset": 146320
+                    "endOffset": 146499
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18503,12 +18524,12 @@
             },
             {
                 "to": {
-                    "startLine": 2077,
+                    "startLine": 2081,
                     "startColumn": 4,
-                    "startOffset": 146325,
-                    "endLine": 2078,
+                    "startOffset": 146504,
+                    "endLine": 2082,
                     "endColumn": 12,
-                    "endOffset": 146432
+                    "endOffset": 146611
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18524,12 +18545,12 @@
             },
             {
                 "to": {
-                    "startLine": 2079,
+                    "startLine": 2083,
                     "startColumn": 4,
-                    "startOffset": 146437,
-                    "endLine": 2080,
+                    "startOffset": 146616,
+                    "endLine": 2084,
                     "endColumn": 12,
-                    "endOffset": 146562
+                    "endOffset": 146741
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18545,11 +18566,11 @@
             },
             {
                 "to": {
-                    "startLine": 2081,
+                    "startLine": 2085,
                     "startColumn": 4,
-                    "startOffset": 146567,
+                    "startOffset": 146746,
                     "endColumn": 90,
-                    "endOffset": 146653
+                    "endOffset": 146832
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18564,11 +18585,11 @@
             },
             {
                 "to": {
-                    "startLine": 2082,
+                    "startLine": 2086,
                     "startColumn": 4,
-                    "startOffset": 146658,
+                    "startOffset": 146837,
                     "endColumn": 122,
-                    "endOffset": 146776
+                    "endOffset": 146955
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18583,12 +18604,12 @@
             },
             {
                 "to": {
-                    "startLine": 2083,
+                    "startLine": 2087,
                     "startColumn": 4,
-                    "startOffset": 146781,
-                    "endLine": 2084,
+                    "startOffset": 146960,
+                    "endLine": 2088,
                     "endColumn": 12,
-                    "endOffset": 146888
+                    "endOffset": 147067
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18604,11 +18625,11 @@
             },
             {
                 "to": {
-                    "startLine": 2085,
+                    "startLine": 2089,
                     "startColumn": 4,
-                    "startOffset": 146893,
+                    "startOffset": 147072,
                     "endColumn": 85,
-                    "endOffset": 146974
+                    "endOffset": 147153
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18623,11 +18644,11 @@
             },
             {
                 "to": {
-                    "startLine": 2086,
+                    "startLine": 2090,
                     "startColumn": 4,
-                    "startOffset": 146979,
+                    "startOffset": 147158,
                     "endColumn": 103,
-                    "endOffset": 147078
+                    "endOffset": 147257
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18642,12 +18663,12 @@
             },
             {
                 "to": {
-                    "startLine": 2087,
+                    "startLine": 2091,
                     "startColumn": 4,
-                    "startOffset": 147083,
-                    "endLine": 2088,
+                    "startOffset": 147262,
+                    "endLine": 2092,
                     "endColumn": 12,
-                    "endOffset": 147186
+                    "endOffset": 147365
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18663,12 +18684,12 @@
             },
             {
                 "to": {
-                    "startLine": 2089,
+                    "startLine": 2093,
                     "startColumn": 4,
-                    "startOffset": 147191,
-                    "endLine": 2090,
+                    "startOffset": 147370,
+                    "endLine": 2094,
                     "endColumn": 12,
-                    "endOffset": 147286
+                    "endOffset": 147465
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18684,12 +18705,12 @@
             },
             {
                 "to": {
-                    "startLine": 2091,
+                    "startLine": 2095,
                     "startColumn": 4,
-                    "startOffset": 147291,
-                    "endLine": 2092,
+                    "startOffset": 147470,
+                    "endLine": 2096,
                     "endColumn": 12,
-                    "endOffset": 147404
+                    "endOffset": 147583
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18705,12 +18726,12 @@
             },
             {
                 "to": {
-                    "startLine": 2093,
+                    "startLine": 2097,
                     "startColumn": 4,
-                    "startOffset": 147409,
-                    "endLine": 2094,
+                    "startOffset": 147588,
+                    "endLine": 2098,
                     "endColumn": 12,
-                    "endOffset": 147508
+                    "endOffset": 147687
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18726,12 +18747,12 @@
             },
             {
                 "to": {
-                    "startLine": 2095,
+                    "startLine": 2099,
                     "startColumn": 4,
-                    "startOffset": 147513,
-                    "endLine": 2096,
+                    "startOffset": 147692,
+                    "endLine": 2100,
                     "endColumn": 12,
-                    "endOffset": 147612
+                    "endOffset": 147791
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18747,12 +18768,12 @@
             },
             {
                 "to": {
-                    "startLine": 2097,
+                    "startLine": 2101,
                     "startColumn": 4,
-                    "startOffset": 147617,
-                    "endLine": 2098,
+                    "startOffset": 147796,
+                    "endLine": 2102,
                     "endColumn": 12,
-                    "endOffset": 147738
+                    "endOffset": 147917
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18768,11 +18789,11 @@
             },
             {
                 "to": {
-                    "startLine": 2099,
+                    "startLine": 2103,
                     "startColumn": 4,
-                    "startOffset": 147743,
+                    "startOffset": 147922,
                     "endColumn": 87,
-                    "endOffset": 147826
+                    "endOffset": 148005
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18787,11 +18808,11 @@
             },
             {
                 "to": {
-                    "startLine": 2100,
+                    "startLine": 2104,
                     "startColumn": 4,
-                    "startOffset": 147831,
+                    "startOffset": 148010,
                     "endColumn": 107,
-                    "endOffset": 147934
+                    "endOffset": 148113
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18806,11 +18827,11 @@
             },
             {
                 "to": {
-                    "startLine": 2101,
+                    "startLine": 2105,
                     "startColumn": 4,
-                    "startOffset": 147939,
+                    "startOffset": 148118,
                     "endColumn": 99,
-                    "endOffset": 148034
+                    "endOffset": 148213
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18825,11 +18846,11 @@
             },
             {
                 "to": {
-                    "startLine": 2102,
+                    "startLine": 2106,
                     "startColumn": 4,
-                    "startOffset": 148039,
+                    "startOffset": 148218,
                     "endColumn": 89,
-                    "endOffset": 148124
+                    "endOffset": 148303
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18844,11 +18865,11 @@
             },
             {
                 "to": {
-                    "startLine": 2103,
+                    "startLine": 2107,
                     "startColumn": 4,
-                    "startOffset": 148129,
+                    "startOffset": 148308,
                     "endColumn": 109,
-                    "endOffset": 148234
+                    "endOffset": 148413
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18863,11 +18884,11 @@
             },
             {
                 "to": {
-                    "startLine": 2104,
+                    "startLine": 2108,
                     "startColumn": 4,
-                    "startOffset": 148239,
+                    "startOffset": 148418,
                     "endColumn": 83,
-                    "endOffset": 148318
+                    "endOffset": 148497
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18882,11 +18903,11 @@
             },
             {
                 "to": {
-                    "startLine": 2105,
+                    "startLine": 2109,
                     "startColumn": 4,
-                    "startOffset": 148323,
+                    "startOffset": 148502,
                     "endColumn": 83,
-                    "endOffset": 148402
+                    "endOffset": 148581
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18901,11 +18922,11 @@
             },
             {
                 "to": {
-                    "startLine": 2106,
+                    "startLine": 2110,
                     "startColumn": 4,
-                    "startOffset": 148407,
+                    "startOffset": 148586,
                     "endColumn": 53,
-                    "endOffset": 148456
+                    "endOffset": 148635
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18920,11 +18941,11 @@
             },
             {
                 "to": {
-                    "startLine": 2107,
+                    "startLine": 2111,
                     "startColumn": 4,
-                    "startOffset": 148461,
+                    "startOffset": 148640,
                     "endColumn": 63,
-                    "endOffset": 148520
+                    "endOffset": 148699
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18939,11 +18960,11 @@
             },
             {
                 "to": {
-                    "startLine": 2108,
+                    "startLine": 2112,
                     "startColumn": 4,
-                    "startOffset": 148525,
+                    "startOffset": 148704,
                     "endColumn": 105,
-                    "endOffset": 148626
+                    "endOffset": 148805
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18958,11 +18979,11 @@
             },
             {
                 "to": {
-                    "startLine": 2109,
+                    "startLine": 2113,
                     "startColumn": 4,
-                    "startOffset": 148631,
+                    "startOffset": 148810,
                     "endColumn": 109,
-                    "endOffset": 148736
+                    "endOffset": 148915
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18977,11 +18998,11 @@
             },
             {
                 "to": {
-                    "startLine": 2110,
+                    "startLine": 2114,
                     "startColumn": 4,
-                    "startOffset": 148741,
+                    "startOffset": 148920,
                     "endColumn": 83,
-                    "endOffset": 148820
+                    "endOffset": 148999
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -18996,11 +19017,11 @@
             },
             {
                 "to": {
-                    "startLine": 2111,
+                    "startLine": 2115,
                     "startColumn": 4,
-                    "startOffset": 148825,
+                    "startOffset": 149004,
                     "endColumn": 119,
-                    "endOffset": 148940
+                    "endOffset": 149119
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values/values.xml",
@@ -19015,12 +19036,12 @@
             },
             {
                 "to": {
-                    "startLine": 2112,
+                    "startLine": 2116,
                     "startColumn": 4,
-                    "startOffset": 148945,
-                    "endLine": 2113,
+                    "startOffset": 149124,
+                    "endLine": 2117,
                     "endColumn": 10,
-                    "endOffset": 149040
+                    "endOffset": 149219
                 },
                 "from": {
                     "file": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/res/values/values.xml",

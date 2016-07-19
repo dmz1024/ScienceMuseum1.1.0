@@ -1945,6 +1945,10 @@
         <item name="android:textSize">@dimen/sp13</item>
         <item name="android:textColor">#999</item>
     </style>
+    <style name="TextSize13Colorc9a06c" parent="Text">
+        <item name="android:textSize">@dimen/sp13</item>
+        <item name="android:textColor">#c9a06c</item>
+    </style>
     <style name="TextSize14Color333" parent="Text">
         <item name="android:textSize">@dimen/sp14</item>
         <item name="android:textColor">#333</item>

@@ -1,11 +1,15 @@
 package com.shoudukejiguan.www.fragment;
 
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.activity.MyOrderActivity;
 import com.shoudukejiguan.www.activity.SetActivity;
+import com.shoudukejiguan.www.activity.UserInfoActivity;
+import com.shoudukejiguan.www.activity.UserLevelActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.view.MaxGridView;
 import com.shoudukejiguan.www.view.TextImage;
@@ -23,10 +27,11 @@ public class MainPeosonalFragment extends MainBaseFragment {
     private LinearLayout ll_progress;
     private TextImage tv_level;
     private String[] titles_info;
-    private boolean isType = false;
+    private boolean isType = true;
     private int[] images_info;
     private GridViewCenterAdapter mAdapter;
     private CircleImageView iv_img;
+
     @Override
     protected boolean isInit() {
         return false;
@@ -36,8 +41,19 @@ public class MainPeosonalFragment extends MainBaseFragment {
     protected void initData() {
         set();
         gv_menu.setAdapter(new GridViewCenterAdapter(getContext(), titles_menu, images_menu, R.layout.item_gv_ti));
-
         Glide.with(getActivity()).load("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg").into(iv_img);
+
+
+        gv_info.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i) {
+                    case 0:
+                        skip(MyOrderActivity.class);
+                        break;
+                }
+            }
+        });
     }
 
     @Override
@@ -46,9 +62,11 @@ public class MainPeosonalFragment extends MainBaseFragment {
         gv_info = (MaxGridView) view.findViewById(R.id.gv_info);
         view_set = view.findViewById(R.id.view_set);
         view_set.setOnClickListener(this);
-        ll_progress= (LinearLayout) view.findViewById(R.id.ll_progress);
-        tv_level= (TextImage) view.findViewById(R.id.tv_level);
-        iv_img= (CircleImageView) view.findViewById(R.id.iv_img);
+        ll_progress = (LinearLayout) view.findViewById(R.id.ll_progress);
+        tv_level = (TextImage) view.findViewById(R.id.tv_level);
+        iv_img = (CircleImageView) view.findViewById(R.id.iv_img);
+        iv_img.setOnClickListener(this);
+        tv_level.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +75,12 @@ public class MainPeosonalFragment extends MainBaseFragment {
             case R.id.view_set:
 //                set();
                 skip(SetActivity.class);
+                break;
+            case R.id.iv_img:
+                skip(UserInfoActivity.class);
+                break;
+            case R.id.tv_level:
+                skip(UserLevelActivity.class);
                 break;
         }
     }
@@ -74,7 +98,7 @@ public class MainPeosonalFragment extends MainBaseFragment {
             tv_level.setVisibility(View.VISIBLE);
         }
         isType = !isType;
-        gv_info.setAdapter(mAdapter=new GridViewCenterAdapter(getContext(), titles_info, images_info, R.layout.item_gv_ti));
+        gv_info.setAdapter(mAdapter = new GridViewCenterAdapter(getContext(), titles_info, images_info, R.layout.item_gv_ti));
     }
 
     @Override

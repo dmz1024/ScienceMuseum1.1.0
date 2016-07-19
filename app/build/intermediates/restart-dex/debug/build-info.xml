@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxhdpi"
+    abi="x86,armeabi-v7a"
+    api-level="18"
+    density="xhdpi"
     format="7"
-    timestamp="1468835788504953000"
+    timestamp="1468908842550375000"
     token="641474196854331016" >
 
     <task
         name="javac"
-        duration="191" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="16" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-        type="DEX" />
+        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="1468835038101587000" >
+    <build timestamp="1468908842550375000" >
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="1468835153566397000" >
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="1468835788504953000" >
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

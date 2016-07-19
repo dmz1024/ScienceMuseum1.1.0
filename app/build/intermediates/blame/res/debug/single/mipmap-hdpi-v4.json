@@ -28,6 +28,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_main_index_selected.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_more.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-hdpi/icon_more.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_love_fill.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-hdpi/ic_love_fill.png"
     },

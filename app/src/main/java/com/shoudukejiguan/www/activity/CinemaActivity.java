@@ -45,7 +45,7 @@ public class CinemaActivity extends BaseActivity {
         ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
         mTabEntities.add(new TabEntity("影院介绍", 0, 0));
         mTabEntities.add(new TabEntity("影讯介绍", 0, 0));
-        mTabEntities.add(new TabEntity("影片介绍", 0, 0));
+        mTabEntities.add(new TabEntity("影片预告", 0, 0));
 //        tl_tab.setTabData(mTabEntities);
 //        mTabEntities = null;
         ArrayList<Fragment> mFragments = new ArrayList<>();

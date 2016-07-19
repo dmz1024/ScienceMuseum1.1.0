@@ -215,16 +215,6 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     }
 
 
-    /**
-     * 返回titleBar对象
-     *
-     * @return
-     */
-    public TitleBar getTitleBarTitle() {
-        return title_bar;
-    }
-
-
     public static void addActivity(BaseActivity activity) {
         synchronized (activities) {
             activities.add(activity);

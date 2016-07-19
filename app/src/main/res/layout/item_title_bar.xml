@@ -19,12 +19,10 @@
 
         <ImageView
             android:id="@+id/bar_left"
-            android:layout_width="@dimen/size45"
-            android:layout_height="match_parent"
+            android:layout_width="@dimen/size25"
+            android:layout_height="@dimen/size25"
             android:layout_centerVertical="true"
-            android:paddingBottom="@dimen/size5"
-            android:paddingLeft="@dimen/size10"
-            android:paddingTop="@dimen/size5"
+            android:layout_marginLeft="@dimen/size10"
             android:src="@mipmap/icon_back"
              />
 
@@ -33,7 +31,6 @@
             android:id="@+id/bar_right"
             android:layout_width="@dimen/size21"
             android:layout_height="@dimen/size21"
-
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/size12"

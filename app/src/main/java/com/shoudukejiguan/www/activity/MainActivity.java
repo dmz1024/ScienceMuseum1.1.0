@@ -115,6 +115,11 @@ public class MainActivity extends BaseActivity {
     }
 
     @Override
+    public void left() {
+        fragments.get(0).right();
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (result != null) {

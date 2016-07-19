@@ -17,6 +17,7 @@ import com.shoudukejiguan.www.view.TitleBar;
  */
 public abstract class MainBaseFragment extends BaseFragment implements View.OnClickListener {
     public boolean isFirst = true;
+    public TitleBar titleBar;
     public Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -30,6 +31,7 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getRid(), null);
         initView(view);
+
         if (isInit()) {
             init();//判断是否在fragment创建的时候就加载数据
         }
@@ -60,8 +62,8 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
     /**
      * 关于titleBar的一些操作
      */
-    private void titleBar() {
-        TitleBar titleBar = ((BaseActivity) getActivity()).getTitleBarTitle();
+    protected void titleBar() {
+        titleBar = ((BaseActivity) getActivity()).title_bar;
         titleBar.toggleTitleBar(isTitleBarShow());
         titleBar.setTvTitleText(getTitleBarTitle());
         titleBar.setTvRightVisi(isRightVisi());
@@ -92,7 +94,6 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
         return true;
     }
 
-    ;
 
     /**
      * 获取titleBar标题
@@ -137,7 +138,8 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
 
     }
 
-    public void search() {
+
+    public void right(){
 
     }
 

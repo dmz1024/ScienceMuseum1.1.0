@@ -80,6 +80,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_my_order.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_my_order.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_my_order.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_my_order.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_cinema.xml",
@@ -180,6 +188,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_user_level.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_user_level.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
@@ -224,6 +236,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_user_info.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_service_guide.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_service_guide.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
     },
@@ -262,6 +278,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_item_order.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_item_order.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_education.xml",
