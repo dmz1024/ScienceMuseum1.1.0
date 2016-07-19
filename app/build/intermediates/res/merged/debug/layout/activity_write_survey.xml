@@ -9,27 +9,28 @@
         style="@style/TextSize12Color333"
         android:layout_width="match_parent"
         android:background="#fff"
-        android:padding="@dimen/size10"
-        android:text="你好" />
+        android:lineSpacingExtra="3dp"
+        android:padding="@dimen/size10" />
 
 
     <Button
         android:id="@+id/bt_submit"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size10"
         android:layout_marginLeft="@dimen/size50"
         android:layout_marginRight="@dimen/size50"
         android:background="#00acbb"
         android:text="提交"
         android:textColor="#fff"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/size10"
         android:textSize="@dimen/sp17" />
+
     <FrameLayout
         android:id="@+id/fg_content"
-        android:layout_above="@id/bt_submit"
-        android:layout_marginBottom="@dimen/size10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tv_title" />
+        android:layout_above="@id/bt_submit"
+        android:layout_below="@id/tv_title"
+        android:layout_marginBottom="@dimen/size10" />
 </RelativeLayout>

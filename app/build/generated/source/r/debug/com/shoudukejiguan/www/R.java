@@ -2961,7 +2961,6 @@ containing a value of this type.
         public static final int ll_team=0x7f0e008e;
         public static final int ll_tip=0x7f0e0078;
         public static final int ll_top=0x7f0e00a6;
-        public static final int lv_a=0x7f0e00eb;
         public static final int lv_news=0x7f0e00b5;
         public static final int lv_order=0x7f0e00df;
         public static final int media_actions=0x7f0e00ff;
@@ -2990,6 +2989,7 @@ containing a value of this type.
         public static final int rl_wei=0x7f0e007c;
         public static final int rl_zhi=0x7f0e0079;
         public static final int rtv_msg_tip=0x7f0e00f9;
+        public static final int rv_a=0x7f0e00eb;
         public static final int rv_base=0x7f0e009d;
         public static final int rv_cc=0x7f0e00e6;
         public static final int rv_education=0x7f0e00c0;

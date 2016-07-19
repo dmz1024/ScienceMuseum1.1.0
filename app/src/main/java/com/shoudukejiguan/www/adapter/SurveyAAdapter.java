@@ -11,13 +11,15 @@ import com.shoudukejiguan.www.entity.Survey;
 import com.shoudukejiguan.www.util.Util;
 import com.shoudukejiguan.www.view.TextImage;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by dengmingzhi on 16/7/12.
  */
 public class SurveyAAdapter extends DefaultAdapter<Survey.Question> {
-
+    public Map<Integer,Integer> map=new HashMap<>();
     public SurveyAAdapter(List<Survey.Question> datas) {
         super(datas);
     }
@@ -34,6 +36,13 @@ public class SurveyAAdapter extends DefaultAdapter<Survey.Question> {
         @Override
         protected void refreshView(Survey.Question data) {
             tv_a.setText(data.a);
+            tv_a.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });
+
         }
 
         @Override

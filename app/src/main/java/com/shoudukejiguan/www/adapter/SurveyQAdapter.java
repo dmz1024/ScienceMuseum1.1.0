@@ -1,5 +1,6 @@
 package com.shoudukejiguan.www.adapter;
 
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
@@ -8,20 +9,29 @@ import android.widget.TextView;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.MyOrder;
 import com.shoudukejiguan.www.entity.Survey;
+import com.shoudukejiguan.www.util.Util;
 import com.shoudukejiguan.www.view.Color2Text;
 import com.shoudukejiguan.www.view.MaxListView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
 /**
  * Created by dengmingzhi on 16/7/12.
  */
 public class SurveyQAdapter extends ListBaseAdapter<Survey.Data, SurveyQAdapter.SurveyHolder> {
-
+    private Map<Integer, Map<Integer, String>> map;
+    private Map<Integer, Integer> countMap;
     public SurveyQAdapter(List<Survey.Data> list) {
         super(list);
+    }
+
+    public SurveyQAdapter(List<Survey.Data> list, Map<Integer, Map<Integer, String>> map, Map<Integer, Integer> countMap){
+        super(list);
+        this.map = map;
+        this.countMap = countMap;
     }
 
     @Override
@@ -33,8 +43,26 @@ public class SurveyQAdapter extends ListBaseAdapter<Survey.Data, SurveyQAdapter.
         List<Survey.Question> list = new ArrayList<>();
         list.add(data1);
         list.add(data2);
-        holder.lv_a.setAdapter(new SurveyAAdapter(list));
+        setA(holder.rv_a,list,position);
+        if (!countMap.containsKey(position)) {
+            countMap.put(position, 1);
+        }
+
         holder.tv_title.setText("Q" + position + "：您经常浏览首都科学技术馆？" + position);
+    }
+
+    /**
+     * 场次
+     *
+     * @param rv_cc
+     * @param list
+     * @param position
+     */
+    private void setA(RecyclerView rv_cc, List<Survey.Question> list, int position) {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(Util.getApplication());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        rv_cc.setLayoutManager(layoutManager);
+        rv_cc.setAdapter(new SurveyAaAdapter(list, map, position));
     }
 
 
@@ -50,13 +78,13 @@ public class SurveyQAdapter extends ListBaseAdapter<Survey.Data, SurveyQAdapter.
 
     public class SurveyHolder extends RecyclerView.ViewHolder {
         public TextView tv_title;
-        public MaxListView lv_a;
+        public RecyclerView rv_a;
 
 
         public SurveyHolder(View itemView) {
             super(itemView);
             tv_title = (TextView) itemView.findViewById(R.id.tv_title);
-            lv_a = (MaxListView) itemView.findViewById(R.id.lv_a);
+            rv_a = (RecyclerView) itemView.findViewById(R.id.rv_a);
         }
     }
 }
