@@ -34,28 +34,18 @@
         <activity android:name=".activity.ExhibitionActivity" />
         <activity android:name=".activity.SetActivity" />
         <activity android:name=".activity.UserInfoActivity" />
-        <activity android:name=".activity.PayActivity">
+        <activity android:name=".activity.PayActivity"></activity>
+        <activity android:name=".activity.ServiceGuideActivity"></activity>
+        <activity android:name=".activity.UserLevelActivity"></activity>
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.InteractionFeedbackActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ServiceGuideActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.UserLevelActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.MyOrderActivity"></activity>
+        <activity android:name=".activity.WriteSurveyActivity"></activity>
     </application>
 
 </manifest>

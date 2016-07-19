@@ -114,10 +114,11 @@ public class MainActivity extends BaseActivity {
         finishAll();
     }
 
-    @Override
-    public void left() {
-        fragments.get(0).right();
-    }
+//    @Override
+//    public void left() {
+//        fragments.get(0).right();
+//    }
+
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {

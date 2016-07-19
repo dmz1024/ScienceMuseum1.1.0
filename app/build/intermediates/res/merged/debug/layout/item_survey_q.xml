@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size8">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSize12Color333"
+        android:text="Q1:您经常浏览首都科学技术馆吗?" />
+
+    <com.shoudukejiguan.www.view.MaxListView
+        android:id="@+id/lv_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/size4"
+        android:background="#fff"
+        android:dividerHeight="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:layout_below="@id/lv_a"
+        android:layout_marginTop="@dimen/size12"
+        android:background="#e1e1e1" />
+</RelativeLayout>
