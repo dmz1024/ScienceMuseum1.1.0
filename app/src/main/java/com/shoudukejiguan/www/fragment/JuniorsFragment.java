@@ -103,7 +103,8 @@ public class JuniorsFragment extends BaseFragment {
                 return getListener();
             }
         });
-        mFragments.add(new JuniorsDataFragment() {
+        mFragments.add(
+new JuniorsDataFragment() {
             @Override
             public View.OnTouchListener setListener() {
                 return getListener();
@@ -111,6 +112,7 @@ public class JuniorsFragment extends BaseFragment {
         });
 
         tl_tab.setTabData(mTabEntities, getActivity(), R.id.fg_juniors, mFragments);
+
 
     }
 

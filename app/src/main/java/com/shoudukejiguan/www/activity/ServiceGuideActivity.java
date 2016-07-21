@@ -36,7 +36,7 @@ public class ServiceGuideActivity extends BaseActivity {
     protected void initData() {
         final List<Fragment> fragments = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
-            fragments.add(new MapFragment());
+            fragments.add(MapFragment.getInstance("https://www.baidu.com"));
         }
 
         vp_content.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {

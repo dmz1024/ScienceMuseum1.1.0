@@ -123,6 +123,7 @@
     <orderEntry type="library" exported="" name="support-annotations-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="volley" level="project" />
     <orderEntry type="library" exported="" name="zxing-android-embedded-3.0.2" level="project" />
+    <orderEntry type="library" exported="" name="AMap_Location_V2.5.0_20160526" level="project" />
     <orderEntry type="library" exported="" name="circleindicator-1.2.1" level="project" />
     <orderEntry type="library" exported="" name="circleimageview-2.1.0" level="project" />
     <orderEntry type="library" exported="" name="app-1.0.4" level="project" />
@@ -138,6 +139,7 @@
     <orderEntry type="library" exported="" name="support-vector-drawable-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="FlycoTabLayout_Lib-2.0.6" level="project" />
     <orderEntry type="library" exported="" name="glide-3.5.2" level="project" />
+    <orderEntry type="library" exported="" name="AMap3DMap_3.3.1_AMapNavi_1.8.0_20160420" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.4.0" level="project" />
   </component>
 </module>

@@ -46,7 +46,7 @@ public class EducationActivity extends BaseActivity {
         mTabEntities.add(new TabEntity("风采展示", 0, 0));
         mTabEntities.add(new TabEntity("意见建议", 0, 0));
         ArrayList<Fragment> mFragments = new ArrayList<>();
-        mFragments.add(new MapFragment());
+        mFragments.add(MapFragment.getInstance("https://www.baidu.com"));
         mFragments.add(new EducationFragment());
         mFragments.add(new StyleShowFragment());
         mFragments.add(new EducationOpinionFragment());

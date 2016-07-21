@@ -8,6 +8,18 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
 
+    <!-- 高德地图开始 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 高德地图结束 -->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -34,18 +46,26 @@
         <activity android:name=".activity.ExhibitionActivity" />
         <activity android:name=".activity.SetActivity" />
         <activity android:name=".activity.UserInfoActivity" />
-        <activity android:name=".activity.PayActivity"></activity>
-        <activity android:name=".activity.ServiceGuideActivity"></activity>
-        <activity android:name=".activity.UserLevelActivity"></activity>
+        <activity android:name=".activity.PayActivity" />
+        <activity android:name=".activity.ServiceGuideActivity" />
+        <activity android:name=".activity.UserLevelActivity" />
         <activity android:name=".activity.MyOrderActivity" />
-        <activity android:name=".activity.InteractionFeedbackActivity">
+        <activity android:name=".activity.InteractionFeedbackActivity" />
+        <activity android:name=".activity.WriteSurveyActivity" />
+        <activity android:name=".activity.ChildrenParkActivity" />
+
+        <!-- 高德地图开始 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a7470b8c856681eaa20c6f827ce35f66" />
+        <!-- 高德地图结束 -->
+        <activity android:name=".activity.Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.WriteSurveyActivity"></activity>
     </application>
 
 </manifest>

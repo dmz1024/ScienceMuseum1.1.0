@@ -30,4 +30,30 @@ public class Util {
 //        int screenHeight = dm.heightPixels; // 屏幕高（像素，如：800px）
         return screenWidth;
     }
+
+    /**
+     * 获取屏幕宽高
+     *
+     * @return
+     */
+    public static int getWidth() {
+        DisplayMetrics dm = new DisplayMetrics();
+        dm = getApplication().getResources().getDisplayMetrics();
+        int screenWidth = dm.widthPixels; // 屏幕宽（像素，如：480px）
+//        int screenHeight = dm.heightPixels; // 屏幕高（像素，如：800px）
+        return screenWidth;
+    }
+
+    /**
+     * 获取屏幕宽高
+     *
+     * @return
+     */
+    public static int getHeight() {
+        DisplayMetrics dm = new DisplayMetrics();
+        dm = getApplication().getResources().getDisplayMetrics();
+        int screenHeight = dm.heightPixels; // 屏幕宽（像素，如：480px）
+//        int screenHeight = dm.heightPixels; // 屏幕高（像素，如：800px）
+        return screenHeight;
+    }
 }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
@@ -25,6 +26,7 @@ import com.shoudukejiguan.www.util.Util;
 import com.shoudukejiguan.www.view.MaxGridView;
 import com.shoudukejiguan.www.view.MaxListView;
 import com.shoudukejiguan.www.view.MyToast;
+import com.shoudukejiguan.www.view.PopMenu;
 import com.shoudukejiguan.www.view.RotationRelativeLayout;
 import com.shoudukejiguan.www.view.TipView;
 
@@ -225,7 +227,13 @@ public class MainIndexFragment extends MainBaseFragment {
     }
 
     @Override
-    public void right() {
-        MyToast.showToast("菜单");
+    public void left() {
+        backgroundAlpha(0.5f);
+        new PopMenu() {
+            @Override
+            public PopupWindow.OnDismissListener getDis() {
+                return MainIndexFragment.this;
+            }
+        }.initPop(getContext(), titleBar);
     }
 }

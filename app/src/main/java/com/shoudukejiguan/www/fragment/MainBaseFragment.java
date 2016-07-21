@@ -139,7 +139,7 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
     }
 
 
-    public void right(){
+    public void left(){
 
     }
 

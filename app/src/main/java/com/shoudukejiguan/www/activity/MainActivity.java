@@ -114,10 +114,10 @@ public class MainActivity extends BaseActivity {
         finishAll();
     }
 
-//    @Override
-//    public void left() {
-//        fragments.get(0).right();
-//    }
+    @Override
+    public void left() {
+        fragments.get(0).left();
+    }
 
 
     @Override
@@ -142,6 +142,5 @@ public class MainActivity extends BaseActivity {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
-
 
 }

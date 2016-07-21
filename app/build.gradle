@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        kejiguan {
+            keyAlias 'kejiguan'
+            keyPassword 'kejiguan'
+            storeFile file('/Users/dengmingzhi/Desktop/科技馆app/kejiguan.jks')
+            storePassword 'kejiguan'
+        }
+    }
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-
     defaultConfig {
         applicationId "com.shoudukejiguan.www"
         minSdkVersion 14
@@ -15,6 +22,16 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.kejiguan
+        }
+        debug {
+            signingConfig signingConfigs.kejiguan
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
         }
     }
 }
@@ -45,4 +62,8 @@ dependencies {
     compile 'com.zhy:flowlayout-lib:1.0.3'
     //圆形图片
     compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/AMap3DMap_3.3.1_AMapNavi_1.8.0_20160420.jar')
+    compile files('libs/AMap_Location_V2.5.0_20160526.jar')
+    //手势缩放图片
+
 }

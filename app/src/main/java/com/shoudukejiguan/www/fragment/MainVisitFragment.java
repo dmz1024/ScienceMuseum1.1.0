@@ -5,6 +5,8 @@ import android.view.View;
 
 import com.flyco.tablayout.SegmentTabLayout;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.manager.MapManager;
+import com.shoudukejiguan.www.view.MyToast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +25,25 @@ public class MainVisitFragment extends MainBaseFragment {
 
     @Override
     protected void initData() {
-        ArrayList<Fragment> mFragments = new ArrayList<>();
-        mFragments.add(new MapFragment());
-        mFragments.add(new GuestsFragment());
-        tl_tab.setTabData(mTitles, getActivity(), R.id.fg_visit, mFragments);
+        MapManager manager = new MapManager(getContext());
+        manager.setOnLocationListener(new MapManager.OnLocationListener() {
+            @Override
+            public void location(double latitude, double longitude) {
+                ArrayList<Fragment> mFragments = new ArrayList<>();
+                mFragments.add(MapFragment.getInstance("http://m.amap.com/navi/?start=" + longitude + "," + latitude + "&dest=116.393275,39.970341&destName=首都科学技术馆&key=d3f5d8b3b05231fa6a11375492310e3a"));
+                mFragments.add(new GuestsFragment());
+                tl_tab.setTabData(mTitles, getActivity(), R.id.fg_visit, mFragments);
+            }
+
+            @Override
+            public void locationErr(String errInfo) {
+                MyToast.showToast("位置信息获取失败：" + errInfo);
+                ArrayList<Fragment> mFragments = new ArrayList<>();
+                mFragments.add(MapFragment.getInstance("http://m.amap.com/navi/?start=116.393275,39.970341&dest=116.393275,39.970341&destName=首都科学技术馆&key=d3f5d8b3b05231fa6a11375492310e3a"));
+                mFragments.add(new GuestsFragment());
+                tl_tab.setTabData(mTitles, getActivity(), R.id.fg_visit, mFragments);
+            }
+        });
     }
 
     @Override
@@ -44,4 +61,5 @@ public class MainVisitFragment extends MainBaseFragment {
     protected boolean isTitleBarShow() {
         return false;
     }
+
 }

@@ -195,14 +195,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            left();
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
+
 
     /**
      * TextView设置字体颜色

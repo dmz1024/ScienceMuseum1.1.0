@@ -49,7 +49,7 @@ public class CinemaActivity extends BaseActivity {
 //        tl_tab.setTabData(mTabEntities);
 //        mTabEntities = null;
         ArrayList<Fragment> mFragments = new ArrayList<>();
-        mFragments.add(new MapFragment());
+        mFragments.add(MapFragment.getInstance("http://keji.lovect.cn/file/upload/201607/01/154820861.jpg"));
         mFragments.add(new VideoSignalFragment());
         mFragments.add(new VideoNoticeFragment());
         tl_tab.setTabData(mTabEntities, this, R.id.fg_cinema, mFragments);
