@@ -85,10 +85,16 @@
             android:name="com.amap.api.v2.apikey"
             android:value="a7470b8c856681eaa20c6f827ce35f66" />
         <!-- 高德地图结束 -->
-        <activity android:name="com.shoudukejiguan.www.activity.Main2Activity" >
-        </activity>
+        <activity android:name="com.shoudukejiguan.www.activity.Main2Activity" />
         <activity android:name="com.shoudukejiguan.www.activity.NoticeBulletinActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.MyCollectionActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.RegActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"

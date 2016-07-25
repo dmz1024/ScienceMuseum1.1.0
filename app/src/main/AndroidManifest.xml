@@ -62,7 +62,13 @@
         <activity android:name=".activity.Main2Activity"></activity>
         <activity android:name=".activity.NoticeBulletinActivity" />
         <activity android:name=".activity.MyCollectionActivity" />
-        <activity android:name=".activity.RegActivity"></activity>
+        <activity android:name=".activity.RegActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

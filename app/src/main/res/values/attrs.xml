@@ -27,4 +27,9 @@
         <attr name="TitleRelativeLayout_content_image_visi" format="boolean"></attr>
     </declare-styleable>
 
+    <declare-styleable name="CustEdit">
+        <attr name="CustEdit_image" format="reference"></attr>
+        <attr name="CustEdit_hint" format="string"></attr>
+    </declare-styleable>
+
 </resources>

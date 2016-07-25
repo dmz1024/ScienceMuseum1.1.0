@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size15"
+    android:paddingRight="@dimen/size15">
+
+    <com.shoudukejiguan.www.view.CustEdit
+        android:id="@+id/ce_nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size14"
+        tool:CustEdit_hint="用户名(最多6位)"
+        tool:CustEdit_image="@mipmap/icon_reg_username" />
+
+    <com.shoudukejiguan.www.view.CustEdit
+        android:id="@+id/ce_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size14"
+        tool:CustEdit_hint="密码(6-16位字符、英文、数字组成)"
+        tool:CustEdit_image="@mipmap/icon_reg_password" />
+
+    <com.shoudukejiguan.www.view.CustEdit
+        android:id="@+id/ce_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size14"
+        tool:CustEdit_hint="再次确认密码"
+        tool:CustEdit_image="@mipmap/icon_reg_password" />
+
+    <com.shoudukejiguan.www.view.CustEdit
+        android:id="@+id/ce_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size14"
+        tool:CustEdit_hint="手机号"
+        tool:CustEdit_image="@mipmap/icon_reg_password" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.shoudukejiguan.www.view.CustEdit
+            android:id="@+id/ce_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size14"
+            tool:CustEdit_hint="短信验证码"
+            tool:CustEdit_image="@mipmap/icon_reg_msm" />
+
+        <Button
+            android:id="@+id/bt_getCode"
+            android:layout_width="@dimen/size100"
+            android:layout_height="@dimen/size30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rectangle_03abee"
+            android:paddingLeft="@dimen/size5"
+            android:paddingRight="@dimen/size5"
+            android:text="获取验证码"
+            android:textColor="#00acbb"
+            android:textSize="@dimen/sp13" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size15"
+        android:orientation="horizontal">
+
+        <com.shoudukejiguan.www.view.TextImage
+            android:id="@+id/ti_protocol"
+            style="@style/TextSize12Color333"
+            android:drawablePadding="@dimen/size8"
+            android:gravity="center_vertical"
+            android:text="我已阅读并同意首都科技馆的"
+            tool:TextImage_drawable="@mipmap/icon_login_check"
+            tool:TextImage_height="@dimen/size15"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size15" />
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            style="@style/TextSize12Color333"
+            android:layout_marginLeft="-5dp"
+            android:text="《服务协议》"
+            android:textColor="#00acbb" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_reg"
+        android:layout_width="@dimen/size200"
+        android:layout_height="@dimen/size40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size55"
+        android:background="#00acbb"
+        android:text="立即注册"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp17" />
+</LinearLayout>
