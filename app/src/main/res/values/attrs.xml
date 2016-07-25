@@ -10,6 +10,7 @@
     <declare-styleable name="Color2Text">
         <attr name="Color2Text_size" format="dimension"></attr>
         <attr name="Color2Text_color" format="color"></attr>
+        <attr name="Color2Text_content" format="string"></attr>
     </declare-styleable>
 
 

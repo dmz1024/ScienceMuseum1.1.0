@@ -37,10 +37,12 @@ public class Color2Text extends TextView {
     }
 
     private void init(AttributeSet attrs) {
-        TypedArray typedArray = getContext().obtainStyledAttributes(attrs,R.styleable.Color2Text);
-        size = typedArray.getDimensionPixelSize(R.styleable.Color2Text_Color2Text_size,R.dimen.sp11);
-        color = typedArray.getColor(R.styleable.Color2Text_Color2Text_color,getResources().getColor(R.color.color333));
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.Color2Text);
+        size = typedArray.getDimensionPixelSize(R.styleable.Color2Text_Color2Text_size, R.dimen.sp11);
+        color = typedArray.getColor(R.styleable.Color2Text_Color2Text_color, getResources().getColor(R.color.color333));
+        String content = typedArray.getString(R.styleable.Color2Text_Color2Text_content);
         typedArray.recycle();
+        setTextContent(content);
     }
 
 
@@ -62,7 +64,7 @@ public class Color2Text extends TextView {
     }
 
 
-    private void setOldText(){
+    private void setOldText() {
         if (isFirstAdd) {
             oldText = getText().toString();
             isFirstAdd = false;
@@ -72,14 +74,14 @@ public class Color2Text extends TextView {
     /**
      * 设置不同位置的文本颜色和字体大小
      */
-    private void setColor(){
-        String str =oldText+nowText;
+    private void setColor() {
+        String str = oldText + nowText;
         SpannableStringBuilder style = new SpannableStringBuilder(str);
 //        style.setSpan(new BackgroundColorSpan(Color.RED), 2, 5, Spannable.SPAN_EXCLUSIVE_INCLUSIVE); //设置指定位置textview的背景颜色
 //        style.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.yd_666)), 0, oldText.length(), Spannable.SPAN_EXCLUSIVE_INCLUSIVE); //设置指定位置文字的颜色
 
-        style.setSpan(new AbsoluteSizeSpan(size), oldText.length(),str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        style.setSpan(new ForegroundColorSpan(color),oldText.length(),str.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
+        style.setSpan(new AbsoluteSizeSpan(size), oldText.length(), str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        style.setSpan(new ForegroundColorSpan(color), oldText.length(), str.length(), Spanned.SPAN_EXCLUSIVE_INCLUSIVE);
         setText(style);
     }
 
