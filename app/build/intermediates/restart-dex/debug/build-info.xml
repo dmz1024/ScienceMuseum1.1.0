@@ -4,38 +4,30 @@
     api-level="18"
     density="xhdpi"
     format="7"
-    timestamp="1469429790208557000"
-    token="641474196854331016"
-    verifier="COMPATIBLE" >
+    timestamp="1469430772862805000"
+    token="641474196854331016" >
 
     <task
         name="javac"
-        duration="585" />
+        duration="1644" />
     <task
         name="instant-run-dex"
-        duration="775" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="103" />
     <task
         name="verifier"
-        duration="2" />
+        duration="10" />
 
     <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="1469429690025926000" >
+    <build timestamp="1469430772862805000" >
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="1469429790208557000"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

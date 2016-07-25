@@ -18,6 +18,7 @@ import com.shoudukejiguan.www.activity.EducationActivity;
 import com.shoudukejiguan.www.activity.ExhibitionActivity;
 import com.shoudukejiguan.www.activity.MainActivity;
 import com.shoudukejiguan.www.activity.MoreNewsActivity;
+import com.shoudukejiguan.www.activity.NoticeBulletinActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.adapter.IndexEducationAdapter;
 import com.shoudukejiguan.www.adapter.IndexNewsAdapter;
@@ -69,6 +70,12 @@ public class MainIndexFragment extends MainBaseFragment {
         layout_rotation.setUrls(urlList);
         gv_center.setAdapter(new GridViewCenterAdapter(getContext(), titles, images));
         tip_notice.setTipList(urlList);
+        tip_notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                skip(NoticeBulletinActivity.class);
+            }
+        });
 
         gv_center.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

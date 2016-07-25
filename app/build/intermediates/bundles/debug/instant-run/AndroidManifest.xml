@@ -87,13 +87,7 @@
         <!-- 高德地图结束 -->
         <activity android:name="com.shoudukejiguan.www.activity.Main2Activity" >
         </activity>
-        <activity android:name="com.shoudukejiguan.www.activity.NoticeBulletinActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.shoudukejiguan.www.activity.NoticeBulletinActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.MyCollectionActivity" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"

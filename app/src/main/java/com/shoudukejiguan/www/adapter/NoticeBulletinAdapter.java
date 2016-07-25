@@ -3,6 +3,7 @@ package com.shoudukejiguan.www.adapter;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
@@ -23,8 +24,11 @@ public class NoticeBulletinAdapter extends ListBaseAdapter<NoticeBulletin.Data, 
 
     @Override
     protected void bindHolder(NoticeBulletinHolder holder, int position) {
-        Glide.with(Util.getApplication()).load("http://cdn.duitang.com/uploads/item/201412/04/20141204163409_Tdusf.thumb.700_0.jpeg")
+        NoticeBulletin.Data data = list.get(position);
+        Glide.with(Util.getApplication()).load(data.thumb)
                 .into(holder.iv_img);
+        holder.tv_title.setText(data.title);
+        holder.tv_time.setText(data.addtime);
     }
 
     @Override
@@ -39,10 +43,14 @@ public class NoticeBulletinAdapter extends ListBaseAdapter<NoticeBulletin.Data, 
 
     public class NoticeBulletinHolder extends RecyclerView.ViewHolder {
         public ImageView iv_img;
+        public TextView tv_title;
+        public TextView tv_time;
 
         public NoticeBulletinHolder(View itemView) {
             super(itemView);
             iv_img = (ImageView) itemView.findViewById(R.id.iv_img);
+            tv_title = (TextView) itemView.findViewById(R.id.tv_title);
+            tv_time = (TextView) itemView.findViewById(R.id.tv_time);
         }
     }
 }

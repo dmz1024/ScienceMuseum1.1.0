@@ -5,7 +5,11 @@ package com.shoudukejiguan.www.entity;
  */
 public class NoticeBulletin extends BaseLvEntity<NoticeBulletin.Data> {
 
-    public class Data extends com.shoudukejiguan.www.entity.Data{
-
+    public class Data extends com.shoudukejiguan.www.entity.Data {
+        public String itemid;
+        public String title;
+        public String introduce;
+        public String addtime;
+        public String thumb;
     }
 }
