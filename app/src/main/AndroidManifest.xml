@@ -60,12 +60,15 @@
             android:value="a7470b8c856681eaa20c6f827ce35f66" />
         <!-- 高德地图结束 -->
         <activity android:name=".activity.Main2Activity">
+        </activity>
+        <activity android:name=".activity.NoticeBulletinActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MyCollectionActivity"></activity>
     </application>
 
 </manifest>

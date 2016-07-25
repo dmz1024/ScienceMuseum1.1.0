@@ -30,7 +30,7 @@ public abstract class PopMenu {
     Context ctx;
     int current;
     PopupWindow window;
-    String json = new StringBuilder().append("{\"data\":").append("[{\"name\": \"新闻资讯\",")
+    static String json = new StringBuilder().append("{\"data\":").append("[{\"name\": \"新闻资讯\",")
             .append("\"ID\": \"1000\",").append(" \"secMenu\":[]").append(" },")
             .append(" {\"name\": \"常设展览\",").append(" \"ID\": \"2000\",")
             .append(" \"secMenu\":[").append("{\"name\": \"三生主展\",")

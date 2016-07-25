@@ -6,6 +6,7 @@ import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.activity.MyCollectionActivity;
 import com.shoudukejiguan.www.activity.MyOrderActivity;
 import com.shoudukejiguan.www.activity.SetActivity;
 import com.shoudukejiguan.www.activity.UserInfoActivity;
@@ -50,6 +51,12 @@ public class MainPeosonalFragment extends MainBaseFragment {
                 switch (i) {
                     case 0:
                         skip(MyOrderActivity.class);
+                        break;
+                    case 1:
+                        skip(MyCollectionActivity.class);
+                        break;
+                    case 2:
+                        skip(UserInfoActivity.class);
                         break;
                 }
             }

@@ -26,7 +26,7 @@
             android:layout_above="@id/view"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/size3"
-            android:text="06" />
+           />
 
         <TextView
             android:id="@+id/tv_year"
@@ -34,12 +34,11 @@
             android:layout_below="@id/view"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/size3"
-            android:text="2015.09" />
+             />
     </RelativeLayout>
 
     <TextView
         android:id="@+id/tv_title"
-        android:text="北京科学中心装修改造项目矩形开工仪式"
         android:layout_marginTop="@dimen/size5"
         android:ellipsize="end"
         android:singleLine="true"
@@ -48,7 +47,6 @@
         android:layout_toRightOf="@id/rl_time" />
     <TextView
         android:id="@+id/tv_content"
-        android:text="北京科学中心装修改造项目矩形开工仪式\n北京科学中心装修改造项目矩形开工仪式"
         android:layout_marginTop="@dimen/size5"
         android:ellipsize="end"
         android:layout_below="@id/tv_title"

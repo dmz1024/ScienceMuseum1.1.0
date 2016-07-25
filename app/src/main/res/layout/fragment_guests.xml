@@ -24,24 +24,19 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/size12" />
 
-    <ScrollView
-        android:layout_marginBottom="@dimen/size5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <RelativeLayout
+        android:id="@+id/rl_content"
         android:layout_above="@id/rv_position"
         android:layout_below="@id/tv_currentPosition"
-        android:layout_marginTop="@dimen/size5">
-
-        <RelativeLayout
-            android:id="@+id/rl_content"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.shoudukejiguan.www.view.TouchImageView
+            android:id="@+id/iv_img"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent" />
 
-            <ImageView
-                android:id="@+id/iv_img"
-                android:scaleType="fitXY"
-                android:layout_width="match_parent"
-                android:layout_height="3000dp" />
-        </RelativeLayout>
-    </ScrollView>
+    </RelativeLayout>
 </RelativeLayout>

@@ -7,5 +7,6 @@ import java.util.List;
  */
 public class BaseLvEntity<T extends Data> {
     public int result;
+    public String msg;
     public List<T> data;
 }

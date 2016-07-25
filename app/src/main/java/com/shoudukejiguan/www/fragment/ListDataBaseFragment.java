@@ -44,8 +44,8 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
     private TextView tv_nodata;
     public List<D> totalList;
     private int currentType;
-    private int page;
-    private int oldPage;
+    private int page = 1;
+    private int oldPage = 1;
     public A mAdapter;
     protected Gson mGson;
     protected Map<String, String> map = new HashMap<>();
@@ -53,7 +53,6 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.d("这里","哈哈哈");
         return initView();
     }
 
@@ -201,21 +200,6 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
 //        xRefreshView.setAutoLoadMore(true);
         //设置刷新完成以后，headerview固定的时间
         rv_base.setOnTouchListener(getOnTouchListener());
-        rv_base.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                Log.d("onScrollStateChanged", newState + "");
-                super.onScrollStateChanged(recyclerView, newState);
-            }
-
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                Log.d("onScrolled", dy + "-" + dx);
-
-                super.onScrolled(recyclerView, dx, dy);
-            }
-        });
-
 
         xRefreshView.setPinnedTime(1000);
         xRefreshView.setMoveForHorizontal(true);
@@ -264,108 +248,102 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
     }
 
     public void initData(final int type) {
+        Log.d("page1", page + "");
         map.put("page", page + "");
         map.put("size", size);
-        if (type == 2) {
-            totalList.clear();
-        }
 
-        for (int i = 0; i < Integer.parseInt(size); i++) {
-            totalList.add((D) new Data());
-        }
+        if (getUrl().equals("")) {
+            if (type == 2) {
+                totalList.clear();
+            }
 
-        mAdapter.notifyDataSetChanged();
-        if (totalList.size() > 0) {
-            showView(1);
-        } else if (totalList.size() == 0) {
-            showView(3);
-        }
-        if (type == 1) {
-            xRefreshView.stopLoadMore();
+            for (int i = 0; i < Integer.parseInt(size); i++) {
+                totalList.add((D) new Data());
+            }
+
+            mAdapter.notifyDataSetChanged();
+            if (totalList.size() > 0) {
+                showView(1);
+            } else if (totalList.size() == 0) {
+                showView(3);
+            }
+            if (type == 1) {
+                xRefreshView.stopLoadMore();
+            } else {
+                xRefreshView.stopRefresh();
+            }
         } else {
-            xRefreshView.stopRefresh();
+            APiHttp api = new APiHttp(getUrl(), getMap(map), getContext()) {
+                @Override
+                protected void success(String json) {
+                    T t = mGson.fromJson(json, getTClass());
+                    if (t.result == 0) {
+                        if (t.data.size() == 0) {
+                            page = oldPage;
+                        }
+                        if (type == 2) {
+                            totalList.clear();
+                        }
+                        totalList.addAll(t.data);
+                        if (totalList.size() > 0) {
+                            showView(1);
+                        } else if (totalList.size() == 0) {
+                            showView(3);
+                        }
+
+                        mAdapter.notifyDataSetChanged();
+                    } else {
+                        page = oldPage;
+                        MyToast.showToast(t.msg);
+                    }
+
+                    if (type == 1) {
+                        xRefreshView.stopLoadMore();
+                    } else {
+                        xRefreshView.stopRefresh();
+                    }
+
+                }
+
+                @Override
+                protected void noNetWork() {
+                    if (totalList.size() > 0) {
+                        MyToast.showToast("网络连接失败!");
+                    } else {
+                        showView(2);
+                    }
+                    page = oldPage;
+                    currentType = type;
+                    if (type == 1) {
+                        xRefreshView.stopLoadMore();
+                    } else {
+                        xRefreshView.stopRefresh();
+                    }
+                }
+
+                @Override
+                protected void error() {
+                    if (totalList.size() > 0) {
+                        MyToast.showToast("服务器异常!");
+                    } else {
+                        showView(2);
+                    }
+                    page = oldPage;
+                    if (type == 1) {
+                        xRefreshView.stopLoadMore();
+                    } else {
+                        xRefreshView.stopRefresh();
+                    }
+                }
+            };
+
+            if (getMethod()) {
+                api.post();
+            } else {
+                api.get();
+            }
         }
 
-//        APiHttp api = new APiHttp(getUrl(), getMap(map), getContext()) {
-//            @Override
-//            protected void success(String json) {
-//                try {
-//                    JSONObject object = new JSONObject(json);
-//                    int result = object.getInt("result");
-//                    if (result == 0) {
-//                        T t = mGson.fromJson(json, getTClass());
-//                        if (t.data.size() == 0) {
-//                            page = oldPage;
-//                        }
-//                        if (type == 2) {
-//                            totalList.clear();
-//                        }
-//                        totalList.addAll(t.data);
-//                        if (totalList.size() > 0) {
-//                            showView(1);
-//                        } else if (totalList.size() == 0) {
-//                            showView(3);
-//                        }
-//
-//                        mAdapter.notifyDataSetChanged();
-//                    } else {
-//                        page = oldPage;
-//                    }
-//
-//                    if (type == 1) {
-//                        xRefreshView.stopLoadMore();
-//                    } else {
-//                        xRefreshView.stopRefresh();
-//                    }
-//
-//                } catch (JSONException e) {
-//                    e.printStackTrace();
-//                    page = oldPage;
-//                    if (type == 1) {
-//                        xRefreshView.stopLoadMore();
-//                    } else {
-//                        xRefreshView.stopRefresh();
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            protected void noNetWork() {
-//                if (totalList.size() > 0) {
-//                    MyToast.showToast("网络连接失败!");
-//                } else {
-//                    showView(2);
-//                }
-//                page = oldPage;
-//                currentType = type;
-//                if (type == 1) {
-//                    xRefreshView.stopLoadMore();
-//                } else {
-//                    xRefreshView.stopRefresh();
-//                }
-//            }
-//
-//            @Override
-//            protected void error() {
-//                if (totalList.size() > 0) {
-//                    MyToast.showToast("服务器异常!");
-//                } else {
-//                    showView(2);
-//                }
-//                page = oldPage;
-//                if (type == 1) {
-//                    xRefreshView.stopLoadMore();
-//                } else {
-//                    xRefreshView.stopRefresh();
-//                }
-//            }
-//        };
-//
-//        if (getMethod()) {
-//            api.post();
-//        } else {
-//            api.get();
-//        }
 
     }
 

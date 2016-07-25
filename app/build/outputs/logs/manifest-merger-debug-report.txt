@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:2:1-71:12
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml
@@ -63,7 +63,7 @@ ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:20:22-73
 application
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:23:5-69:19
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:23:5-72:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -191,9 +191,17 @@ ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:59:13-50
 activity#com.shoudukejiguan.www.activity.Main2Activity
-ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:62:9-68:20
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:62:9-63:20
 	android:name
 		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:62:19-57
+activity#com.shoudukejiguan.www.activity.NoticeBulletinActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:64:9-70:20
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:64:19-66
+activity#com.shoudukejiguan.www.activity.MyCollectionActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:71:9-76
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml:71:19-64
 uses-sdk
 INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78

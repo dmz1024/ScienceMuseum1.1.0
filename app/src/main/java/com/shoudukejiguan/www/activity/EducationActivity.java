@@ -10,8 +10,6 @@ import com.shoudukejiguan.www.fragment.EducationFragment;
 import com.shoudukejiguan.www.fragment.EducationOpinionFragment;
 import com.shoudukejiguan.www.fragment.MapFragment;
 import com.shoudukejiguan.www.fragment.StyleShowFragment;
-import com.shoudukejiguan.www.fragment.VideoNoticeFragment;
-import com.shoudukejiguan.www.fragment.VideoSignalFragment;
 
 import java.util.ArrayList;
 

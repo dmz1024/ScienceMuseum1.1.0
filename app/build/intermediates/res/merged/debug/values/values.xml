@@ -555,6 +555,7 @@
     <dimen name="size97">97dp</dimen>
     <dimen name="size98">98dp</dimen>
     <dimen name="size99">99dp</dimen>
+    <dimen name="size_5">-5dp</dimen>
     <dimen name="sp0">0sp</dimen>
     <dimen name="sp0.5">0.5sp</dimen>
     <dimen name="sp1">1sp</dimen>
