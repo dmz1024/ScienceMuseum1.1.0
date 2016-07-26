@@ -78,7 +78,6 @@
         <activity android:name="com.shoudukejiguan.www.activity.InteractionFeedbackActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.WriteSurveyActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.ChildrenParkActivity" />
-
         <!-- 高德地图开始 -->
         <meta-data
             android:name="com.amap.api.v2.apikey"
@@ -87,20 +86,10 @@
         <activity android:name="com.shoudukejiguan.www.activity.Main2Activity" />
         <activity android:name="com.shoudukejiguan.www.activity.NoticeBulletinActivity" />
         <activity android:name="com.shoudukejiguan.www.activity.MyCollectionActivity" />
-        <activity android:name="com.shoudukejiguan.www.activity.RegActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.shoudukejiguan.www.activity.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.shoudukejiguan.www.activity.RegActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.LoginActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.UpdatePasswordActivity" />
+        <activity android:name="com.shoudukejiguan.www.activity.ForgotPasswordActivity" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"

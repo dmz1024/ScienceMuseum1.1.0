@@ -68,6 +68,7 @@
         android:textSize="@dimen/sp17" />
 
     <com.shoudukejiguan.www.view.Color2Text
+        android:id="@+id/tv_reg"
         style="@style/TextSize10Color999"
         tool:Color2Text_content="免费注册"
         android:layout_gravity="right"

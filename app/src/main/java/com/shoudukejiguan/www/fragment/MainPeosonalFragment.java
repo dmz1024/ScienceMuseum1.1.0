@@ -6,9 +6,14 @@ import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.activity.LoginActivity;
+import com.shoudukejiguan.www.activity.MainActivity;
+import com.shoudukejiguan.www.activity.MoreNewsActivity;
 import com.shoudukejiguan.www.activity.MyCollectionActivity;
 import com.shoudukejiguan.www.activity.MyOrderActivity;
+import com.shoudukejiguan.www.activity.OpinionFeedbackActivity;
 import com.shoudukejiguan.www.activity.SetActivity;
+import com.shoudukejiguan.www.activity.UpdatePasswordActivity;
 import com.shoudukejiguan.www.activity.UserInfoActivity;
 import com.shoudukejiguan.www.activity.UserLevelActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
@@ -28,7 +33,7 @@ public class MainPeosonalFragment extends MainBaseFragment {
     private LinearLayout ll_progress;
     private TextImage tv_level;
     private String[] titles_info;
-    private boolean isType = true;
+    private boolean isType = false;
     private int[] images_info;
     private GridViewCenterAdapter mAdapter;
     private CircleImageView iv_img;
@@ -44,21 +49,71 @@ public class MainPeosonalFragment extends MainBaseFragment {
         gv_menu.setAdapter(new GridViewCenterAdapter(getContext(), titles_menu, images_menu, R.layout.item_gv_ti));
         Glide.with(getActivity()).load("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg").into(iv_img);
 
-
-        gv_info.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        gv_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 0:
-                        skip(MyOrderActivity.class);
+                        skip(LoginActivity.class);
                         break;
                     case 1:
-                        skip(MyCollectionActivity.class);
+                        ((MainActivity) getActivity()).onTabSelect(i);
                         break;
                     case 2:
-                        skip(UserInfoActivity.class);
+                        skip(MoreNewsActivity.class);
                         break;
+                    case 3:
+                        ((MainActivity) getActivity()).onTabSelect(i - 1);
+                        break;
+
                 }
+
+            }
+        });
+
+
+        gv_info.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (isType) {
+                    switch (i) {
+                        case 0:
+                            skip(MyOrderActivity.class);
+                            break;
+                        case 1:
+                            skip(MyCollectionActivity.class);
+                            break;
+                        case 2:
+                            skip(UserInfoActivity.class);
+                            break;
+                        case 3:
+                            skip(UpdatePasswordActivity.class);
+                            break;
+                    }
+                } else {
+                    switch (i) {
+                        case 0:
+                            skip(MyOrderActivity.class);
+                            break;
+                        case 1:
+                            skip(MyOrderActivity.class);
+                            break;
+                        case 2:
+                            skip(MyCollectionActivity.class);
+                            break;
+                        case 3:
+                            skip(UserInfoActivity.class);
+                            break;
+                        case 4:
+                            skip(OpinionFeedbackActivity.class);
+                            break;
+                        case 5:
+                            skip(UpdatePasswordActivity.class);
+                            break;
+                    }
+                }
+
+
             }
         });
     }
@@ -80,7 +135,6 @@ public class MainPeosonalFragment extends MainBaseFragment {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.view_set:
-//                set();
                 skip(SetActivity.class);
                 break;
             case R.id.iv_img:
@@ -104,7 +158,7 @@ public class MainPeosonalFragment extends MainBaseFragment {
             images_info = new int[]{R.mipmap.icon_wddd, R.mipmap.icon_wdsc, R.mipmap.icon_yhxx, R.mipmap.icon_xgmm};
             tv_level.setVisibility(View.VISIBLE);
         }
-        isType = !isType;
+
         gv_info.setAdapter(mAdapter = new GridViewCenterAdapter(getContext(), titles_info, images_info, R.layout.item_gv_ti));
     }
 

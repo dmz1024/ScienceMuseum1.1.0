@@ -12,20 +12,20 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_interaction_feedback.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_juniors.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_juniors.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/layout_tab_segment.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/res/layout/layout_tab_segment.xml"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_juniors.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_juniors.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/pop_menu.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/pop_menu.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/layout_tab_segment.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/res/layout/layout_tab_segment.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
@@ -292,6 +292,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_update_password.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_update_password.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_video_signa.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_video_signa.xml"
     },
@@ -394,6 +398,10 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/activity_forgot_password.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/activity_forgot_password.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",

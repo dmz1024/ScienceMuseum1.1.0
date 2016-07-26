@@ -61,8 +61,11 @@
         <activity android:name=".activity.Main2Activity" />
         <activity android:name=".activity.NoticeBulletinActivity" />
         <activity android:name=".activity.MyCollectionActivity" />
-        <activity android:name=".activity.RegActivity"></activity>
-        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".activity.RegActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.UpdatePasswordActivity" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.OpinionFeedbackActivity"></activity>
     </application>
 
 </manifest>
