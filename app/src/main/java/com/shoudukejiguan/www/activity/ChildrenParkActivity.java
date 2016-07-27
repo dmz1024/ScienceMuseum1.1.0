@@ -4,9 +4,9 @@ import android.support.v4.app.Fragment;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
 import com.shoudukejiguan.www.fragment.ChildrenParkFragment;
+import com.shoudukejiguan.www.R;
 
 import java.util.ArrayList;
 

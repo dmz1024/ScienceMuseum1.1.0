@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:padding="@dimen/size5"
+    android:layout_height="wrap_content">
+    <com.shoudukejiguan.www.view.TextImage
+        android:id="@+id/tv_a"
+        tool:TextImage_drawable="@mipmap/icon_pay_check"
+        tool:TextImage_seat="1"
+        android:drawablePadding="@dimen/size10"
+        android:gravity="center"
+        android:text="经常"
+        tool:TextImage_width="@dimen/size15"
+        tool:TextImage_height="@dimen/size15"
+        style="@style/TextSize12Color666" />
+</FrameLayout>

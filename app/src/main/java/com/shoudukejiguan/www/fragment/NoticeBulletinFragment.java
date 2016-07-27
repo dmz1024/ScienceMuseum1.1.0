@@ -2,10 +2,8 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 
-import com.shoudukejiguan.www.adapter.MyOrderAdapter;
 import com.shoudukejiguan.www.adapter.NoticeBulletinAdapter;
 import com.shoudukejiguan.www.constant.ApiConstant;
-import com.shoudukejiguan.www.entity.MyOrder;
 import com.shoudukejiguan.www.entity.NoticeBulletin;
 
 import java.util.List;

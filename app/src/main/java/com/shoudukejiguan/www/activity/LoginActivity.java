@@ -1,13 +1,20 @@
 package com.shoudukejiguan.www.activity;
 
-import android.content.SharedPreferences;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.api.ApiRequest;
+import com.shoudukejiguan.www.util.SharedPreferenUtil;
 import com.shoudukejiguan.www.view.CustEdit;
+import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.TextImage;
+import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.constant.ApiConstant;
+import com.shoudukejiguan.www.entity.UserLogin;
+
+import java.util.Map;
 
 public class LoginActivity extends BaseActivity {
     private CustEdit ce_nick;
@@ -31,7 +38,13 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-
+        isRemember = new SharedPreferenUtil(this).getData("isRemember");
+        if (isRemember) {
+            tv_remember.setDrawable(R.mipmap.icon_login_checked);
+            Map<String, String> map = new SharedPreferenUtil(this, "userLogin").getData(new String[]{"username", "password"});
+            ce_nick.setContent(map.get("username"));
+            ce_password.setContent(map.get("password"));
+        }
     }
 
     @Override
@@ -71,7 +84,54 @@ public class LoginActivity extends BaseActivity {
      * 登录
      */
     private void login() {
+        final String userName = ce_nick.getContent();
+        if (TextUtils.isEmpty(userName)) {
+            MyToast.showToast("请输入用户名!");
+            return;
+        }
 
+        final String password = ce_password.getContent();
+        if (TextUtils.isEmpty(password)) {
+            MyToast.showToast("请输入密码");
+            return;
+        }
+
+        new ApiRequest<UserLogin>(this, ApiConstant.LOGIN, UserLogin.class) {
+            @Override
+            protected void noNetWork() {
+                MyToast.showToast("网络无连接，请检查网络");
+            }
+
+            @Override
+            protected void success(UserLogin userLogin) {
+                if (userLogin.result == 0) {
+                    MyToast.showToast("登录成功!");
+                    if (isRemember) {
+                        new SharedPreferenUtil(LoginActivity.this).setData("isRemember", true);
+                        new SharedPreferenUtil(LoginActivity.this, "userLogin").setData(new String[]{"username", userName, "password", password});
+                    } else {
+                        new SharedPreferenUtil(LoginActivity.this).setData("isRemember", false);
+                        new SharedPreferenUtil(LoginActivity.this, "userLogin").setData(new String[]{"username", "", "password", ""});
+                    }
+                    new SharedPreferenUtil(LoginActivity.this, "userInfo").setData(new String[]{"uid", userLogin.data.uid, "token", userLogin.data.token, "type", userLogin.data.type});
+                } else {
+                    MyToast.showToast(userLogin.msg);
+                    ce_password.setContent("");
+                }
+            }
+
+            @Override
+            protected Map<String, String> map(Map<String, String> map) {
+                map.put("username", userName);
+                map.put("password", password);
+                return map;
+            }
+
+            @Override
+            protected void onErr() {
+                MyToast.showToast("服务器错误，请联系客服!");
+            }
+        }.post("正在登录....");
     }
 
     /**
@@ -85,7 +145,7 @@ public class LoginActivity extends BaseActivity {
      * 忘记密码
      */
     private void forgot() {
-
+        skip(ForgotPasswordActivity.class);
     }
 
     /**

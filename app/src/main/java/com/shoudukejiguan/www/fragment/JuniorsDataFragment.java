@@ -1,14 +1,10 @@
 package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 
 import com.shoudukejiguan.www.adapter.JuniorsAdapter;
-import com.shoudukejiguan.www.adapter.StyleShowAdapter;
 import com.shoudukejiguan.www.entity.Juniors;
-import com.shoudukejiguan.www.entity.StyleShow;
 
 import java.util.List;
 import java.util.Map;

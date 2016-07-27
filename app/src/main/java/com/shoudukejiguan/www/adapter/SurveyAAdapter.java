@@ -6,12 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.shoudukejiguan.www.view.TextImage;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.Survey;
 import com.shoudukejiguan.www.util.Util;
-import com.shoudukejiguan.www.view.TextImage;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

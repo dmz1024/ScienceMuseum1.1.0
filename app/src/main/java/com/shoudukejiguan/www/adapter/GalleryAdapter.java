@@ -5,9 +5,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.Gallery;
-import com.shoudukejiguan.www.entity.NoticeBulletin;
+import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.util.Util;
 
 import java.util.List;

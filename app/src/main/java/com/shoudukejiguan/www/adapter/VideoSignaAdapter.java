@@ -6,7 +6,6 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
-import com.shoudukejiguan.www.entity.News;
 import com.shoudukejiguan.www.entity.VideoSigna;
 import com.shoudukejiguan.www.util.Util;
 

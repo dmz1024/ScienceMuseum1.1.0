@@ -5,9 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.Survey;
 import com.shoudukejiguan.www.util.Util;
+import com.shoudukejiguan.www.R;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,0 +1,321 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:2:1-77:12
+	package
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:6:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:23:5-65
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:6:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:8:22-63
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:9:5-69
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:9:22-66
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:14:22-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:15:22-72
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:18:5-89
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:18:22-86
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:20:22-73
+application
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:23:5-75:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.1.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.huxq17.xrefreshview/xrefreshview/3.1.0/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/AndroidManifest.xml:11:5-14:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:47:5-55:19
+MERGED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:11:5-26:19
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:27:9-41
+	android:supportsRtl
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:28:9-35
+	android:allowBackup
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:25:9-35
+	android:icon
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:26:9-43
+	android:theme
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:29:9-40
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:24:9-60
+activity#com.shoudukejiguan.www.activity.MainActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:30:9-36:20
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:30:19-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:34:27-74
+activity#com.shoudukejiguan.www.activity.MoreNewsActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:37:9-63
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:37:19-60
+activity#com.shoudukejiguan.www.activity.CaptureActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:38:9-42:63
+	android:screenOrientation
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:40:13-49
+	android:stateNotNeeded
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:41:13-42
+	android:windowSoftInputMode
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:42:13-60
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:39:13-53
+activity#com.shoudukejiguan.www.activity.WebViewActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:43:9-62
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:43:19-59
+activity#com.shoudukejiguan.www.activity.CinemaActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:44:9-61
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:44:19-58
+activity#com.shoudukejiguan.www.activity.EducationActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:45:9-64
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:45:19-61
+activity#com.shoudukejiguan.www.activity.ExhibitionActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:46:9-65
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:46:19-62
+activity#com.shoudukejiguan.www.activity.SetActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:47:9-58
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:47:19-55
+activity#com.shoudukejiguan.www.activity.UserInfoActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:48:9-63
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:48:19-60
+activity#com.shoudukejiguan.www.activity.PayActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:49:9-58
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:49:19-55
+activity#com.shoudukejiguan.www.activity.ServiceGuideActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:50:9-67
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:50:19-64
+activity#com.shoudukejiguan.www.activity.UserLevelActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:51:9-64
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:51:19-61
+activity#com.shoudukejiguan.www.activity.MyOrderActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:52:9-62
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:52:19-59
+activity#com.shoudukejiguan.www.activity.InteractionFeedbackActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:53:9-74
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:53:19-71
+activity#com.shoudukejiguan.www.activity.WriteSurveyActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:54:9-66
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:54:19-63
+activity#com.shoudukejiguan.www.activity.ChildrenParkActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:55:9-67
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:55:19-64
+meta-data#com.amap.api.v2.apikey
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:57:9-59:64
+	android:value
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:59:13-61
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:58:13-50
+activity#com.shoudukejiguan.www.activity.Main2Activity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:61:9-67:20
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:61:19-57
+activity#com.shoudukejiguan.www.activity.NoticeBulletinActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:68:9-69
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:68:19-66
+activity#com.shoudukejiguan.www.activity.MyCollectionActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:69:9-67
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:69:19-64
+activity#com.shoudukejiguan.www.activity.RegActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:70:9-58
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:70:19-55
+activity#com.shoudukejiguan.www.activity.LoginActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:71:9-60
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:71:19-57
+activity#com.shoudukejiguan.www.activity.UpdatePasswordActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:72:9-69
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:72:19-66
+activity#com.shoudukejiguan.www.activity.ForgotPasswordActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:73:9-69
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:73:19-66
+activity#com.shoudukejiguan.www.activity.OpinionFeedbackActivity
+ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:74:9-79
+	android:name
+		ADDED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml:74:19-67
+uses-sdk
+INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.huxq17.xrefreshview:xrefreshview:3.1.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.huxq17.xrefreshview/xrefreshview/3.1.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.flyco.tablayout/FlycoTabLayout_Lib/2.0.6/AndroidManifest.xml:7:5-9:41
+MERGED from [me.relex:circleindicator:1.2.1] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/me.relex/circleindicator/1.2.1/AndroidManifest.xml:8:5-10:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:19:5-21:41
+MERGED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.zhy:flowlayout-lib:1.0.3] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.zhy/flowlayout-lib/1.0.3/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+		INJECTED from /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:26:5-28:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:28:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:27:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:29:5-31:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:31:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:30:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:34:5-36:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:36:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:35:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:37:5-39:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:39:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:38:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:40:5-42:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:42:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:41:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:43:5-45:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:45:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:44:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:48:9-54:63
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:50:13-45
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:51:13-56
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:52:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:54:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:53:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.0.2] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.0.2/AndroidManifest.xml:49:13-74
+activity#com.hedgehog.ratingbar.MainActivity
+ADDED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:15:9-25:20
+	android:label
+		ADDED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from [com.hedgehog.ratingbar:app:1.0.4] /Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/AndroidManifest.xml:16:13-63

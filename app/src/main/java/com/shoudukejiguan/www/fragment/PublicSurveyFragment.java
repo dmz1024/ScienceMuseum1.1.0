@@ -3,9 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.PublicSurveyAdapter;
-import com.shoudukejiguan.www.adapter.StyleShowAdapter;
 import com.shoudukejiguan.www.entity.PublicSurvey;
-import com.shoudukejiguan.www.entity.StyleShow;
 
 import java.util.List;
 import java.util.Map;

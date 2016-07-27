@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        kejiguan {
+            keyAlias 'kejiguan'
+            keyPassword 'kejiguan'
+            storeFile file('/Users/dengmingzhi/Desktop/科技馆app/kejiguan.jks')
+            storePassword 'kejiguan'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        applicationId "com.shoudukejiguan.www"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.kejiguan
+        }
+        debug {
+            signingConfig signingConfigs.kejiguan
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/xutils.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    //刷新
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.1.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    //https://github.com/H07000223/FlycoTabLayout //tab框架
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6@aar'
+    //glede加载图片框架
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    //轮播图指示器框架
+    compile 'me.relex:circleindicator:1.2.1@aar'
+    //扫描二维码
+    compile 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+    compile 'com.google.zxing:core:3.2.0'
+    //RatingBar评分
+    compile 'com.hedgehog.ratingbar:app:1.0.4'
+    //标签
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('libs/AMap3DMap_3.3.1_AMapNavi_1.8.0_20160420.jar')
+    compile files('libs/AMap_Location_V2.5.0_20160526.jar')
+    //手势缩放图片
+    
+}

@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.activity.WriteSurveyActivity;
-import com.shoudukejiguan.www.entity.News;
 import com.shoudukejiguan.www.entity.PublicSurvey;
 
 import java.util.List;

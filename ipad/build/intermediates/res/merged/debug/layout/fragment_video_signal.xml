@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tl_tab"
+        android:layout_width="@dimen/size250"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/size40"
+        android:background="#fff"
+        tool:tl_indicator_color="#00acbb"
+        tool:tl_indicator_height="@dimen/size2"
+        tool:tl_indicator_width="@dimen/size40"
+        tool:tl_textSelectColor="#333"
+        tool:tl_textUnselectColor="#999"
+        tool:tl_textsize="@dimen/sp14" />
+</RelativeLayout>
+
+    <!--tool:tl_indicator_color="#2C97DE"-->
+    <!--tool:tl_indicator_height="0dp"-->
+    <!--tool:tl_iconHeight="23dp"-->
+    <!--tool:tl_iconWidth="23dp"-->
+    <View
+        android:background="#e5e5e5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"/>
+    <FrameLayout
+        android:id="@+id/fg_video_signa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

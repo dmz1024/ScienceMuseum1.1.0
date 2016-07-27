@@ -8,19 +8,15 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
+import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.Color2Text;
-import com.shoudukejiguan.www.view.TouchLinearLayout;
 
 import java.util.ArrayList;
 

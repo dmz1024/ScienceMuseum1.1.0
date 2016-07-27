@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eee"
+    android:paddingBottom="@dimen/size8"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:paddingBottom="@dimen/size5"
+        android:paddingTop="@dimen/size5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6">
+
+        <TextView
+            android:id="@+id/tv_sn"
+            style="@style/TextSize12Color333"
+            android:layout_marginLeft="@dimen/size8"
+            android:text="订单号：12102487954" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/TextSize12Color333"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size8"
+            android:text="待付款"
+            android:textColor="#00acbb" />
+    </RelativeLayout>
+
+    <com.shoudukejiguan.www.view.MaxListView
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:background="#fff"
+        android:divider="#e1e1e1"
+        android:dividerHeight="@dimen/size0.5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_order"
+        android:layout_marginTop="@dimen/size1"
+        android:background="#fff"
+        android:padding="@dimen/size8">
+
+        <TextView
+            android:id="@+id/tv_count"
+            style="@style/TextSize13Color333"
+            android:layout_centerVertical="true"
+            android:text="共6张票" />
+
+        <com.shoudukejiguan.www.view.Color2Text
+            android:id="@+id/tv_price"
+            style="@style/TextSize13Color333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size30"
+            android:layout_toRightOf="@id/tv_count"
+            android:text="需支付："
+            tool:Color2Text_color="#c9a06c"
+            tool:Color2Text_size="@dimen/sp13" />
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size27"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginTop="@dimen/size5"
+            android:background="#00adb9"
+            android:text="支付"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp13" />
+
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size27"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/size5"
+            android:layout_marginRight="@dimen/size8"
+            android:layout_marginTop="@dimen/size5"
+            android:layout_toLeftOf="@id/bt_right"
+            android:background="#999999"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="@dimen/sp13" />
+
+    </RelativeLayout>
+</RelativeLayout>

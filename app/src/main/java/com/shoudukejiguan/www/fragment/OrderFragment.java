@@ -3,9 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.OrderAdapter;
-import com.shoudukejiguan.www.adapter.StyleShowAdapter;
 import com.shoudukejiguan.www.entity.Order;
-import com.shoudukejiguan.www.entity.StyleShow;
 
 import java.util.HashMap;
 import java.util.List;

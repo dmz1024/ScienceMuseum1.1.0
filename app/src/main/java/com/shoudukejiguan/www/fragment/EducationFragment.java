@@ -3,9 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.EducationAdapter;
-import com.shoudukejiguan.www.adapter.VideoNoticeAdapter;
 import com.shoudukejiguan.www.entity.Education;
-import com.shoudukejiguan.www.entity.VideoNotice;
 
 import java.util.List;
 import java.util.Map;

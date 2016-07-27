@@ -1,8 +1,5 @@
 package com.shoudukejiguan.www.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
 

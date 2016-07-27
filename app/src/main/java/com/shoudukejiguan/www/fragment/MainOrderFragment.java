@@ -1,18 +1,13 @@
 package com.shoudukejiguan.www.fragment;
 
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.TextImage;
+import com.shoudukejiguan.www.R;
 
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * A simple {@link Fragment} subclass.

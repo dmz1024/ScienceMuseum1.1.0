@@ -1,7 +1,7 @@
 package com.shoudukejiguan.www.activity;
 
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.fragment.NewsFragment;
+import com.shoudukejiguan.www.R;
 
 public class MoreNewsActivity extends FragmentBaseActivity {
 

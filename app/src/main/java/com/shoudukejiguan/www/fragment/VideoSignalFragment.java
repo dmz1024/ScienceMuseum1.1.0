@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
+import com.shoudukejiguan.www.R;
 
 import java.util.ArrayList;
 

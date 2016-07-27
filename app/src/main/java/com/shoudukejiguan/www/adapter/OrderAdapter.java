@@ -2,20 +2,18 @@ package com.shoudukejiguan.www.adapter;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.shoudukejiguan.www.view.TextImage;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.Order;
 import com.shoudukejiguan.www.util.Util;
-import com.shoudukejiguan.www.view.TextImage;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

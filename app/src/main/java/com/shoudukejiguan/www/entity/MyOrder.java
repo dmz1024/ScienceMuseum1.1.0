@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class MyOrder extends BaseLvEntity<MyOrder.Data> {
 
-    public class Data extends com.shoudukejiguan.www.entity.Data{
+    public class Data extends com.shoudukejiguan.www.entity.Data {
         public List<OrderData> orders;
     }
 

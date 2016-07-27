@@ -2,10 +2,8 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 
-import com.shoudukejiguan.www.adapter.ChildrenParkAdapter;
-import com.shoudukejiguan.www.adapter.NewsAdapter;
 import com.shoudukejiguan.www.entity.ChildrenPark;
-import com.shoudukejiguan.www.entity.News;
+import com.shoudukejiguan.www.adapter.ChildrenParkAdapter;
 
 import java.util.List;
 import java.util.Map;

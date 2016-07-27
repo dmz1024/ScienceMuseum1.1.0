@@ -2,13 +2,10 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.shoudukejiguan.www.adapter.GalleryAdapter;
-import com.shoudukejiguan.www.adapter.NewsAdapter;
 import com.shoudukejiguan.www.entity.Gallery;
-import com.shoudukejiguan.www.entity.News;
 
 import java.util.List;
 import java.util.Map;

@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size190"
+        android:background="@mipmap/icon_personal_bg">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/size59"
+            android:layout_height="@dimen/size59"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size25" />
+        <!--app:civ_border_width="2dp"-->
+        <!--app:civ_border_color="#FF000000"-->
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextSize13Color666"
+            android:layout_below="@id/iv_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size5"
+            android:text="岁月静好"
+            android:textColor="#fff" />
+
+        <com.shoudukejiguan.www.view.TextImage
+            android:id="@+id/tv_safe"
+            style="@style/TextSize12Color666"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size5"
+            android:drawablePadding="@dimen/size5"
+            android:text="账户安全：中"
+            android:textColor="#ecd88a"
+            tool:TextImage_drawable="@mipmap/icon_personal_safe"
+            tool:TextImage_height="@dimen/size10"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size10" />
+
+        <com.shoudukejiguan.www.view.TextImage
+            android:id="@+id/tv_level"
+
+            style="@style/TextSize12Color666"
+            android:layout_below="@id/tv_safe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size5"
+            android:drawablePadding="@dimen/size5"
+            android:text="成为会员，还需要9000张票"
+            android:textColor="#fff"
+            android:visibility="gone"
+            tool:TextImage_drawable="@mipmap/icon_level"
+            tool:TextImage_height="@dimen/size10"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size10" />
+
+        <View
+            android:id="@+id/view_set"
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size15"
+            android:layout_marginTop="@dimen/size15"
+            android:background="@mipmap/icon_personal_sz" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size10"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/TextSize13Color333"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="4个\n已报名"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/TextSize13Color333"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="4个\n正学习"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/TextSize13Color333"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:text="4个\n已学习"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_menu"
+        android:background="#fff"
+        android:layout_marginTop="@dimen/size10"
+        tool:TitleRelativeLayout_title_image="@mipmap/icon_personal_tit"
+        tool:TitleRelativeLayout_title="快捷菜单"
+        tool:TitleRelativeLayout_content_visi="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.shoudukejiguan.www.view.MaxGridView
+        android:id="@+id/gv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#fff"
+        android:gravity="center"
+        android:numColumns="4"
+        android:paddingTop="@dimen/size10"
+        android:verticalSpacing="@dimen/size15" />
+
+    <com.shoudukejiguan.www.view.MaxGridView
+        android:id="@+id/gv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/size10"
+        android:horizontalSpacing="@dimen/size0.5"
+        android:verticalSpacing="@dimen/size0.5" />
+</LinearLayout>

@@ -1,6 +1,5 @@
 package com.shoudukejiguan.www.adapter;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,13 +9,7 @@ import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.shoudukejiguan.www.entity.Data;
 import com.shoudukejiguan.www.util.Util;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by dengmingzhi on 16/6/21.

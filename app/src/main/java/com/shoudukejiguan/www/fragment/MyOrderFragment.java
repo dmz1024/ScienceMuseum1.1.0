@@ -3,9 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.MyOrderAdapter;
-import com.shoudukejiguan.www.adapter.NewsAdapter;
 import com.shoudukejiguan.www.entity.MyOrder;
-import com.shoudukejiguan.www.entity.News;
 
 import java.util.List;
 import java.util.Map;

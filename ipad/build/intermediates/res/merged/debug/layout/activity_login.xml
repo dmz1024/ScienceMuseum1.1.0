@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingLeft="@dimen/size20"
+    android:paddingRight="@dimen/size20">
+
+    
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size50"
+        android:src="@mipmap/icon_login_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.shoudukejiguan.www.view.CustEdit
+        android:id="@+id/ce_nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size60"
+        tool:CustEdit_hint="用户名/手机号"
+        tool:CustEdit_image="@mipmap/icon_reg_username" />
+
+    <com.shoudukejiguan.www.view.CustEdit
+        android:id="@+id/ce_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size14"
+        tool:CustEdit_hint="密码"
+        tool:CustEdit_image="@mipmap/icon_reg_password" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10">
+
+        <com.shoudukejiguan.www.view.TextImage
+            android:id="@+id/tv_remember"
+            style="@style/TextSize10Color999"
+            android:drawablePadding="@dimen/size6"
+            android:gravity="center_vertical"
+            android:text="记住密码"
+            tool:TextImage_drawable="@mipmap/icon_login_check"
+            tool:TextImage_height="@dimen/size13"
+            tool:TextImage_seat="1"
+            tool:TextImage_width="@dimen/size13" />
+
+        <TextView
+            android:id="@+id/tv_forgot"
+            style="@style/TextSize10Color999"
+            android:layout_alignParentRight="true"
+            android:text="忘记密码?" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/size45"
+        android:layout_marginRight="@dimen/size45"
+        android:layout_marginTop="@dimen/size55"
+        android:background="#00acbb"
+        android:text="登陆"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp17" />
+
+    <com.shoudukejiguan.www.view.Color2Text
+        android:id="@+id/tv_reg"
+        style="@style/TextSize10Color999"
+        tool:Color2Text_content="免费注册"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/size45"
+        android:layout_marginTop="@dimen/size10"
+        android:text="还没有账号? "
+        tool:Color2Text_color="#00acbb"
+        tool:Color2Text_size="@dimen/sp10" />
+
+</LinearLayout>

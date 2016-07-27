@@ -5,7 +5,7 @@ package com.shoudukejiguan.www.entity;
  */
 public class PublicSurvey extends BaseLvEntity<PublicSurvey.Data> {
 
-    public class Data extends com.shoudukejiguan.www.entity.Data{
+    public class Data extends com.shoudukejiguan.www.entity.Data {
 
     }
 }

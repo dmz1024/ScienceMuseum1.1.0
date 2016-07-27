@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/size15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/size200"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_eee"
+        android:orientation="horizontal"
+        android:padding="@dimen/size5">
+
+        <ImageView
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_main_personal_center" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:textSize="@dimen/sp12"
+            android:textColor="#666"
+            android:hint="请输入您的姓名"
+            android:textColorHint="#999"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size10"
+            android:background="@null" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size15"
+        android:layout_width="@dimen/size200"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_eee"
+        android:orientation="horizontal"
+        android:padding="@dimen/size5">
+
+        <ImageView
+            android:layout_width="@dimen/size20"
+            android:layout_height="@dimen/size20"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_main_personal_center" />
+
+        <EditText
+            android:id="@+id/et_tel"
+            android:textSize="@dimen/sp12"
+            android:textColor="#666"
+            android:hint="请输入您的联系电话"
+            android:textColorHint="#999"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size10"
+            android:background="@null" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:textSize="@dimen/sp12"
+        android:textColor="#666"
+        android:layout_marginTop="@dimen/size15"
+        android:gravity="left"
+        android:hint="提出您的宝贵意见吧"
+        android:textColorHint="#999"
+        android:padding="@dimen/size5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size130"
+        android:background="@drawable/rectangle_eee" />
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size25"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp14"
+        android:text="提交"
+        android:background="#00acbb"
+        android:layout_width="@dimen/size100"
+        android:layout_height="@dimen/size30" />
+</LinearLayout>

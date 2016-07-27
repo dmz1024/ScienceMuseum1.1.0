@@ -1,7 +1,7 @@
 package com.shoudukejiguan.www.activity;
 
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.fragment.NoticeBulletinFragment;
+import com.shoudukejiguan.www.R;
 
 /**
  * Created by dengmingzhi on 16/7/25.

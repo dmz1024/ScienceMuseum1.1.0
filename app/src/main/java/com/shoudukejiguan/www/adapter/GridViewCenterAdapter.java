@@ -5,8 +5,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.TextImage;
+import com.shoudukejiguan.www.R;
 
 /**
  * Created by dengmingzhi on 16/4/22.

@@ -2,7 +2,6 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,15 +16,11 @@ import android.widget.TextView;
 import com.andview.refreshview.XRefreshView;
 import com.andview.refreshview.recyclerview.BaseRecyclerAdapter;
 import com.google.gson.Gson;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.api.APiHttp;
 import com.shoudukejiguan.www.entity.BaseLvEntity;
 import com.shoudukejiguan.www.entity.Data;
-import com.shoudukejiguan.www.entity.News;
+import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.MyToast;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;

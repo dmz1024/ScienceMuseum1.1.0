@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingBottom="@dimen/size10"
+        android:paddingTop="@dimen/size10">
+
+        <TextView
+            style="@style/TextSize15Color333"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size10"
+            android:text="头像" />
+
+        <ImageView
+            android:id="@+id/iv_go"
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size12"
+            android:background="@mipmap/icon_go" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/size50"
+            android:layout_height="@dimen/size50"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size10"
+            android:layout_marginTop="@dimen/size25"
+            android:layout_toLeftOf="@id/iv_go" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:layout_below="@id/iv_img"
+            android:layout_marginLeft="@dimen/size12"
+            android:layout_marginRight="@dimen/size12"
+            android:background="#ebebeb" />
+    </RelativeLayout>
+
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        tool:TitleRelativeLayout_content="仅存的温柔"
+        tool:TitleRelativeLayout_content_image_visi="false"
+        tool:TitleRelativeLayout_show_view="2"
+        tool:TitleRelativeLayout_title="用户名"
+        tool:TitleRelativeLayout_view_visi="true" />
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        tool:TitleRelativeLayout_content="18326167257"
+        tool:TitleRelativeLayout_content_image_visi="false"
+        tool:TitleRelativeLayout_title="手机号"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.shoudukejiguan.www.view.TitleRelativeLayout
+            android:id="@+id/tr_team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            tool:TitleRelativeLayout_content="哒哒哒"
+            tool:TitleRelativeLayout_content_image_visi="false"
+            tool:TitleRelativeLayout_show_view="2"
+            tool:TitleRelativeLayout_title="团体名称"
+            tool:TitleRelativeLayout_view_visi="true" />
+
+        <com.shoudukejiguan.www.view.TitleRelativeLayout
+            android:id="@+id/tr_team_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            tool:TitleRelativeLayout_content="50人"
+            tool:TitleRelativeLayout_content_image_visi="false"
+
+            tool:TitleRelativeLayout_title="团体人数"
+             />
+
+        <com.shoudukejiguan.www.view.TitleRelativeLayout
+            android:id="@+id/tr_team_link_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            tool:TitleRelativeLayout_content="啦啦啦"
+            tool:TitleRelativeLayout_content_image_visi="false"
+            tool:TitleRelativeLayout_show_view="2"
+            tool:TitleRelativeLayout_title="联系人姓名"
+            tool:TitleRelativeLayout_view_visi="true" />
+
+        <com.shoudukejiguan.www.view.TitleRelativeLayout
+            android:id="@+id/tr_team_link_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            tool:TitleRelativeLayout_content="18326167257"
+            tool:TitleRelativeLayout_content_image_visi="false"
+            tool:TitleRelativeLayout_title="联系人电话"
+             />
+
+    </LinearLayout>
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#fff"
+        tool:TitleRelativeLayout_title="修改密码" />
+</LinearLayout>

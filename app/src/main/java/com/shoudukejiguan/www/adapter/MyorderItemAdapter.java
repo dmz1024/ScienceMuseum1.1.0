@@ -1,16 +1,13 @@
 package com.shoudukejiguan.www.adapter;
 
-import android.content.Context;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
-import com.shoudukejiguan.www.entity.IndexNews;
 import com.shoudukejiguan.www.entity.MyOrder;
 import com.shoudukejiguan.www.util.Util;
-import com.shoudukejiguan.www.view.TextImage;
 
 import java.util.List;
 

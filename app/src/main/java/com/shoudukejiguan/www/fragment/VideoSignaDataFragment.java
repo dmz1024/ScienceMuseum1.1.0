@@ -2,9 +2,7 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 
-import com.shoudukejiguan.www.adapter.NewsAdapter;
 import com.shoudukejiguan.www.adapter.VideoSignaAdapter;
-import com.shoudukejiguan.www.entity.News;
 import com.shoudukejiguan.www.entity.VideoSigna;
 
 import java.util.List;

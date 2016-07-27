@@ -5,7 +5,6 @@ import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.activity.LoginActivity;
 import com.shoudukejiguan.www.activity.MainActivity;
 import com.shoudukejiguan.www.activity.MoreNewsActivity;
@@ -14,11 +13,12 @@ import com.shoudukejiguan.www.activity.MyOrderActivity;
 import com.shoudukejiguan.www.activity.OpinionFeedbackActivity;
 import com.shoudukejiguan.www.activity.SetActivity;
 import com.shoudukejiguan.www.activity.UpdatePasswordActivity;
-import com.shoudukejiguan.www.activity.UserInfoActivity;
 import com.shoudukejiguan.www.activity.UserLevelActivity;
-import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.view.MaxGridView;
 import com.shoudukejiguan.www.view.TextImage;
+import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.activity.UserInfoActivity;
+import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

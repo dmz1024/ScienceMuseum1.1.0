@@ -1,18 +1,13 @@
 package com.shoudukejiguan.www.activity;
 
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
 import com.shoudukejiguan.www.fragment.JuniorsFragment;
-import com.shoudukejiguan.www.fragment.MapFragment;
 import com.shoudukejiguan.www.fragment.ScienceFragment;
-import com.shoudukejiguan.www.fragment.VideoNoticeFragment;
-import com.shoudukejiguan.www.fragment.VideoSignalFragment;
+import com.shoudukejiguan.www.R;
 
 import java.util.ArrayList;
 

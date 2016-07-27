@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv_currentPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#5d5d5d"
+        android:padding="@dimen/size10"
+        android:text="当前：B馆2F"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp12" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_position"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size30"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size12" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_above="@id/rv_position"
+        android:layout_below="@id/tv_currentPosition"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.shoudukejiguan.www.view.TouchImageView
+            android:id="@+id/iv_img"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>

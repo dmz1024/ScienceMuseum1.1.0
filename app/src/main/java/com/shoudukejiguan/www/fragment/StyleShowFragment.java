@@ -2,10 +2,8 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 
-import com.shoudukejiguan.www.adapter.StyleShowAdapter;
-import com.shoudukejiguan.www.adapter.VideoNoticeAdapter;
 import com.shoudukejiguan.www.entity.StyleShow;
-import com.shoudukejiguan.www.entity.VideoNotice;
+import com.shoudukejiguan.www.adapter.StyleShowAdapter;
 
 import java.util.List;
 import java.util.Map;

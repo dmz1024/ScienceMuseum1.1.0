@@ -2,7 +2,6 @@ package com.shoudukejiguan.www.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -14,13 +13,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.flyco.tablayout.CommonTabLayout;
-import com.flyco.tablayout.listener.CustomTabEntity;
 import com.shoudukejiguan.www.R;
-import com.shoudukejiguan.www.entity.TabEntity;
 import com.shoudukejiguan.www.view.Color2Text;
-
-import java.util.ArrayList;
 
 /**
  * Created by dengmingzhi on 16/7/12.

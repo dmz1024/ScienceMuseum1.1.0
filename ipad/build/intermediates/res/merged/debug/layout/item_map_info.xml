@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/size40"
+    android:background="@drawable/icon_map_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/size5"
+    android:paddingRight="@dimen/size7"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首都科学技术馆"
+        android:layout_marginTop="@dimen/size5"
+        android:textColor="#fff"
+        android:textSize="@dimen/sp12" />
+
+    <View
+        android:layout_width="@dimen/size1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/size5"
+        android:background="#191919" />
+
+    <ImageView
+        android:id="@+id/iv_go"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_width="@dimen/size15"
+        android:layout_height="@dimen/size20"
+        android:layout_marginLeft="@dimen/size5"
+        android:src="@mipmap/icon_map_go" />
+
+</LinearLayout>

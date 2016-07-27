@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#fff"
+        tool:TitleRelativeLayout_title="账号管理"
+        tool:TitleRelativeLayout_view_visi="false" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#fff"
+        android:paddingBottom="@dimen/size10">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextSize15Color333"
+            android:layout_marginLeft="@dimen/size12"
+            android:layout_marginTop="@dimen/size10"
+            android:text="消息推送" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/TextSize12Color333"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/size12"
+            android:layout_marginTop="@dimen/size10"
+            android:text="接受票务或课程等信息通知"
+            android:textColor="#f00" />
+
+        <Switch
+            android:id="@+id/s_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size10" />
+    </RelativeLayout>
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#fff"
+        tool:TitleRelativeLayout_content="7.40MB"
+        tool:TitleRelativeLayout_content_image_visi="false"
+        tool:TitleRelativeLayout_title="清除缓存"
+        tool:TitleRelativeLayout_view_visi="false" />
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+        android:background="#fff"
+        tool:TitleRelativeLayout_show_view="2"
+        tool:TitleRelativeLayout_title="关于我们"
+        tool:TitleRelativeLayout_view_visi="true" />
+
+    <com.shoudukejiguan.www.view.TitleRelativeLayout
+        android:id="@+id/tr_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        tool:TitleRelativeLayout_content="5.5.8"
+        tool:TitleRelativeLayout_content_image_visi="false"
+        tool:TitleRelativeLayout_title="当前版本"
+        tool:TitleRelativeLayout_view_visi="true" />
+
+    <Button
+        android:id="@+id/bt_exit"
+        android:textColor="#fff"
+        android:text="退出登录"
+        android:textSize="@dimen/sp17"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size60"
+        android:background="#00abbb"
+        android:layout_marginRight="@dimen/size20"
+        android:layout_marginLeft="@dimen/size20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size40" />
+</LinearLayout>

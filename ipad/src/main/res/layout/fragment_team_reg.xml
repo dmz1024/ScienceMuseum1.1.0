@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv_tips"
+        style="@style/TextSize15Color333"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="团体注册流程较为复杂，请移至PC端注册" />
+
+    <TextView
+        android:id="@+id/tv_url"
+        android:autoLink="web"
+        style="@style/TextSize12Color333"
+        android:layout_below="@id/tv_tips"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size10"
+        android:gravity="center"
+        android:textColor="#00acbb"
+        android:text="http://keji.lovect.cn/member/register.php" />
+
+</RelativeLayout>

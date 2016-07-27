@@ -9,8 +9,6 @@ import android.util.Log;
 
 import com.shoudukejiguan.www.view.MyToast;
 
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;
 import org.xutils.x;

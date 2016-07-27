@@ -7,7 +7,6 @@ import android.widget.TextView;
 
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.MyOrder;
-import com.shoudukejiguan.www.entity.Order;
 import com.shoudukejiguan.www.view.Color2Text;
 import com.shoudukejiguan.www.view.MaxListView;
 

@@ -8,10 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-
-import com.shoudukejiguan.www.manager.MapManager;
-import com.shoudukejiguan.www.view.MyToast;
 
 /**
  * Created by dengmingzhi on 16/7/12.

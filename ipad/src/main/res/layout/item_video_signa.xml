@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="@dimen/size5">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="@dimen/size50"
+        android:layout_height="@dimen/size75"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSize12Color333"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_toRightOf="@id/iv_img"
+        android:maxEms="15"
+        android:singleLine="true"
+        android:text="《飞行之梦》" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextSize10Color999"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="@dimen/size5"
+        android:singleLine="true"
+        android:maxEms="15"
+        android:text="男孩坚持己见并努力追求飞行梦想的故事" />
+
+    <TextView
+        android:id="@+id/tv_director"
+        style="@style/TextSize10Color999"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_content"
+        android:layout_marginTop="@dimen/size5"
+        android:singleLine="true"
+        android:maxEms="15"
+        android:text="导演：会飞的花花" />
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_title"
+        android:layout_below="@id/tv_director"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size5"
+        tool:clickable="false"
+        tool:starCount="5"
+        tool:starEmpty="@mipmap/ic_star_empty"
+        tool:starFill="@mipmap/ic_star_fill"
+        tool:starImageSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:text="5.0"
+        android:layout_marginLeft="@dimen/size3"
+        android:layout_alignBottom="@id/ratingbar"
+        android:layout_toRightOf="@id/ratingbar"
+        style="@style/TextSize10Color999" />
+
+    <Button
+        android:id="@+id/bt_order"
+        android:layout_width="@dimen/size45"
+        android:layout_height="@dimen/size25"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/size10"
+        android:background="@drawable/rectangle_03abee"
+        android:padding="@dimen/size1"
+        android:text="购票"
+        android:textColor="#03abee"
+        android:textSize="@dimen/sp14" />
+    <View
+        android:layout_below="@id/iv_img"
+        android:background="#eee"
+        android:layout_marginTop="@dimen/size10"
+        android:layout_alignLeft="@id/iv_img"
+        android:layout_alignRight="@id/bt_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"/>
+</RelativeLayout>

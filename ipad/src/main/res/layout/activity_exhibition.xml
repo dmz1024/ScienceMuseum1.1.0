@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40"
+            android:layout_marginLeft="@dimen/size60"
+            android:layout_marginRight="@dimen/size60"
+            android:background="#fff"
+            tool:tl_iconVisible="false"
+            tool:tl_indicator_color="#00acbb"
+            tool:tl_indicator_corner_radius="1.5dp"
+            tool:tl_indicator_height="5dp"
+            tool:tl_indicator_style="TRIANGLE"
+            tool:tl_indicator_width="50dp"
+            tool:tl_textSelectColor="#00acbb"
+            tool:tl_textUnselectColor="#333"
+            tool:tl_textsize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size0.5"
+        android:background="#e5e5e5" />
+
+    <FrameLayout
+        android:id="@+id/fg_exhibtion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

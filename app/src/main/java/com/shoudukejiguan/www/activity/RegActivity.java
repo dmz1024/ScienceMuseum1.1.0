@@ -5,13 +5,10 @@ import android.support.v4.app.Fragment;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.TabEntity;
-import com.shoudukejiguan.www.fragment.MapFragment;
-import com.shoudukejiguan.www.fragment.RegFragment;
 import com.shoudukejiguan.www.fragment.TeamRegFragment;
-import com.shoudukejiguan.www.fragment.VideoNoticeFragment;
-import com.shoudukejiguan.www.fragment.VideoSignalFragment;
+import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.fragment.RegFragment;
 
 import java.util.ArrayList;
 

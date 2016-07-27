@@ -3,10 +3,8 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 import android.view.View;
 
-import com.shoudukejiguan.www.adapter.JuniorsAdapter;
-import com.shoudukejiguan.www.adapter.ScienceAdapter;
-import com.shoudukejiguan.www.entity.Juniors;
 import com.shoudukejiguan.www.entity.Science;
+import com.shoudukejiguan.www.adapter.ScienceAdapter;
 
 import java.util.List;
 import java.util.Map;

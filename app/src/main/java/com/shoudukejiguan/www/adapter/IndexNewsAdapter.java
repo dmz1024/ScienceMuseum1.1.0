@@ -4,10 +4,9 @@ import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
 
-import com.bumptech.glide.util.Util;
+import com.shoudukejiguan.www.view.TextImage;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.entity.IndexNews;
-import com.shoudukejiguan.www.view.TextImage;
 
 import java.util.List;
 

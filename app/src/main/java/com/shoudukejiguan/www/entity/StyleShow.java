@@ -5,7 +5,7 @@ package com.shoudukejiguan.www.entity;
  */
 public class StyleShow extends BaseLvEntity<StyleShow.Data> {
 
-    public class Data extends com.shoudukejiguan.www.entity.Data{
+    public class Data extends com.shoudukejiguan.www.entity.Data {
 
     }
 }

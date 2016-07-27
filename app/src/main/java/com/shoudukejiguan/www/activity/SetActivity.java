@@ -1,11 +1,9 @@
 package com.shoudukejiguan.www.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.TitleRelativeLayout;
+import com.shoudukejiguan.www.R;
 
 public class SetActivity extends BaseActivity {
 

@@ -2,10 +2,8 @@ package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
 
-import com.shoudukejiguan.www.adapter.PublicSurveyAdapter;
-import com.shoudukejiguan.www.adapter.SurveyQAdapter;
-import com.shoudukejiguan.www.entity.PublicSurvey;
 import com.shoudukejiguan.www.entity.Survey;
+import com.shoudukejiguan.www.adapter.SurveyQAdapter;
 
 import java.util.HashMap;
 import java.util.List;

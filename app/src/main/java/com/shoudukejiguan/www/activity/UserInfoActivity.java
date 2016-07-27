@@ -1,13 +1,11 @@
 package com.shoudukejiguan.www.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.TitleRelativeLayout;
+import com.shoudukejiguan.www.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

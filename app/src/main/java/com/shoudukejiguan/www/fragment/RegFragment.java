@@ -1,6 +1,5 @@
 package com.shoudukejiguan.www.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -12,18 +11,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.shoudukejiguan.www.R;
-import com.shoudukejiguan.www.activity.RegActivity;
-import com.shoudukejiguan.www.api.APiHttp;
+import com.shoudukejiguan.www.api.ApiRequest;
 import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.view.CustEdit;
 import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.TextImage;
+import com.shoudukejiguan.www.R;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -122,14 +116,15 @@ public class RegFragment extends BaseFragment {
      */
     private void reg() {
         if (!isRead) {
-            MyToast.showToast("请先同意服务协议");
+            MyToast.showToast("请先阅读服务协议");
             return;
         }
-        String name = ce_nick.getContent();
+        final String name = ce_nick.getContent();
         if (TextUtils.isEmpty(name) || name.length() > 6) {
             MyToast.showToast("请输入最多6位的用户名");
             return;
         }
+
         final String tel = ce_tel.getContent();
         if (tel.length() != 11) {
             MyToast.showToast("请输入正确格式的手机号");
@@ -147,44 +142,43 @@ public class RegFragment extends BaseFragment {
             return;
         }
 
-        String code = ce_code.getContent();
-        if (code.length() != 4) {
-            MyToast.showToast("请输入4位验证码");
+        final String code = ce_code.getContent();
+        if (code.length() != 6) {
+            MyToast.showToast("请输入6位验证码");
             return;
         }
-        Map<String, String> map = new HashMap<>();
-        map.put("nickname", name);
-        map.put("phone", tel);
-        map.put("password", password);
-        map.put("code", code);
-        new APiHttp(ApiConstant.REG, map, getContext()) {
-            @Override
-            protected void success(String json) {
-                try {
-                    JSONObject object = new JSONObject(json);
-                    int result = object.getInt("result");
-                    String msg = object.getString("msg");
-                    if (result == 0) {
-                        MyToast.showToast("注册成功!");
-                        getActivity().finish();
-                    } else {
-                        MyToast.showToast(msg);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
 
+
+
+        new ApiRequest<com.shoudukejiguan.www.entity.Message>(getContext(), ApiConstant.REG, com.shoudukejiguan.www.entity.Message.class) {
             @Override
             protected void noNetWork() {
                 MyToast.showToast("网络无连接，请检查网络");
             }
 
             @Override
-            protected void error() {
-                MyToast.showToast("服务器错误，请联系客服!");
+            protected Map<String, String> map(Map<String, String> map) {
+                map.put("username", name);
+                map.put("mobile", tel);
+                map.put("password", password);
+                map.put("mobilecode", code);
+                return map;
             }
 
+            @Override
+            protected void success(com.shoudukejiguan.www.entity.Message message) {
+                if (message.result == 0) {
+                    MyToast.showToast("注册成功!");
+                    getActivity().finish();
+                } else {
+                    MyToast.showToast(message.msg);
+                }
+            }
+
+            @Override
+            protected void onErr() {
+                MyToast.showToast("服务器错误，请联系客服!");
+            }
         }.post("正在注册...");
     }
 
@@ -192,43 +186,41 @@ public class RegFragment extends BaseFragment {
      * 获取验证码
      */
     private void getCode() {
-        String tel = ce_tel.getContent();
+        final String tel = ce_tel.getContent();
         if (tel.length() != 11) {
             MyToast.showToast("请输入正确格式的手机号");
             return;
         }
         time = 60;
-        Map<String, String> map = new HashMap<>();
-        map.put("mobile", tel);
-        new APiHttp(ApiConstant.REG_CODE, map, getContext()) {
-            @Override
-            protected void success(String json) {
-                try {
-                    JSONObject object = new JSONObject(json);
-                    int result = object.getInt("result");
-                    String msg = object.getString("msg");
-                    if (result == 0) {
-                        MyToast.showToast("验证码已发送,请注意查看短信");
-                        bt_getCode.setEnabled(false);
-                        handler.sendEmptyMessage(time);
-                    } else {
-                        MyToast.showToast(msg);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-
+        new ApiRequest<com.shoudukejiguan.www.entity.Message>(getContext(), ApiConstant.CODE, com.shoudukejiguan.www.entity.Message.class) {
             @Override
             protected void noNetWork() {
                 MyToast.showToast("网络无连接，请检查网络");
             }
 
             @Override
-            protected void error() {
+            protected Map<String, String> map(Map<String, String> map) {
+                map.put("sjh", tel);
+                return map;
+            }
+
+            @Override
+            protected void success(com.shoudukejiguan.www.entity.Message message) {
+                if (message.result == 0) {
+                    MyToast.showToast("验证码已发送,请注意查看短信");
+                    bt_getCode.setEnabled(false);
+                    handler.sendEmptyMessage(time);
+                } else {
+                    MyToast.showToast(message.msg);
+                }
+            }
+
+            @Override
+            protected void onErr() {
                 MyToast.showToast("服务器错误，请联系客服!");
             }
         }.post("正在获取验证码...");
+
     }
 
 
