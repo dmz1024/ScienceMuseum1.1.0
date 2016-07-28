@@ -1,10 +1,50 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_back.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_back.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_personal.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_personal.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_personal_cur.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_personal_cur.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_sz.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_sz.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_index_cur.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_index_cur.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_index.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_index.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_logo.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_logo.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_book.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_book.png"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_guide_cur.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_guide_cur.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_book_cur.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_book_cur.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_guide.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_guide.png"
     }
 ]

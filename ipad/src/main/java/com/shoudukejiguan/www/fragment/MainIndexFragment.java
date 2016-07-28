@@ -29,6 +29,7 @@ import com.shoudukejiguan.www.view.MaxListView;
 import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.PopMenu;
 import com.shoudukejiguan.www.view.RotationRelativeLayout;
+import com.shoudukejiguan.www.view.RotationViewPager;
 import com.shoudukejiguan.www.view.TipView;
 
 import java.util.ArrayList;
@@ -38,7 +39,7 @@ import java.util.List;
 /**
  */
 public class MainIndexFragment extends MainBaseFragment {
-    private RotationRelativeLayout layout_rotation;
+    private RotationViewPager rvp_rotation;
     private LinearLayout ll_exhibition;
     private RecyclerView rv_education;
     private RelativeLayout rl_news;
@@ -67,7 +68,7 @@ public class MainIndexFragment extends MainBaseFragment {
         urlList.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
-        layout_rotation.setUrls(urlList);
+        rvp_rotation.setUrls(urlList);
         gv_center.setAdapter(new GridViewCenterAdapter(getContext(), titles, images));
         tip_notice.setTipList(urlList);
         tip_notice.setOnClickListener(new View.OnClickListener() {
@@ -133,7 +134,7 @@ public class MainIndexFragment extends MainBaseFragment {
     @Override
     protected void initView(View view) {
         gv_center = (MaxGridView) view.findViewById(R.id.gv_center);
-        layout_rotation = (RotationRelativeLayout) view.findViewById(R.id.layout_rotation);
+        rvp_rotation = (RotationViewPager) view.findViewById(R.id.rvp_rotation);
         tip_notice = (TipView) view.findViewById(R.id.tip_notice);
         lv_news = (MaxListView) view.findViewById(R.id.lv_news);
         rl_exhibition = (RelativeLayout) view.findViewById(R.id.rl_exhibition);

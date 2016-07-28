@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        android:orientation="vertical">
+
+        <com.shoudukejiguan.www.view.RotationViewPager
+            android:id="@+id/rvp_rotation"
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size400" />
+
+        <com.shoudukejiguan.www.view.MaxGridView
+            android:id="@+id/gv_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            android:gravity="center"
+            android:numColumns="4"
+            android:paddingBottom="@dimen/size15"
+            android:paddingTop="@dimen/size15"
+            android:verticalSpacing="@dimen/size15" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size0.5"
+            android:background="#e1e1e1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/size10"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_marginRight="@dimen/size20"
+                android:layout_marginTop="@dimen/size10"
+                android:text="通知公告"
+                android:textColor="#666"
+                android:textSize="@dimen/sp18" />
+
+            <com.shoudukejiguan.www.view.TipView
+                android:id="@+id/tip_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_notice"
+                android:padding="@dimen/size10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            android:paddingBottom="@dimen/size10">
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                style="@style/TextSize12Color666"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size20"
+                android:text="新闻资讯" />
+
+            <TextView
+                android:id="@+id/tv_news_content"
+                style="@style/TextSize10Color999"
+                android:layout_below="@id/tv_news_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size5"
+                android:text="科技馆的最新消息第一时间查看" />
+
+            <ImageView
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size10"
+                android:src="@mipmap/icon_go" />
+        </RelativeLayout>
+
+        <com.shoudukejiguan.www.view.MaxListView
+            android:id="@+id/lv_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" />
+
+        <RelativeLayout
+            android:id="@+id/rl_exhibition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            android:paddingBottom="@dimen/size10">
+
+            <TextView
+                android:id="@+id/tv_exhibition_title"
+                style="@style/TextSize12Color666"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size20"
+                android:text="常设展览专区" />
+
+            <TextView
+                android:id="@+id/tv_exhibition_content"
+                style="@style/TextSize10Color999"
+                android:layout_below="@id/tv_exhibition_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size5"
+                android:text="生命·生活·生存·临展四大主题展厅" />
+
+            <ImageView
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size10"
+                android:src="@mipmap/icon_go" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_exhibition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/size20"
+            android:weightSum="4"></LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_film"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            android:paddingBottom="@dimen/size10">
+
+            <TextView
+                android:id="@+id/tv_film_title"
+                style="@style/TextSize12Color666"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size20"
+                android:text="特效影院专区" />
+
+            <TextView
+                android:id="@+id/tv_film_content"
+                style="@style/TextSize10Color999"
+                android:layout_below="@id/tv_film_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size5"
+                android:text="体验从未有过的震撼和新奇之旅" />
+
+            <ImageView
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size10"
+                android:src="@mipmap/icon_go" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+            android:background="#fff"
+            android:paddingBottom="@dimen/size10">
+
+            <TextView
+                android:id="@+id/tv_education_title"
+                style="@style/TextSize12Color666"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size20"
+                android:text="教育专区" />
+
+            <TextView
+                android:id="@+id/tv_education_content"
+                style="@style/TextSize10Color999"
+                android:layout_below="@id/tv_education_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size5"
+                android:text="传递科普知识,传递正能量" />
+
+            <ImageView
+                android:layout_width="@dimen/size10"
+                android:layout_height="@dimen/size15"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size10"
+                android:src="@mipmap/icon_go" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:backgroundTint="#fff"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>

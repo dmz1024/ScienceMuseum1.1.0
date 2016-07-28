@@ -4,13 +4,7 @@ package com.shoudukejiguan.www.activity;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
@@ -32,17 +26,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends BaseActivity {
-    private String[] mTitles = {"首页", "票务预订", "参观指引", "个人中心"};
-    private int[] mIconUnselectIds = {
-            R.mipmap.icon_main_index, R.mipmap.icon_main_passage_order,
-            R.mipmap.icon_main_visit_guide, R.mipmap.icon_main_personal_center};
-    private int[] mIconSelectIds = {
-            R.mipmap.icon_main_index_selected, R.mipmap.icon_main_passage_order_selected,
-            R.mipmap.icon_main_visit_guide_selected, R.mipmap.icon_main_personal_center_selected};
-    private ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
+    private TextImage tv_index;
+    private TextImage tv_order;
+    private TextImage tv_visit;
+    private TextImage tv_personal;
+
     private NoScrollViewPager vp_main;
     private List<MainBaseFragment> fragments;
-    private CommonTabLayout tab_bottom;
 
     @Override
     protected int getRid() {
@@ -51,7 +41,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initTitleBar() {
-        title_bar.setlLeftVisi(false);
+        title_bar.setVisibility(View.GONE);
     }
 
     @Override
@@ -61,25 +51,6 @@ public class MainActivity extends BaseActivity {
         fragments.add(new MainOrderFragment());
         fragments.add(new MainVisitFragment());
         fragments.add(new MainPeosonalFragment());
-        for (int i = 0; i < mTitles.length; i++) {
-            mTabEntities.add(new TabEntity(mTitles[i], mIconSelectIds[i], mIconUnselectIds[i]));
-        }
-        tab_bottom.setTabData(mTabEntities);
-        tab_bottom.setOnTabSelectListener(new OnTabSelectListener() {
-            @Override
-            public void onTabSelect(int position) {
-                vp_main.setCurrentItem(position, false);
-                fragments.get(position).init();
-            }
-
-            @Override
-            public void onTabReselect(int position) {
-
-            }
-        });
-
-
-
         vp_main.setOffscreenPageLimit(3);
         vp_main.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -91,20 +62,86 @@ public class MainActivity extends BaseActivity {
             public int getCount() {
                 return 4;
             }
+
         });
     }
 
 
-    public void onTabSelect(int position){
-        vp_main.setCurrentItem(position, false);
-        fragments.get(position).init();
-        tab_bottom.setCurrentTab(position);
-    }
-
     @Override
     protected void initView() {
         vp_main = getView(R.id.vp_main);
-        tab_bottom = getView(R.id.tab_bottom);
+        tv_index = getView(R.id.tv_index);
+        tv_order = getView(R.id.tv_order);
+        tv_visit = getView(R.id.tv_visit);
+        tv_personal = getView(R.id.tv_personal);
+        tv_index.setOnClickListener(this);
+        tv_order.setOnClickListener(this);
+        tv_visit.setOnClickListener(this);
+        tv_personal.setOnClickListener(this);
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_index:
+                onTabSelect(0);
+                break;
+            case R.id.tv_order:
+                onTabSelect(1);
+                break;
+            case R.id.tv_visit:
+                onTabSelect(2);
+                break;
+            case R.id.tv_personal:
+                onTabSelect(3);
+                break;
+        }
+    }
+
+    /**
+     * 点击tab切换视图
+     *
+     * @param index
+     */
+    public void onTabSelect(int index) {
+        int currentItem = vp_main.getCurrentItem();
+        if (index == currentItem) {
+            return;
+        }
+
+        tv_index.setDrawable(R.mipmap.icon_ipad_nav_index);
+        tv_order.setDrawable(R.mipmap.icon_ipad_nav_book);
+        tv_visit.setDrawable(R.mipmap.icon_ipad_nav_guide);
+        tv_personal.setDrawable(R.mipmap.icon_ipad_nav_personal);
+
+        tv_index.setTextColor(getResources().getColor(R.color.colore3e2e2));
+        tv_order.setTextColor(getResources().getColor(R.color.colore3e2e2));
+        tv_visit.setTextColor(getResources().getColor(R.color.colore3e2e2));
+        tv_personal.setTextColor(getResources().getColor(R.color.colore3e2e2));
+
+
+        switch (index) {
+            case 0:
+                tv_index.setDrawable(R.mipmap.icon_ipad_nav_index_cur);
+                tv_index.setTextColor(getResources().getColor(R.color.color184064));
+                break;
+            case 1:
+                tv_order.setDrawable(R.mipmap.icon_ipad_nav_book_cur);
+                tv_order.setTextColor(getResources().getColor(R.color.color184064));
+                break;
+            case 2:
+                tv_visit.setDrawable(R.mipmap.icon_ipad_nav_guide_cur);
+                tv_visit.setTextColor(getResources().getColor(R.color.color184064));
+                break;
+            case 3:
+                tv_personal.setDrawable(R.mipmap.icon_ipad_nav_personal_cur);
+                tv_personal.setTextColor(getResources().getColor(R.color.color184064));
+                break;
+        }
+
+        fragments.get(index).init();
+        vp_main.setCurrentItem(index, false);
     }
 
 

@@ -44,6 +44,7 @@ public class RotationViewPager extends ViewPager {
         handler.sendEmptyMessageDelayed(1, 2500);
     }
 
+
     public RotationViewPager(Context context) {
         super(context);
     }
@@ -61,7 +62,7 @@ public class RotationViewPager extends ViewPager {
         this.views = views;
         if (views != null && (viewCount = views.size()) > 0) {
             setAdapter(mAdapter = new MyAdapter());
-            setCurrentItem(viewCount * 100000);
+
             handler.sendEmptyMessageDelayed(1, 2500);
         }
 
@@ -130,6 +131,7 @@ public class RotationViewPager extends ViewPager {
         public void destroyItem(ViewGroup container, int position, Object object) {
 //            ((RotationViewPager) container).removeView(views.get(position % views.size()));
         }
+
     }
 
     @Override

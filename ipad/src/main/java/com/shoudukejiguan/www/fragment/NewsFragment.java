@@ -16,7 +16,7 @@ public class NewsFragment extends ListDataBaseFragment<News, News.Data, NewsAdap
 
     @Override
     protected NewsAdapter getAdapter(Context context, List<News.Data> totalList) {
-        return new NewsAdapter(totalList);
+        return new NewsAdapter(totalList,getContext());
     }
 
     @Override

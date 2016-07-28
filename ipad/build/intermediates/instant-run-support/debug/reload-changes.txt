@@ -1,0 +1,5 @@
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/adapter/NewsAdapter$NewsHolder$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/adapter/NewsAdapter$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/entity/News$Data$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/NewsFragment$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

@@ -1,26 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tool="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eee">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <com.flyco.tablayout.CommonTabLayout
-        android:id="@+id/tab_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size45"
-        android:layout_alignParentBottom="true"
-        android:background="#ffffff"
-        tool:tl_textsize="@dimen/sp11"
-        tool:tl_iconHeight="@dimen/size20"
-        tool:tl_iconWidth="@dimen/size15"
-        tool:tl_textSelectColor="#00acbb"
-        tool:tl_textUnselectColor="#666" />
+    <com.hedgehog.ratingbar.RatingBar
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        hedgehog:starCount="5"
+        hedgehog:clickable="true"
+        hedgehog:starEmpty="@mipmap/ic_star_empty"
+        hedgehog:starFill="@mipmap/ic_star_fill"
+        hedgehog:starImageSize="30dp"
+        />
+    <com.hedgehog.ratingbar.RatingBar
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/ratingbar_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        hedgehog:starCount="5"
+        hedgehog:clickable="true"
+        hedgehog:starEmpty="@mipmap/ic_love_empty"
+        hedgehog:starFill="@mipmap/ic_love_fill"
+        hedgehog:starImageSize="30dp"
+        />
+    <com.hedgehog.ratingbar.RatingBar
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/ratingbar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        hedgehog:starCount="5"
+        hedgehog:clickable="true"
+        hedgehog:starEmpty="@mipmap/ic_home_empty"
+        hedgehog:starFill="@mipmap/ic_home_fill"
+        hedgehog:starImageSize="30dp"
+        />
 
-    <com.shoudukejiguan.www.view.NoScrollViewPager
-        android:id="@+id/vp_main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/tab_bottom"
-        android:background="#f1f1f1" />
-</RelativeLayout>
+</LinearLayout>
+<!-- From: file:/D:/GitHub/RatingBar/app/src/main/res/layout/activity_main.xml -->

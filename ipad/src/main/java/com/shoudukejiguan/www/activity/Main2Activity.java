@@ -13,7 +13,10 @@ import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.Message;
 import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.PinchImageView;
+import com.shoudukejiguan.www.view.RotationRelativeLayout;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class Main2Activity extends BaseActivity {
@@ -21,6 +24,7 @@ public class Main2Activity extends BaseActivity {
     private EditText et_password;
     private Button bt_login;
     private Button bt_reg;
+    private RotationRelativeLayout rrll_banner;
     @Override
     protected int getRid() {
         return R.layout.activity_main2;
@@ -33,12 +37,18 @@ public class Main2Activity extends BaseActivity {
 
     @Override
     protected void initData() {
-
+        List<String> urlList = new ArrayList<>();
+        urlList.add("http://cdn.duitang.com/uploads/item/201412/04/20141204163409_Tdusf.thumb.700_0.jpeg");
+        urlList.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
+        urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
+        urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
+        rrll_banner.setUrls(urlList);
     }
 
     @Override
     protected void initView() {
         et_name=getView(R.id.et_name);
+        rrll_banner=getView(R.id.rrll_banner);
         et_password=getView(R.id.et_password);
         bt_login=getView(R.id.bt_login);
         bt_reg=getView(R.id.bt_reg);
