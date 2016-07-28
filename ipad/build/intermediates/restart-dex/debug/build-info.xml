@@ -4,7 +4,7 @@
     api-level="15"
     density="hdpi"
     format="7"
-    timestamp="1469693908783588000"
+    timestamp="1469700853224582000"
     token="6633508054438689859" >
 
     <task
@@ -21,18 +21,13 @@
         duration="0" />
 
     <artifact
-        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/outputs/apk/ipad-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="1469693803073233000" >
+    <build timestamp="1469700853224582000" >
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/outputs/apk/ipad-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="1469693908783588000" >
-        <artifact
-            location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

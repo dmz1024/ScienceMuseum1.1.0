@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
@@ -20,19 +24,23 @@ import com.shoudukejiguan.www.fragment.MainPeosonalFragment;
 import com.shoudukejiguan.www.fragment.MainVisitFragment;
 import com.shoudukejiguan.www.view.MyToast;
 import com.shoudukejiguan.www.view.NoScrollViewPager;
+import com.shoudukejiguan.www.view.PopMenu;
 import com.shoudukejiguan.www.view.TextImage;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends BaseActivity {
+    private RelativeLayout rl_top;
     private TextImage tv_index;
     private TextImage tv_order;
     private TextImage tv_visit;
     private TextImage tv_personal;
-
+    private ImageView iv_right;
+    private TextView tv_title;
     private NoScrollViewPager vp_main;
     private List<MainBaseFragment> fragments;
+    private String[] titles = {"首都科学技术馆", "票务预订", "参观指引", "个人中心", "设置"};
 
     @Override
     protected int getRid() {
@@ -51,7 +59,7 @@ public class MainActivity extends BaseActivity {
         fragments.add(new MainOrderFragment());
         fragments.add(new MainVisitFragment());
         fragments.add(new MainPeosonalFragment());
-        vp_main.setOffscreenPageLimit(3);
+        vp_main.setOffscreenPageLimit(fragments.size());
         vp_main.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
@@ -60,7 +68,7 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public int getCount() {
-                return 4;
+                return fragments.size();
             }
 
         });
@@ -69,6 +77,9 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initView() {
+        iv_right = getView(R.id.iv_right);
+        rl_top = getView(R.id.rl_top);
+        tv_title = getView(R.id.tv_title);
         vp_main = getView(R.id.vp_main);
         tv_index = getView(R.id.tv_index);
         tv_order = getView(R.id.tv_order);
@@ -78,6 +89,17 @@ public class MainActivity extends BaseActivity {
         tv_order.setOnClickListener(this);
         tv_visit.setOnClickListener(this);
         tv_personal.setOnClickListener(this);
+        iv_right.setOnClickListener(this);
+    }
+
+
+    /**
+     * 设置右侧按钮是否可点击
+     *
+     * @param visi
+     */
+    public void setIvRightVisi(int visi) {
+        iv_right.setVisibility(visi);
     }
 
 
@@ -96,8 +118,14 @@ public class MainActivity extends BaseActivity {
             case R.id.tv_personal:
                 onTabSelect(3);
                 break;
+            case R.id.iv_right:
+                more();
         }
     }
+
+
+
+
 
     /**
      * 点击tab切换视图
@@ -109,6 +137,15 @@ public class MainActivity extends BaseActivity {
         if (index == currentItem) {
             return;
         }
+
+        tv_title.setText(titles[index]);
+
+        if (index == 2) {
+            rl_top.setVisibility(View.GONE);
+        } else {
+            rl_top.setVisibility(View.VISIBLE);
+        }
+
 
         tv_index.setDrawable(R.mipmap.icon_ipad_nav_index);
         tv_order.setDrawable(R.mipmap.icon_ipad_nav_book);
@@ -140,7 +177,6 @@ public class MainActivity extends BaseActivity {
                 break;
         }
 
-        fragments.get(index).init();
         vp_main.setCurrentItem(index, false);
     }
 
@@ -149,11 +185,6 @@ public class MainActivity extends BaseActivity {
     protected void onDestroy() {
         super.onDestroy();
         finishAll();
-    }
-
-    @Override
-    public void left() {
-        fragments.get(0).left();
     }
 
 
@@ -178,6 +209,20 @@ public class MainActivity extends BaseActivity {
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
+    }
+
+
+    /**
+     * 更多
+     */
+    private void more() {
+        backgroundAlpha(0.5f);
+        new PopMenu() {
+            @Override
+            public PopupWindow.OnDismissListener getDis() {
+                return MainActivity.this;
+            }
+        }.initPop(this, rl_top);
     }
 
 }

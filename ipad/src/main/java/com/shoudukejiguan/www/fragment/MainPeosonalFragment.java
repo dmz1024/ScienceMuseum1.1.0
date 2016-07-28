@@ -167,8 +167,4 @@ public class MainPeosonalFragment extends MainBaseFragment {
         return R.layout.fragment_main_peosonal;
     }
 
-    @Override
-    protected boolean isTitleBarShow() {
-        return false;
-    }
 }

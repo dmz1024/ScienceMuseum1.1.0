@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,13 +18,48 @@ import com.shoudukejiguan.www.view.TitleBar;
  */
 public abstract class MainBaseFragment extends BaseFragment implements View.OnClickListener {
     public boolean isFirst = true;
-    public TitleBar titleBar;
-    public Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            MainBaseFragment.this.handleMessage(msg);
+    public boolean isVisible;
+    /**
+     * 标志位，标志已经初始化完成
+     */
+    public boolean isPrepared;
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (getUserVisibleHint()) {
+            isVisible = true;
+            onVisible();
+        } else {
+            isVisible = false;
+            onInvisible();
         }
-    };
+    }
+
+
+    /**
+     * 可见
+     */
+    protected void onVisible() {
+
+        if (!isFirst) {
+            return;
+        }
+        isFirst = false;
+        if (!isPrepared || !isVisible) {
+            return;
+        }
+        initData();
+    }
+
+
+    /**
+     * 不可见
+     */
+    protected void onInvisible() {
+
+
+    }
 
 
     @Nullable
@@ -31,10 +67,11 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getRid(), null);
         initView(view);
-
         if (isInit()) {
-            init();//判断是否在fragment创建的时候就加载数据
+            isFirst = false;
+            initData();
         }
+        isPrepared = true;
         return view;
     }
 
@@ -44,64 +81,19 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
      * 加载数据
      */
     public void init() {
-        titleBar();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if (!isFirst) {//数据是否已经加载过了,如果已经加载过了就不再重新加载
-                    return;
-                } else {
-                    isFirst = false;
-                }
-
-                initData();
-            }
-        }, 100);
+//        if (!isFirst) {//数据是否已经加载过了,如果已经加载过了就不再重新加载
+//            return;
+//        } else {
+//            isFirst = false;
+//        }
+//
+//        initData();
     }
 
-    /**
-     * 关于titleBar的一些操作
-     */
-    protected void titleBar() {
-        titleBar = ((BaseActivity) getActivity()).title_bar;
-        titleBar.toggleTitleBar(isTitleBarShow());
-        titleBar.setTvTitleText(getTitleBarTitle());
-        titleBar.setTvRightVisi(isRightVisi());
-    }
 
     public void skip(Class clx) {
         Intent intent = new Intent(getContext(), clx);
         startActivity(intent);
-    }
-
-
-    /**
-     * titleBar右侧按钮是否显示
-     *
-     * @return
-     */
-    protected boolean isRightVisi() {
-        return true;
-    }
-
-
-    /**
-     * 判断是否显示titleBar
-     *
-     * @return
-     */
-    protected boolean isTitleBarShow() {
-        return true;
-    }
-
-
-    /**
-     * 获取titleBar标题
-     *
-     * @return
-     */
-    protected String getTitleBarTitle() {
-        return "";
     }
 
 
@@ -124,22 +116,9 @@ public abstract class MainBaseFragment extends BaseFragment implements View.OnCl
      */
     protected abstract int getRid();
 
-    /**
-     * 处理Handler消息
-     *
-     * @param msg
-     */
-    protected void handleMessage(Message msg) {
-
-    }
 
     @Override
     public void onClick(View view) {
-
-    }
-
-
-    public void left(){
 
     }
 

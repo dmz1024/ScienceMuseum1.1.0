@@ -57,9 +57,5 @@ public class MainVisitFragment extends MainBaseFragment {
         return R.layout.fragment_main_visit;
     }
 
-    @Override
-    protected boolean isTitleBarShow() {
-        return false;
-    }
 
 }

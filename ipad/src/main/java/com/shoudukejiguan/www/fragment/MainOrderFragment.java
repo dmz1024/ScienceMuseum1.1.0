@@ -45,11 +45,6 @@ public class MainOrderFragment extends MainBaseFragment {
 
     }
 
-    @Override
-    protected void titleBar() {
-        super.titleBar();
-        titleBar.setlLeftVisi(false);
-    }
 
     @Override
     protected int getRid() {
@@ -65,10 +60,6 @@ public class MainOrderFragment extends MainBaseFragment {
         }
     }
 
-    @Override
-    protected String getTitleBarTitle() {
-        return "票务预订";
-    }
 
     /**
      * 选择日期

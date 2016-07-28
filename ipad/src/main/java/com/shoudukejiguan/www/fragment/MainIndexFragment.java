@@ -55,14 +55,11 @@ public class MainIndexFragment extends MainBaseFragment {
 
     @Override
     protected boolean isInit() {
-
         return true;
     }
 
     @Override
     protected void initData() {
-        titleBar.setLeftImage(R.mipmap.icon_more);
-
         List<String> urlList = new ArrayList<>();
         urlList.add("http://cdn.duitang.com/uploads/item/201412/04/20141204163409_Tdusf.thumb.700_0.jpeg");
         urlList.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
@@ -108,12 +105,6 @@ public class MainIndexFragment extends MainBaseFragment {
         }
 
         educationView(urlList);
-    }
-
-    @Override
-    protected void titleBar() {
-        super.titleBar();
-        titleBar.setlLeftVisi(true);
     }
 
     /**
@@ -205,11 +196,6 @@ public class MainIndexFragment extends MainBaseFragment {
         return R.layout.fragment_main_index;
     }
 
-    @Override
-    protected String getTitleBarTitle() {
-        return "首都科学技术馆";
-    }
-
 
     private void addImage(String url) {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams((Util.getWeight() / 4) - 20, (Util.getWeight() / 4) - 20);
@@ -234,14 +220,4 @@ public class MainIndexFragment extends MainBaseFragment {
         rv_education.setAdapter(new IndexEducationAdapter(urlList));
     }
 
-    @Override
-    public void left() {
-        backgroundAlpha(0.5f);
-        new PopMenu() {
-            @Override
-            public PopupWindow.OnDismissListener getDis() {
-                return MainIndexFragment.this;
-            }
-        }.initPop(getContext(), titleBar);
-    }
 }

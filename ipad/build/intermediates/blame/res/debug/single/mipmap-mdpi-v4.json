@@ -16,6 +16,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_sz.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_more.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_more.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_index_cur.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_index_cur.png"
     },

@@ -1,19 +1,19 @@
 [
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/activity_collection.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/layout-large/activity_collection.xml"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/fragment_education_opinion.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/layout-large/fragment_education_opinion.xml"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/fragment_guests.xml",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/layout-large/fragment_guests.xml"
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/activity_collection.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/layout-large/activity_collection.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/item_news.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/layout-large/item_news.xml"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/fragment_guests.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/layout-large/fragment_guests.xml"
     },
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/layout-large-v4/item_juniors.xml",
