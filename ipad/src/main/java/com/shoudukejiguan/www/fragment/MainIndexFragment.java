@@ -1,13 +1,16 @@
 package com.shoudukejiguan.www.fragment;
 
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -21,8 +24,12 @@ import com.shoudukejiguan.www.activity.MoreNewsActivity;
 import com.shoudukejiguan.www.activity.NoticeBulletinActivity;
 import com.shoudukejiguan.www.adapter.GridViewCenterAdapter;
 import com.shoudukejiguan.www.adapter.IndexEducationAdapter;
+import com.shoudukejiguan.www.adapter.IndexFilmAdapter;
 import com.shoudukejiguan.www.adapter.IndexNewsAdapter;
+import com.shoudukejiguan.www.adapter.NewsAdapter;
 import com.shoudukejiguan.www.entity.IndexNews;
+import com.shoudukejiguan.www.entity.News;
+import com.shoudukejiguan.www.entity.VideoSigna;
 import com.shoudukejiguan.www.util.Util;
 import com.shoudukejiguan.www.view.MaxGridView;
 import com.shoudukejiguan.www.view.MaxListView;
@@ -42,6 +49,7 @@ public class MainIndexFragment extends MainBaseFragment {
     private RotationViewPager rvp_rotation;
     private LinearLayout ll_exhibition;
     private RecyclerView rv_education;
+    private RecyclerView rv_film;
     private RelativeLayout rl_news;
     private RelativeLayout rl_exhibition;
     private RelativeLayout rl_film;
@@ -49,6 +57,7 @@ public class MainIndexFragment extends MainBaseFragment {
     private TipView tip_notice;
     private RelativeLayout rl_menu_news, rl_menu_order, rl_menu_visit, rl_menu_scan;
     private boolean isFirstSao1Sao;
+    private RecyclerView rv_news;
 
     @Override
     protected boolean isInit() {
@@ -62,6 +71,10 @@ public class MainIndexFragment extends MainBaseFragment {
         urlList.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
+        urlList.add("http://cdn.duitang.com/uploads/item/201412/04/20141204163409_Tdusf.thumb.700_0.jpeg");
+        urlList.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
+        urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
+        urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
         rvp_rotation.setUrls(urlList);
         tip_notice.setTipList(urlList);
         tip_notice.setOnClickListener(new View.OnClickListener() {
@@ -71,36 +84,27 @@ public class MainIndexFragment extends MainBaseFragment {
             }
         });
 
-//        gv_center.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                switch (i) {
-//                    case 3:
-//                        sao1sao();
-//                        break;
-//                    case 0:
-//                        skip(MoreNewsActivity.class);
-//                    case 1:
-//                    case 2:
-//                        ((MainActivity) getActivity()).onTabSelect(i);
-//                        break;
-//
-//                }
-//            }
-//        });
-
-//        List<IndexNews> listNews = new ArrayList<>();
-//        for (int i = 0; i < 5; i++) {
-//            IndexNews indexNews = new IndexNews("标题：" + i, "2016-09-16");
-//            listNews.add(indexNews);
-//        }
-//        lv_news.setAdapter(new IndexNewsAdapter(getContext(), listNews));
-
-        for (int i = 0; i < urlList.size(); i++) {
-            addImage(urlList.get(i));
-        }
+        exhibitionView();
 
         educationView(urlList);
+
+        List<VideoSigna.Data> fileList = new ArrayList<>();
+        for (int i = 0; i < 2; i++) {
+            VideoSigna.Data data = new VideoSigna.Data();
+            fileList.add(data);
+        }
+        fileView(fileList);
+
+        List<News.Data> newsList = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            News.Data data = new News.Data();
+            data.addtime = "2016-07-29";
+            data.title = "测试用标题";
+            data.introduce = "测试用内容测试用内容测试用内容测试用内容测试用内容测试用内容测试用内容测试用内容测试用内容";
+            data.linkurl = "https://www.baidu.com";
+            newsList.add(data);
+        }
+        newsView(newsList);
     }
 
     /**
@@ -120,6 +124,8 @@ public class MainIndexFragment extends MainBaseFragment {
 
     @Override
     protected void initView(View view) {
+        rv_news = (RecyclerView) view.findViewById(R.id.rv_news);
+        rv_film = (RecyclerView) view.findViewById(R.id.rv_film);
         rvp_rotation = (RotationViewPager) view.findViewById(R.id.rvp_rotation);
         tip_notice = (TipView) view.findViewById(R.id.tip_notice);
         rl_exhibition = (RelativeLayout) view.findViewById(R.id.rl_exhibition);
@@ -147,7 +153,6 @@ public class MainIndexFragment extends MainBaseFragment {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-
             case R.id.rl_exhibition:
                 moreExhibition();
                 break;
@@ -203,19 +208,44 @@ public class MainIndexFragment extends MainBaseFragment {
     }
 
 
-    private void addImage(String url) {
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams((Util.getWeight() / 4) - 20, (Util.getWeight() / 4) - 20);
-        params.leftMargin = 20;
-        ImageView iv = new ImageView(getContext());
-        iv.setScaleType(ImageView.ScaleType.FIT_XY);
-        iv.setLayoutParams(params);
-        Glide.with(getActivity()).load(url).into(iv);
-        ll_exhibition.addView(iv);
+    /**
+     * 常设展览专区
+     */
+    private void exhibitionView() {
+        List<String> listUrl = new ArrayList<>();
+        List<String> listTitle = new ArrayList<>();
+        listUrl.add("http://cdn.duitang.com/uploads/item/201412/04/20141204163409_Tdusf.thumb.700_0.jpeg");
+        listUrl.add("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg");
+        listUrl.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
+        listUrl.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
+
+        listTitle.add("生命乐章展厅");
+        listTitle.add("生活追梦展厅");
+        listTitle.add("生存对话主题展厅");
+        listTitle.add("临时展览展厅");
+        int width = (Util.getWidth() - 180 - dp2Px(70)) / 4;
+        LinearLayout.LayoutParams params;
+        for (int i = 0; i < listUrl.size(); i++) {
+            View view = View.inflate(getActivity(), R.layout.item_exhibition, null);
+            params = new LinearLayout.LayoutParams(width, ViewGroup.LayoutParams.WRAP_CONTENT);
+            if (i != 0) {
+                params.leftMargin = 30;
+            }
+
+            view.setLayoutParams(params);
+            ImageView iv_img = (ImageView) view.findViewById(R.id.iv_img);
+            TextView tv_title = (TextView) view.findViewById(R.id.tv_title);
+            Glide.with(getActivity()).load(listUrl.get(i)).into(iv_img);
+            tv_title.setText(listTitle.get(i));
+            ll_exhibition.addView(view);
+        }
+
+
     }
 
 
     /**
-     * 横向滚动的视图
+     * 教育专区
      *
      * @param urlList
      */
@@ -224,6 +254,27 @@ public class MainIndexFragment extends MainBaseFragment {
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         rv_education.setLayoutManager(layoutManager);
         rv_education.setAdapter(new IndexEducationAdapter(urlList));
+    }
+
+    /**
+     * 新闻资讯
+     *
+     * @param datas
+     */
+    private void newsView(List<News.Data> datas) {
+        GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 2);
+        rv_news.setLayoutManager(layoutManager);
+        rv_news.setAdapter(new NewsAdapter(datas, getContext()));
+    }
+
+
+    /**
+     * 特效影院
+     */
+    private void fileView(List<VideoSigna.Data> datas) {
+        GridLayoutManager layoutManager = new GridLayoutManager(getContext(), 2);
+        rv_film.setLayoutManager(layoutManager);
+        rv_film.setAdapter(new IndexFilmAdapter(datas));
     }
 
 }

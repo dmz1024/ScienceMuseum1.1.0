@@ -244,8 +244,7 @@
             android:id="@+id/rv_news"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
-            android:padding="@dimen/size35" />
+            android:background="#fff" />
 
 
         <RelativeLayout
@@ -330,8 +329,22 @@
                 android:layout_toLeftOf="@id/iv_go_film"
                 android:text="体验从未有过的震撼和新奇之旅"
                 android:textSize="@dimen/sp13" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_alignParentBottom="true"
+                android:background="#e0e0e0" />
         </RelativeLayout>
-
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_film"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:paddingRight="@dimen/size35"
+            android:paddingLeft="@dimen/size35"
+            android:paddingBottom="@dimen/size20"
+            android:paddingTop="@dimen/size20"
+            />
 
         <RelativeLayout
             android:id="@+id/rl_education"
@@ -364,6 +377,11 @@
                 android:layout_toLeftOf="@id/iv_go_education"
                 android:text="传递科普知识,传递正能量"
                 android:textSize="@dimen/sp13" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_alignParentBottom="true"
+                android:background="#e0e0e0" />
         </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
@@ -371,7 +389,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:padding="@dimen/size35" />
+            android:paddingRight="@dimen/size35"
+            android:paddingLeft="@dimen/size35"
+            android:paddingBottom="@dimen/size20"
+            android:paddingTop="@dimen/size20"
+             />
 
     </LinearLayout>
 

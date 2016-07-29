@@ -5,7 +5,7 @@ package com.shoudukejiguan.www.entity;
  */
 public class News extends BaseLvEntity<News.Data> {
 
-    public class Data extends com.shoudukejiguan.www.entity.Data {
+    public static class Data extends com.shoudukejiguan.www.entity.Data {
         public String itemid;
         public String title;
         public String introduce;

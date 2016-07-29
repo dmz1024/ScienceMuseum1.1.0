@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_e0e0e0"
+        android:padding="@dimen/size10">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/size250"
+            android:layout_height="@dimen/size300"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextSize15Color333"
+            android:layout_marginLeft="@dimen/size15"
+            android:layout_marginTop="@dimen/size20"
+            android:layout_toRightOf="@id/iv_img"
+            android:text="海豚" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/TextSize12Color666"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/size20"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/size4"
+            android:maxLines="3"
+            android:text="影片改编自真实故事故事故事故事，讲述一只年幼的海豚被人类的陷阱所伤导致尾巴残疾，面对失去游泳能力的小海豚" />
+
+        <TextView
+            android:id="@+id/tv_director"
+            style="@style/TextSize12Color666"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_content"
+            android:layout_marginTop="@dimen/size20"
+            android:lineSpacingExtra="@dimen/size4"
+            android:text="导演：小哈里 · 康尼克Harry Connick" />
+
+        <com.hedgehog.ratingbar.RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_director"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size20"
+            tool:clickable="false"
+            tool:starCount="5"
+            tool:starEmpty="@mipmap/ic_star_empty"
+            tool:starFill="@mipmap/ic_star_fill"
+            tool:starImageSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_star"
+            style="@style/TextSize14Color999"
+            android:layout_alignBottom="@id/ratingbar"
+            android:layout_marginLeft="@dimen/size5"
+            android:layout_toRightOf="@id/ratingbar"
+            android:text="5.0" />
+
+        <Button
+            android:id="@+id/bt_order"
+            android:layout_width="@dimen/size65"
+            android:layout_height="@dimen/size35"
+            android:layout_alignBottom="@id/iv_img"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_marginBottom="@dimen/size15"
+            android:background="@drawable/rectangle_03abee"
+            android:padding="@dimen/size1"
+            android:text="购票"
+            android:textColor="#03abee"
+            android:textSize="@dimen/sp14" />
+    </RelativeLayout>
+</LinearLayout>

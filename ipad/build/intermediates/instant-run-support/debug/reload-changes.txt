@@ -1,2 +1,7 @@
-CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/MainIndexFragment$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/activity/LoginActivity$1$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/ListDataBaseFragment$4$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/activity/Main2Activity$2$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/activity/Main2Activity$1$override.class
 CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/RegFragment$2$override.class
+CHANGED,/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/shoudukejiguan/www/fragment/RegFragment$3$override.class

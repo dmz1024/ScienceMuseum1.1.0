@@ -1,6 +1,8 @@
 package com.shoudukejiguan.www.fragment;
 
 import android.content.Context;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.shoudukejiguan.www.adapter.NewsAdapter;
 import com.shoudukejiguan.www.constant.ApiConstant;
@@ -16,7 +18,7 @@ public class NewsFragment extends ListDataBaseFragment<News, News.Data, NewsAdap
 
     @Override
     protected NewsAdapter getAdapter(Context context, List<News.Data> totalList) {
-        return new NewsAdapter(totalList,getContext());
+        return new NewsAdapter(totalList, getContext());
     }
 
     @Override
@@ -35,4 +37,8 @@ public class NewsFragment extends ListDataBaseFragment<News, News.Data, NewsAdap
         return map;
     }
 
+    @Override
+    protected RecyclerView.LayoutManager getLayoutManager() {
+        return new GridLayoutManager(getContext(), 2);
+    }
 }
