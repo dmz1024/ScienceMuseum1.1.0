@@ -4,6 +4,18 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_back.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_menu_news.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_menu_news.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_menu_booktic.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_menu_booktic.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_menu_guide.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_menu_guide.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_personal.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_personal.png"
     },
@@ -32,6 +44,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_logo.png"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_menu_scan.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_menu_scan.png"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_book.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_book.png"
     },
@@ -50,5 +66,9 @@
     {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_nav_guide.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_nav_guide.png"
+    },
+    {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-mdpi-v4/icon_ipad_go.png",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-mdpi/icon_ipad_go.png"
     }
 ]

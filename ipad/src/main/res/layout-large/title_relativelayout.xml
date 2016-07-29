@@ -25,7 +25,7 @@
         android:gravity="center"
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/size12"
-        tool:TextImage_drawable="@mipmap/icon_go"
+        tool:TextImage_drawable="@mipmap/icon_ipad_go"
         tool:TextImage_height="@dimen/size10"
         tool:TextImage_seat="3"
         tool:TextImage_width="@dimen/size5" />

@@ -46,11 +46,8 @@ public class MainIndexFragment extends MainBaseFragment {
     private RelativeLayout rl_exhibition;
     private RelativeLayout rl_film;
     private RelativeLayout rl_education;
-    private MaxListView lv_news;
-    private MaxGridView gv_center;
     private TipView tip_notice;
-    private String[] titles = {"新闻资讯", "票务预订", "参观指引", "扫一扫"};
-    private int[] images = {R.mipmap.index_menu_news, R.mipmap.index_menu_booktic, R.mipmap.index_menu_map, R.mipmap.index_menu_sao};
+    private RelativeLayout rl_menu_news, rl_menu_order, rl_menu_visit, rl_menu_scan;
     private boolean isFirstSao1Sao;
 
     @Override
@@ -66,7 +63,6 @@ public class MainIndexFragment extends MainBaseFragment {
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
         urlList.add("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg");
         rvp_rotation.setUrls(urlList);
-        gv_center.setAdapter(new GridViewCenterAdapter(getContext(), titles, images));
         tip_notice.setTipList(urlList);
         tip_notice.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,30 +71,30 @@ public class MainIndexFragment extends MainBaseFragment {
             }
         });
 
-        gv_center.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                switch (i) {
-                    case 3:
-                        sao1sao();
-                        break;
-                    case 0:
-                        skip(MoreNewsActivity.class);
-                    case 1:
-                    case 2:
-                        ((MainActivity) getActivity()).onTabSelect(i);
-                        break;
+//        gv_center.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                switch (i) {
+//                    case 3:
+//                        sao1sao();
+//                        break;
+//                    case 0:
+//                        skip(MoreNewsActivity.class);
+//                    case 1:
+//                    case 2:
+//                        ((MainActivity) getActivity()).onTabSelect(i);
+//                        break;
+//
+//                }
+//            }
+//        });
 
-                }
-            }
-        });
-
-        List<IndexNews> listNews = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            IndexNews indexNews = new IndexNews("标题：" + i, "2016-09-16");
-            listNews.add(indexNews);
-        }
-        lv_news.setAdapter(new IndexNewsAdapter(getContext(), listNews));
+//        List<IndexNews> listNews = new ArrayList<>();
+//        for (int i = 0; i < 5; i++) {
+//            IndexNews indexNews = new IndexNews("标题：" + i, "2016-09-16");
+//            listNews.add(indexNews);
+//        }
+//        lv_news.setAdapter(new IndexNewsAdapter(getContext(), listNews));
 
         for (int i = 0; i < urlList.size(); i++) {
             addImage(urlList.get(i));
@@ -124,10 +120,8 @@ public class MainIndexFragment extends MainBaseFragment {
 
     @Override
     protected void initView(View view) {
-        gv_center = (MaxGridView) view.findViewById(R.id.gv_center);
         rvp_rotation = (RotationViewPager) view.findViewById(R.id.rvp_rotation);
         tip_notice = (TipView) view.findViewById(R.id.tip_notice);
-        lv_news = (MaxListView) view.findViewById(R.id.lv_news);
         rl_exhibition = (RelativeLayout) view.findViewById(R.id.rl_exhibition);
         ll_exhibition = (LinearLayout) view.findViewById(R.id.ll_exhibition);
         rv_education = (RecyclerView) view.findViewById(R.id.rv_education);
@@ -139,16 +133,21 @@ public class MainIndexFragment extends MainBaseFragment {
         rl_exhibition.setOnClickListener(this);
         rl_film.setOnClickListener(this);
         rl_education.setOnClickListener(this);
-
+        rl_menu_news = (RelativeLayout) view.findViewById(R.id.rl_menu_news);
+        rl_menu_order = (RelativeLayout) view.findViewById(R.id.rl_menu_order);
+        rl_menu_visit = (RelativeLayout) view.findViewById(R.id.rl_menu_visit);
+        rl_menu_scan = (RelativeLayout) view.findViewById(R.id.rl_menu_scan);
+        rl_menu_news.setOnClickListener(this);
+        rl_menu_order.setOnClickListener(this);
+        rl_menu_visit.setOnClickListener(this);
+        rl_menu_scan.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.rl_news:
-                moreNews();
-                break;
+
             case R.id.rl_exhibition:
                 moreExhibition();
                 break;
@@ -157,6 +156,19 @@ public class MainIndexFragment extends MainBaseFragment {
                 break;
             case R.id.rl_education:
                 moreEducation();
+                break;
+            case R.id.rl_menu_scan:
+                sao1sao();
+                break;
+            case R.id.rl_news:
+            case R.id.rl_menu_news:
+                skip(MoreNewsActivity.class);
+                break;
+            case R.id.rl_menu_order:
+                ((MainActivity) getActivity()).onTabSelect(1);
+                break;
+            case R.id.rl_menu_visit:
+                ((MainActivity) getActivity()).onTabSelect(2);
                 break;
         }
     }
@@ -184,12 +196,6 @@ public class MainIndexFragment extends MainBaseFragment {
         skip(ExhibitionActivity.class);
     }
 
-    /**
-     * 更多新闻资讯
-     */
-    private void moreNews() {
-        skip(MoreNewsActivity.class);
-    }
 
     @Override
     protected int getRid() {

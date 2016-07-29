@@ -4,27 +4,27 @@
     api-level="15"
     density="hdpi"
     format="7"
-    timestamp="1469700853224582000"
+    timestamp="1469756082011577000"
     token="6633508054438689859" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="420" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="39" />
     <task
         name="verifier"
-        duration="0" />
+        duration="5" />
 
     <artifact
         location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/outputs/apk/ipad-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1469700853224582000" >
+    <build timestamp="1469756082011577000" >
         <artifact
             location="/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/outputs/apk/ipad-debug.apk"
             type="MAIN" />

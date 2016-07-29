@@ -76,10 +76,6 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/exploded-aar/com.hedgehog.ratingbar/app/1.0.4/res/mipmap-hdpi/ic_home_empty.png"
     },
     {
-        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_go.png",
-        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-hdpi/icon_go.png"
-    },
-    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/build/intermediates/res/merged/debug/mipmap-hdpi-v4/icon_wdkc.png",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/ipad/src/main/res/mipmap-hdpi/icon_wdkc.png"
     },

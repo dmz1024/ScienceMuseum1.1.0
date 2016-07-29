@@ -13,23 +13,172 @@
 
         <com.shoudukejiguan.www.view.RotationViewPager
             android:id="@+id/rvp_rotation"
-            android:clipChildren="false"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/size400" />
+            android:layout_height="@dimen/size400"
+            android:clipChildren="false" />
 
-        
+
         <LinearLayout
-            android:orientation="horizontal"
-            android:weightSum="4"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/size85">
+            android:layout_height="@dimen/size85"
+            android:layout_marginTop="@dimen/size20"
+            android:dividerPadding="@dimen/size30"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
+            <RelativeLayout
+                android:id="@+id/rl_menu_news"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size35"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_00acbb">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size45"
+                        android:layout_height="@dimen/size40"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_ipad_menu_news" />
+
+                    <com.shoudukejiguan.www.view.Color2Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:lineSpacingExtra="2dp"
+                        android:text="新闻资讯"
+                        android:textColor="#00acbb"
+                        android:textSize="@dimen/sp17"
+                        tool:Color2Text_color="#8000acbb"
+                        tool:Color2Text_content="\n场馆动态实时掌握"
+                        tool:Color2Text_size="@dimen/sp13" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_menu_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_20cc85">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size45"
+                        android:layout_height="@dimen/size40"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_ipad_menu_booktic" />
+
+                    <com.shoudukejiguan.www.view.Color2Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:lineSpacingExtra="2dp"
+                        android:text="票务预订"
+                        android:textColor="#20cc85"
+                        android:textSize="@dimen/sp17"
+                        tool:Color2Text_color="#8020cc85"
+                        tool:Color2Text_content="\n场馆门票在线预订"
+                        tool:Color2Text_size="@dimen/sp13" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_menu_visit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_9659d7">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size45"
+                        android:layout_height="@dimen/size40"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_ipad_menu_guide" />
+
+                    <com.shoudukejiguan.www.view.Color2Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:lineSpacingExtra="2dp"
+                        android:text="参观指引"
+                        android:textColor="#9659d7"
+                        android:textSize="@dimen/sp17"
+                        tool:Color2Text_color="#809659d7"
+                        tool:Color2Text_content="\n馆内管外线路指引"
+                        tool:Color2Text_size="@dimen/sp13" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_menu_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size30"
+                android:layout_marginRight="@dimen/size35"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_ea2a40">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size45"
+                        android:layout_height="@dimen/size40"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_ipad_menu_scan" />
+
+                    <com.shoudukejiguan.www.view.Color2Text
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:lineSpacingExtra="2dp"
+                        android:text="扫一扫"
+                        android:textColor="#ea2a40"
+                        android:textSize="@dimen/sp17"
+                        tool:Color2Text_color="#80ea2a40"
+                        tool:Color2Text_content="\n快速查看展品信息"
+                        tool:Color2Text_size="@dimen/sp13" />
+                </LinearLayout>
+
+            </RelativeLayout>
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff">
+            android:layout_marginTop="@dimen/size20"
+            android:background="#fff"
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35">
 
             <TextView
                 android:id="@+id/tv_notice"
@@ -37,7 +186,6 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginBottom="@dimen/size10"
-                android:layout_marginLeft="@dimen/size10"
                 android:layout_marginRight="@dimen/size20"
                 android:layout_marginTop="@dimen/size10"
                 android:text="通知公告"
@@ -55,71 +203,88 @@
         <RelativeLayout
             android:id="@+id/rl_news"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size10"
+            android:layout_height="@dimen/size45"
+            android:layout_marginTop="@dimen/size20"
             android:background="#fff"
-            android:paddingBottom="@dimen/size10">
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35">
 
             <TextView
                 android:id="@+id/tv_news_title"
                 style="@style/TextSize12Color666"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size20"
-                android:text="新闻资讯" />
+                android:layout_centerVertical="true"
+                android:text="新闻资讯"
+                android:textSize="@dimen/size16" />
 
-            <TextView
-                android:id="@+id/tv_news_content"
-                style="@style/TextSize10Color999"
-                android:layout_below="@id/tv_news_title"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size5"
-                android:text="科技馆的最新消息第一时间查看" />
 
             <ImageView
-                android:layout_width="@dimen/size10"
-                android:layout_height="@dimen/size15"
+                android:id="@+id/iv_go_news"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size23"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/size10"
-                android:src="@mipmap/icon_go" />
+                android:src="@mipmap/icon_ipad_go" />
+
+            <TextView
+                style="@style/TextSize10Color999"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size20"
+                android:layout_toLeftOf="@id/iv_go_news"
+                android:text="科技馆的最新消息第一时间查看"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_alignParentBottom="true"
+                android:background="#e0e0e0" />
         </RelativeLayout>
 
-        <com.shoudukejiguan.www.view.MaxListView
-            android:id="@+id/lv_news"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_news"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff" />
+            android:background="#fff"
+            android:padding="@dimen/size35" />
+
 
         <RelativeLayout
             android:id="@+id/rl_exhibition"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size10"
+            android:layout_height="@dimen/size45"
+            android:layout_marginTop="@dimen/size20"
             android:background="#fff"
-            android:paddingBottom="@dimen/size10">
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35">
 
             <TextView
-                android:id="@+id/tv_exhibition_title"
                 style="@style/TextSize12Color666"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size20"
-                android:text="常设展览专区" />
+                android:layout_centerVertical="true"
+                android:text="常设展览专区"
+                android:textSize="@dimen/size16" />
 
-            <TextView
-                android:id="@+id/tv_exhibition_content"
-                style="@style/TextSize10Color999"
-                android:layout_below="@id/tv_exhibition_title"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size5"
-                android:text="生命·生活·生存·临展四大主题展厅" />
 
             <ImageView
-                android:layout_width="@dimen/size10"
-                android:layout_height="@dimen/size15"
+                android:id="@+id/iv_go_exhibition"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size23"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/size10"
-                android:src="@mipmap/icon_go" />
+                android:src="@mipmap/icon_ipad_go" />
+
+            <TextView
+                style="@style/TextSize10Color999"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size20"
+                android:layout_toLeftOf="@id/iv_go_exhibition"
+                android:text="生命 · 生活 · 生存 · 临展四大主题展厅"
+                android:textSize="@dimen/sp13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size0.5"
+                android:layout_alignParentBottom="true"
+                android:background="#e0e0e0" />
         </RelativeLayout>
 
         <LinearLayout
@@ -129,71 +294,76 @@
             android:background="#fff"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/size20"
-            android:weightSum="4"></LinearLayout>
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35"
+            android:paddingTop="@dimen/size15"
+            android:weightSum="4" />
 
         <RelativeLayout
             android:id="@+id/rl_film"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size10"
+            android:layout_height="@dimen/size45"
+            android:layout_marginTop="@dimen/size20"
             android:background="#fff"
-            android:paddingBottom="@dimen/size10">
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35">
 
             <TextView
-                android:id="@+id/tv_film_title"
                 style="@style/TextSize12Color666"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size20"
-                android:text="特效影院专区" />
+                android:layout_centerVertical="true"
+                android:text="特效影院专区"
+                android:textSize="@dimen/size16" />
 
-            <TextView
-                android:id="@+id/tv_film_content"
-                style="@style/TextSize10Color999"
-                android:layout_below="@id/tv_film_title"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size5"
-                android:text="体验从未有过的震撼和新奇之旅" />
 
             <ImageView
-                android:layout_width="@dimen/size10"
-                android:layout_height="@dimen/size15"
+                android:id="@+id/iv_go_film"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size23"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/size10"
-                android:src="@mipmap/icon_go" />
+                android:src="@mipmap/icon_ipad_go" />
+
+            <TextView
+                style="@style/TextSize10Color999"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size20"
+                android:layout_toLeftOf="@id/iv_go_film"
+                android:text="体验从未有过的震撼和新奇之旅"
+                android:textSize="@dimen/sp13" />
         </RelativeLayout>
 
 
         <RelativeLayout
             android:id="@+id/rl_education"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/size10"
+            android:layout_height="@dimen/size45"
+            android:layout_marginTop="@dimen/size20"
             android:background="#fff"
-            android:paddingBottom="@dimen/size10">
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35">
 
             <TextView
-                android:id="@+id/tv_education_title"
                 style="@style/TextSize12Color666"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size20"
-                android:text="教育专区" />
+                android:layout_centerVertical="true"
+                android:text="教育专区"
+                android:textSize="@dimen/size16" />
 
-            <TextView
-                android:id="@+id/tv_education_content"
-                style="@style/TextSize10Color999"
-                android:layout_below="@id/tv_education_title"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/size5"
-                android:text="传递科普知识,传递正能量" />
 
             <ImageView
-                android:layout_width="@dimen/size10"
-                android:layout_height="@dimen/size15"
+                android:id="@+id/iv_go_education"
+                android:layout_width="@dimen/size15"
+                android:layout_height="@dimen/size23"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/size10"
-                android:src="@mipmap/icon_go" />
+                android:src="@mipmap/icon_ipad_go" />
+
+            <TextView
+                style="@style/TextSize10Color999"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size20"
+                android:layout_toLeftOf="@id/iv_go_education"
+                android:text="传递科普知识,传递正能量"
+                android:textSize="@dimen/sp13" />
         </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
@@ -201,6 +371,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:backgroundTint="#fff"></android.support.v7.widget.RecyclerView>
+            android:padding="@dimen/size35" />
+
     </LinearLayout>
+
 </ScrollView>
