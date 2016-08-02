@@ -3,6 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.EducationAdapter;
+import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.Education;
 
 import java.util.List;
@@ -24,11 +25,13 @@ public class EducationFragment extends ListDataBaseFragment<Education, Education
 
     @Override
     protected String getUrl() {
-        return "";
+        return ApiConstant.LIST;
     }
 
     @Override
     protected Map<String, String> getMap(Map<String, String> map) {
+        map.put("mid","27");
+        map.put("catid","108");
         return map;
     }
 }

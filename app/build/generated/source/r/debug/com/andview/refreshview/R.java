@@ -40,8 +40,8 @@ public final class R {
 		public static final int xrefreshview_header_time = 0x7f0e012f;
 	}
 	public static final class layout {
-		public static final int xrefreshview_footer = 0x7f04006a;
-		public static final int xrefreshview_header = 0x7f04006b;
+		public static final int xrefreshview_footer = 0x7f04006b;
+		public static final int xrefreshview_header = 0x7f04006c;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f080019;

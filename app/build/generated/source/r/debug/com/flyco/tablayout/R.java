@@ -65,12 +65,12 @@ public final class R {
 		public static final int tv_tab_title = 0x7f0e010e;
 	}
 	public static final class layout {
-		public static final int layout_tab = 0x7f040055;
-		public static final int layout_tab_bottom = 0x7f040056;
-		public static final int layout_tab_left = 0x7f040057;
-		public static final int layout_tab_right = 0x7f040058;
-		public static final int layout_tab_segment = 0x7f040059;
-		public static final int layout_tab_top = 0x7f04005a;
+		public static final int layout_tab = 0x7f040056;
+		public static final int layout_tab_bottom = 0x7f040057;
+		public static final int layout_tab_left = 0x7f040058;
+		public static final int layout_tab_right = 0x7f040059;
+		public static final int layout_tab_segment = 0x7f04005a;
+		public static final int layout_tab_top = 0x7f04005b;
 	}
 	public static final class styleable {
 		public static final int[] CommonTabLayout = { 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f0100c1, 0x7f0100c2, 0x7f0100c3, 0x7f0100c4, 0x7f0100c5 };

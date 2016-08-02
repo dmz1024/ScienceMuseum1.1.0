@@ -20,7 +20,7 @@
         android:layout_toRightOf="@id/iv_img"
         android:maxEms="15"
         android:singleLine="true"
-        android:text="深度体验实验室" />
+        />
 
     <TextView
         android:id="@+id/tv_content"
@@ -31,8 +31,7 @@
         android:lines="3"
         android:ellipsize="end"
         android:lineSpacingExtra="4dp"
-
-        android:text="男孩坚持己见并努力追求飞行梦想的故事\n男孩坚持己见并努力追求飞行梦想的故事\n男孩坚持己见并努力追求飞行梦想的故事\n" />
+        />
 
     <View
         android:layout_below="@id/iv_img"

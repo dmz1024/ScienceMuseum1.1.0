@@ -51,14 +51,14 @@ public abstract class ListDataBaseFragment<T extends BaseLvEntity, D extends Dat
         return initView();
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Bundle bundle = getArguments();
-        if (bundle != null) {
-            size = bundle.getString("size");
-        }
-    }
+//    @Override
+//    public void onCreate(@Nullable Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        Bundle bundle = getArguments();
+//        if (bundle != null) {
+//            size = bundle.getString("size");
+//        }
+//    }
 
     /**
      * 初始化视图

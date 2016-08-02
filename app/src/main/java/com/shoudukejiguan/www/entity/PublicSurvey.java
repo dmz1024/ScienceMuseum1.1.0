@@ -6,6 +6,8 @@ package com.shoudukejiguan.www.entity;
 public class PublicSurvey extends BaseLvEntity<PublicSurvey.Data> {
 
     public class Data extends com.shoudukejiguan.www.entity.Data {
-
+        public String content;
+        public String itemid;
+        public String title;
     }
 }

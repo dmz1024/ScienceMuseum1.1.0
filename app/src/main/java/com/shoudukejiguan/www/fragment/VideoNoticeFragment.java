@@ -3,6 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.VideoNoticeAdapter;
+import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.VideoNotice;
 
 import java.util.List;
@@ -24,11 +25,13 @@ public class VideoNoticeFragment extends ListDataBaseFragment<VideoNotice, Video
 
     @Override
     protected String getUrl() {
-        return "";
+        return ApiConstant.LIST;
     }
 
     @Override
     protected Map<String, String> getMap(Map<String, String> map) {
+        map.put("mid","16");
+        map.put("catid","89");
         return map;
     }
 }

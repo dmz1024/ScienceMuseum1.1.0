@@ -42,10 +42,10 @@ public class ChildrenParkActivity extends BaseActivity {
         mTabEntities.add(new TabEntity("生活的奥妙", 0, 0));
         mTabEntities.add(new TabEntity("放飞希望", 0, 0));
         ArrayList<Fragment> mFragments = new ArrayList<>();
-        mFragments.add(new ChildrenParkFragment());
-        mFragments.add(new ChildrenParkFragment());
-        mFragments.add(new ChildrenParkFragment());
-        mFragments.add(new ChildrenParkFragment());
+        mFragments.add(ChildrenParkFragment.getInstance("52"));
+        mFragments.add(ChildrenParkFragment.getInstance("53"));
+        mFragments.add(ChildrenParkFragment.getInstance("54"));
+        mFragments.add(ChildrenParkFragment.getInstance("55"));
         tl_tab.setTabData(mTabEntities, this, R.id.fg_chiledrenPark, mFragments);
     }
 }

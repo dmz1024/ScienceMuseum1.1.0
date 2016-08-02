@@ -100,12 +100,12 @@ public class JuniorsFragment extends BaseFragment {
             }
         });
         mFragments.add(
-new JuniorsDataFragment() {
-            @Override
-            public View.OnTouchListener setListener() {
-                return getListener();
-            }
-        });
+                new JuniorsDataFragment() {
+                    @Override
+                    public View.OnTouchListener setListener() {
+                        return getListener();
+                    }
+                });
 
         tl_tab.setTabData(mTabEntities, getActivity(), R.id.fg_juniors, mFragments);
 
@@ -127,26 +127,26 @@ new JuniorsDataFragment() {
                         float tab_y = tl_tab.getY();
                         Log.d("运行", tab_y + "");
                         Log.d("deltaY", deltaY + "");
-                            deltaY = motionEvent.getY() - downY;
-                            if (deltaY >= 0) {
-                                if (tab_y > 0) {
+                        deltaY = motionEvent.getY() - downY;
+                        if (deltaY >= 0) {
+                            if (tab_y > 0) {
 //                                    if (rootView.getPaddingTop() >= 0) {
 //                                        rootView.setPadding(rootView.getPaddingLeft(), 0, rootView.getPaddingRight(), rootView.getPaddingBottom());
 //                                        return true;
 //                                    }
-                                    rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
-                                    return true;
-                                }
-
-                            } else {
-                                if (tab_y <= 0) {
-                                    return false;
-                                } else {
-                                    rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
-                                    return true;
-                                }
-
+                                rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
+                                return true;
                             }
+
+                        } else {
+                            if (tab_y <= 0) {
+                                return false;
+                            } else {
+                                rootView.setPadding(rootView.getPaddingLeft(), (int) (oldPaddingTop + deltaY), rootView.getPaddingRight(), rootView.getPaddingBottom());
+                                return true;
+                            }
+
+                        }
                         break;
 
                     case MotionEvent.ACTION_UP:

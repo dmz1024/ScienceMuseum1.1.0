@@ -28,8 +28,11 @@ public class MapFragment extends BaseFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getArguments();
-        url = bundle.getString("url");
-        Log.d("网址", url + "--");
+        if (bundle != null) {
+            url = bundle.getString("url");
+            Log.d("网址", url + "--");
+        }
+
     }
 
     @Nullable

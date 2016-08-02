@@ -18,7 +18,7 @@
         tool:tl_indicator_width="50dp"
         tool:tl_textSelectColor="#00acbb"
         tool:tl_textUnselectColor="#333"
-        tool:tl_textsize="@dimen/sp16" />
+        tool:tl_textsize="@dimen/sp13" />
 
     <View
         android:layout_width="match_parent"

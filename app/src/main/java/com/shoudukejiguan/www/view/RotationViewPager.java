@@ -11,7 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.ImageView;
+
 import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +26,7 @@ public class RotationViewPager extends ViewPager {
     private int viewCount = 0;
     private List<View> views;
     private PagerAdapter mAdapter;
+    private int size = 0;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -36,9 +39,9 @@ public class RotationViewPager extends ViewPager {
     };
 
     private void rotation() {
-        if (viewCount <= 1) {
-            return;
-        }
+//        if (viewCount <= 1) {
+//            return;
+//        }
 
         setCurrentItem(getCurrentItem() + 1);
         handler.sendEmptyMessageDelayed(1, 2500);
@@ -60,9 +63,16 @@ public class RotationViewPager extends ViewPager {
     public void setViews(List<View> views) {
         this.views = views;
         if (views != null && (viewCount = views.size()) > 0) {
-            setAdapter(mAdapter = new MyAdapter());
-            setCurrentItem(viewCount * 100000);
-            handler.sendEmptyMessageDelayed(1, 2500);
+            if (viewCount > 1) {
+                size = Integer.MAX_VALUE;
+                setAdapter(mAdapter = new MyAdapter());
+                setCurrentItem(viewCount * 100000);
+                handler.sendEmptyMessageDelayed(1, 2500);
+            } else {
+                size = 1;
+                setAdapter(mAdapter = new MyAdapter());
+            }
+
         }
 
 
@@ -104,7 +114,7 @@ public class RotationViewPager extends ViewPager {
     class MyAdapter extends PagerAdapter {
         @Override
         public int getCount() {
-            return Integer.MAX_VALUE;
+            return size;
         }
 
         @Override
@@ -130,30 +140,34 @@ public class RotationViewPager extends ViewPager {
         public void destroyItem(ViewGroup container, int position, Object object) {
 //            ((RotationViewPager) container).removeView(views.get(position % views.size()));
         }
+
+
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
-
-        switch (ev.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                handler.removeMessages(1);
-                break;
-            case MotionEvent.ACTION_UP:
+        if (viewCount > 1) {
+            switch (ev.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    handler.removeMessages(1);
+                    break;
+                case MotionEvent.ACTION_UP:
 //                if (getCurrentItem() == views.size() - 1) {
 //                    handler.sendEmptyMessage(1);
 //                } else {
 //                    handler.sendEmptyMessageDelayed(1, 2500);
 //                }
-                handler.sendEmptyMessageDelayed(1, 2500);
-                break;
-            case MotionEvent.ACTION_MOVE:
-                requestDisallowInterceptTouchEvent(true);
-                break;
-            case MotionEvent.ACTION_CANCEL:
-                requestDisallowInterceptTouchEvent(false);
-                break;
+                    handler.sendEmptyMessageDelayed(1, 2500);
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    requestDisallowInterceptTouchEvent(true);
+                    break;
+                case MotionEvent.ACTION_CANCEL:
+                    requestDisallowInterceptTouchEvent(false);
+                    break;
+            }
         }
+
         return super.onTouchEvent(ev);
     }
 }

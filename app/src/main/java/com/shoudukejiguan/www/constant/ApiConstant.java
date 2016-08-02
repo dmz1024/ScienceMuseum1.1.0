@@ -25,4 +25,21 @@ public interface ApiConstant {
      */
     String LOGIN = URL + "login.php";
 
+    /**
+     * 全模块列表
+     */
+
+    String LIST = URL + "list.php";
+
+    /**
+     * 首页
+     */
+
+    String INDEX = URL + "index.php";
+
+    /**
+     * 调查问卷列表
+     */
+    String FORMLIST = URL + "formlist.php";
+
 }

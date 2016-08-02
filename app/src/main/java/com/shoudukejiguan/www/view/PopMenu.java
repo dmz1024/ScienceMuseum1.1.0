@@ -107,10 +107,7 @@ public abstract class PopMenu {
         lv_content.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (current ==8) {
-                    window.dismiss();
-                    return;
-                }else if(current ==7){
+                if (current == 7) {
                     window.dismiss();
                     return;
                 }

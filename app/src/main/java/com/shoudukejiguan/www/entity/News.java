@@ -10,5 +10,6 @@ public class News extends BaseLvEntity<News.Data> {
         public String title;
         public String introduce;
         public String addtime;
+        public String linkurl;
     }
 }

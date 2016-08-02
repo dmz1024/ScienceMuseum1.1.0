@@ -45,10 +45,10 @@ public class VideoSignalFragment extends BaseFragment {
         mTabEntities.add(new TabEntity("巨幕", 0, 0));
         mTabEntities.add(new TabEntity("球幕", 0, 0));
         ArrayList<Fragment> mFragments = new ArrayList<>();
-        mFragments.add(new VideoSignaDataFragment());
-        mFragments.add(new VideoSignaDataFragment());
-        mFragments.add(new VideoSignaDataFragment());
-        mFragments.add(new VideoSignaDataFragment());
+        mFragments.add(VideoSignaDataFragment.getInstance("88"));
+        mFragments.add(VideoSignaDataFragment.getInstance("94"));
+        mFragments.add(VideoSignaDataFragment.getInstance("95"));
+        mFragments.add(VideoSignaDataFragment.getInstance("96"));
         tl_tab.setTabData(mTabEntities, getActivity(), R.id.fg_video_signa, mFragments);
     }
 }

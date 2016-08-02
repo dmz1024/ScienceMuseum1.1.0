@@ -136,7 +136,10 @@
             android:background="#fff"
             android:orientation="horizontal"
             android:paddingBottom="@dimen/size20"
-            android:weightSum="4"></LinearLayout>
+            android:paddingLeft="@dimen/size35"
+            android:paddingRight="@dimen/size35"
+            android:paddingTop="@dimen/size15"
+            android:weightSum="4" />
 
         <RelativeLayout
             android:id="@+id/rl_film"

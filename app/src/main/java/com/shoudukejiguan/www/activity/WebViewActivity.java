@@ -41,6 +41,10 @@ public class WebViewActivity extends BaseActivity {
     @Override
     protected void initView() {
         webView = new WebView(this);
+//        LinearLayout.LayoutParams params= (LinearLayout.LayoutParams) webView.getLayoutParams();
+//        params.width=LinearLayout.LayoutParams.MATCH_PARENT;
+//        params.height=LinearLayout.LayoutParams.MATCH_PARENT;
+//        webView.setLayoutParams(params);
         setContentView(webView);
     }
 

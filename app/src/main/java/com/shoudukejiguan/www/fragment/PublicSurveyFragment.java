@@ -3,6 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 
 import com.shoudukejiguan.www.adapter.PublicSurveyAdapter;
+import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.PublicSurvey;
 
 import java.util.List;
@@ -24,7 +25,7 @@ public class PublicSurveyFragment extends ListDataBaseFragment<PublicSurvey, Pub
 
     @Override
     protected String getUrl() {
-        return "";
+        return ApiConstant.FORMLIST;
     }
 
     @Override

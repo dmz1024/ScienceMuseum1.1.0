@@ -29,16 +29,20 @@ public class PublicSurveyAdapter extends ListBaseAdapter<PublicSurvey.Data, Publ
 
     @Override
     protected void bindHolder(PublicSurveyHolder holder, final int position) {
+        final PublicSurvey.Data data = list.get(position);
         holder.tv_num.setText(position + "");
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ctx, WriteSurveyActivity.class);
-                intent.putExtra("title", "首都科学技术馆游客满意度调查" + position);
-                intent.putExtra("id", position + "");
+                intent.putExtra("title", data.title);
+                intent.putExtra("id", data.itemid + "");
                 ctx.startActivity(intent);
             }
         });
+        holder.tv_title.setText(data.title);
+        holder.tv_content.setText(data.content);
+
     }
 
     @Override
