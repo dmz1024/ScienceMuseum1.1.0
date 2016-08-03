@@ -14,7 +14,7 @@ public class PopMenu {
 
     }
 
-    public class SecMenu {
+    public static class SecMenu {
         public int ID;
         public String name;
     }

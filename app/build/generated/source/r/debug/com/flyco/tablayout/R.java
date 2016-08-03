@@ -59,10 +59,10 @@ public final class R {
 		public static final int RIGHT = 0x7f0e0032;
 		public static final int TOP = 0x7f0e0012;
 		public static final int TRIANGLE = 0x7f0e0015;
-		public static final int iv_tab_icon = 0x7f0e0111;
-		public static final int ll_tap = 0x7f0e0110;
-		public static final int rtv_msg_tip = 0x7f0e010f;
-		public static final int tv_tab_title = 0x7f0e010e;
+		public static final int iv_tab_icon = 0x7f0e0114;
+		public static final int ll_tap = 0x7f0e0113;
+		public static final int rtv_msg_tip = 0x7f0e0112;
+		public static final int tv_tab_title = 0x7f0e0111;
 	}
 	public static final class layout {
 		public static final int layout_tab = 0x7f040056;

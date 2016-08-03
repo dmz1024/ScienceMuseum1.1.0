@@ -11,6 +11,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.shoudukejiguan.www.MyApplication;
+import com.shoudukejiguan.www.view.MyToast;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -113,7 +114,9 @@ public abstract class ApiRequest<T> {
     /**
      * 没有网络
      */
-    protected abstract void noNetWork();
+    protected  void noNetWork(){
+        MyToast.showToast("网络连接失败!");
+    }
 
     /**
      * 成功返回数据
@@ -123,7 +126,9 @@ public abstract class ApiRequest<T> {
     /**
      * 代码或服务器异常
      */
-    protected abstract void onErr();
+    protected  void onErr(){
+        MyToast.showToast("服务器异常!");
+    }
 
     protected Map<String, String> map(Map<String, String> map) {
         return map;

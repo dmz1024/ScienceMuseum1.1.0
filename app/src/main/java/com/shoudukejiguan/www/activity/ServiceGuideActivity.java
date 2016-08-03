@@ -6,13 +6,18 @@ import android.support.v4.view.ViewPager;
 
 import com.flyco.tablayout.SlidingTabLayout;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.api.ApiRequest;
+import com.shoudukejiguan.www.constant.ApiConstant;
+import com.shoudukejiguan.www.entity.GuideInfo;
 import com.shoudukejiguan.www.fragment.MapFragment;
+import com.shoudukejiguan.www.view.MyToast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class ServiceGuideActivity extends BaseActivity {
-    private String[] titles = {"参观指引", "个人预订", "团体预订", "交通指南", "友情推荐", "游客服务"};
+
     private SlidingTabLayout tl_tab;
     private ViewPager vp_content;
 
@@ -28,29 +33,49 @@ public class ServiceGuideActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-        final List<Fragment> fragments = new ArrayList<>();
-        for (int i = 0; i < 6; i++) {
-            fragments.add(MapFragment.getInstance("https://www.baidu.com"));
-        }
-
-        vp_content.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+        new ApiRequest<GuideInfo>(this, ApiConstant.LIST, GuideInfo.class) {
             @Override
-            public Fragment getItem(int position) {
-                return fragments.get(position);
+            protected void success(GuideInfo guideInfo) {
+                if (guideInfo.result == 0) {
+                    final List<GuideInfo.Data> data = guideInfo.data;
+                    final int count = data.size();
+                    final List<Fragment> fragments = new ArrayList<>();
+                    for (int i = 0; i < count; i++) {
+                        fragments.add(MapFragment.getInstance("https://www.baidu.com"));
+                    }
+
+                    vp_content.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
+                        @Override
+                        public Fragment getItem(int position) {
+                            return fragments.get(position);
+                        }
+
+                        @Override
+                        public int getCount() {
+                            return count;
+                        }
+
+                        @Override
+                        public CharSequence getPageTitle(int position) {
+                            return data.get(position).lanmumingcheng;
+                        }
+                    });
+
+                    tl_tab.setViewPager(vp_content);
+                } else {
+                    MyToast.showToast(guideInfo.msg);
+                }
             }
 
             @Override
-            public int getCount() {
-                return 6;
+            protected Map<String, String> map(Map<String, String> map) {
+                map.put("mid", "30");
+                map.put("catid", "73");
+                map.put("size", Integer.MAX_VALUE + "");
+                return map;
             }
+        }.post("获取服务信息...");
 
-            @Override
-            public CharSequence getPageTitle(int position) {
-                return titles[position];
-            }
-        });
-
-        tl_tab.setViewPager(vp_content);
 
     }
 

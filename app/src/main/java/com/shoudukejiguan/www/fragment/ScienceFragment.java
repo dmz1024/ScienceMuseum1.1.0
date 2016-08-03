@@ -14,7 +14,13 @@ import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.shoudukejiguan.www.R;
+import com.shoudukejiguan.www.api.ApiRequest;
+import com.shoudukejiguan.www.constant.ApiConstant;
+import com.shoudukejiguan.www.entity.JuniorsTab;
+import com.shoudukejiguan.www.entity.ScienceTab;
 import com.shoudukejiguan.www.view.Color2Text;
+
+import java.util.Map;
 
 /**
  * Created by dengmingzhi on 16/7/12.
@@ -25,6 +31,7 @@ public class ScienceFragment extends BaseFragment {
     private Color2Text tv_cr_price;
     private Color2Text tv_et_price;
     private Color2Text tv_tips;
+    private ImageView iv;
     private View rootView;
     private int oldPaddingTop;
     private LinearLayout ll_top;
@@ -45,8 +52,7 @@ public class ScienceFragment extends BaseFragment {
 
     private void initView(View view) {
         rootView = view;
-        ImageView iv = (ImageView) view.findViewById(R.id.iv_img);
-        Glide.with(getActivity()).load("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg").into(iv);
+        iv = (ImageView) view.findViewById(R.id.iv_img);
         tv_time = (Color2Text) view.findViewById(R.id.tv_time);
         tv_address = (Color2Text) view.findViewById(R.id.tv_address);
         tv_cr_price = (Color2Text) view.findViewById(R.id.tv_cr_price);
@@ -97,11 +103,7 @@ public class ScienceFragment extends BaseFragment {
     }
 
     private void initData() {
-        tv_time.setTextContent("日常 08:00至 20:00,节假日：10:00 至 21:00");
-        tv_address.setTextContent("首都科学技术官 D馆3层生命乐章展厅");
-        tv_cr_price.setTextContent("￥35");
-        tv_et_price.setTextContent("￥17");
-        tv_tips.setTextContent("您可以带您的家人一起来感受首都科技馆的氛围,这里是科学殿堂,梦想的开始。一人一票，儿童票半价，一票只可使用一次。");
+        initTitleBar();
         getChildFragmentManager().beginTransaction().add(R.id.fg_science, scienceDataFragment=new ScienceDataFragment()).commit();
         scienceDataFragment.setListener(new View.OnTouchListener() {
             @Override
@@ -152,6 +154,34 @@ public class ScienceFragment extends BaseFragment {
             }
 
         });
+    }
+
+
+
+    private void initTitleBar() {
+        new ApiRequest<ScienceTab>(getContext(), ApiConstant.LIST, ScienceTab.class) {
+            @Override
+            protected void success(ScienceTab scienceTab) {
+                if (scienceTab.result == 0) {
+                    if (scienceTab.data.size() > 0) {
+                        ScienceTab.Data data = scienceTab.data.get(0);
+                        Glide.with(getActivity()).load(data.thumb).into(iv);
+                        tv_time.setTextContent(data.kfsj);
+                        tv_cr_price.setTextContent("￥" + data.crpj);
+                        tv_et_price.setTextContent("￥" + data.etpj);
+                        tv_tips.setTextContent(data.wxts);
+                        tv_address.setTextContent(data.didian);
+                    }
+                }
+            }
+
+            @Override
+            protected Map<String, String> map(Map<String, String> map) {
+                map.put("mid","16");
+                map.put("catid","85");
+                return map;
+            }
+        }.post();
     }
 
 }

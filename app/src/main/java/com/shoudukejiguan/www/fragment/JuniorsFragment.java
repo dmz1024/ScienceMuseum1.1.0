@@ -14,11 +14,15 @@ import android.widget.LinearLayout;
 import com.bumptech.glide.Glide;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
+import com.shoudukejiguan.www.api.ApiRequest;
+import com.shoudukejiguan.www.constant.ApiConstant;
+import com.shoudukejiguan.www.entity.JuniorsTab;
 import com.shoudukejiguan.www.entity.TabEntity;
 import com.shoudukejiguan.www.R;
 import com.shoudukejiguan.www.view.Color2Text;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 /**
  * Created by dengmingzhi on 16/7/12.
@@ -29,6 +33,7 @@ public class JuniorsFragment extends BaseFragment {
     private Color2Text tv_cr_price;
     private Color2Text tv_et_price;
     private Color2Text tv_tips;
+    private ImageView iv;
     private CommonTabLayout tl_tab;
     private LinearLayout ll_top;
     private float downY;
@@ -48,8 +53,7 @@ public class JuniorsFragment extends BaseFragment {
 
     private void initView(View view) {
         rootView = view;
-        ImageView iv = (ImageView) view.findViewById(R.id.iv_img);
-        Glide.with(getActivity()).load("http://img1.v.tmcdn.net/img/h000/h08/img20120822145108301270.jpg").into(iv);
+        iv = (ImageView) view.findViewById(R.id.iv_img);
         tv_title = (Color2Text) view.findViewById(R.id.tv_title);
         tv_open_time = (Color2Text) view.findViewById(R.id.tv_open_time);
         tv_cr_price = (Color2Text) view.findViewById(R.id.tv_cr_price);
@@ -71,12 +75,34 @@ public class JuniorsFragment extends BaseFragment {
     }
 
     private void initData() {
-        tv_title.setTextContent("\"生命乐章主展\"、\"生活追梦主展\"、\"生存对话主展\"");
-        tv_open_time.setTextContent("日常 08:00至 20：00,节假日：10:00 至 21:00");
-        tv_cr_price.setTextContent("￥35");
-        tv_et_price.setTextContent("￥17");
-        tv_tips.setTextContent("您可以带您的家人一起来感受首都科技馆的氛围,这里是科学殿堂,梦想的开始。一人一票，儿童票半价，一票只可使用一次。");
+        initTitleBar();
         initTab();
+    }
+
+    private void initTitleBar() {
+        new ApiRequest<JuniorsTab>(getContext(), ApiConstant.LIST, JuniorsTab.class) {
+            @Override
+            protected void success(JuniorsTab juniorsTab) {
+                if (juniorsTab.result == 0) {
+                    if (juniorsTab.data.size() > 0) {
+                        JuniorsTab.Data data = juniorsTab.data.get(0);
+                        Glide.with(getActivity()).load(data.thumb).into(iv);
+                        tv_title.setTextContent(data.title);
+                        tv_open_time.setTextContent(data.kfsj);
+                        tv_cr_price.setTextContent("￥" + data.crpj);
+                        tv_et_price.setTextContent("￥" + data.etpj);
+                        tv_tips.setTextContent(data.wxts);
+                    }
+                }
+            }
+
+            @Override
+            protected Map<String, String> map(Map<String, String> map) {
+                map.put("mid","16");
+                map.put("catid","84");
+                return map;
+            }
+        }.post();
     }
 
     private void initTab() {

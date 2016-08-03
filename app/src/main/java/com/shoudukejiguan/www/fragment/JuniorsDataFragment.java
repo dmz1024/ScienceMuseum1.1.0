@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.View;
 
 import com.shoudukejiguan.www.adapter.JuniorsAdapter;
+import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.Juniors;
 
 import java.util.List;
@@ -27,11 +28,13 @@ public abstract class JuniorsDataFragment extends ListDataBaseFragment<Juniors, 
 
     @Override
     protected String getUrl() {
-        return "";
+        return ApiConstant.LIST;
     }
 
     @Override
     protected Map<String, String> getMap(Map<String, String> map) {
+        map.put("mid","35");
+        map.put("catid","106");
         return map;
     }
 

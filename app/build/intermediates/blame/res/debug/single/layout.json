@@ -164,6 +164,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_item_order.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/map_load.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/map_load.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_education.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_education.xml"
     },

@@ -3,6 +3,7 @@ package com.shoudukejiguan.www.fragment;
 import android.content.Context;
 import android.view.View;
 
+import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.Science;
 import com.shoudukejiguan.www.adapter.ScienceAdapter;
 
@@ -14,6 +15,7 @@ import java.util.Map;
  */
 public class ScienceDataFragment extends ListDataBaseFragment<Science, Science.Data, ScienceAdapter> {
     private View.OnTouchListener listener;
+
     @Override
     protected ScienceAdapter getAdapter(Context context, List<Science.Data> totalList) {
         return new ScienceAdapter(totalList);
@@ -26,7 +28,7 @@ public class ScienceDataFragment extends ListDataBaseFragment<Science, Science.D
 
     @Override
     protected String getUrl() {
-        return "";
+        return ApiConstant.LIST;
     }
 
     @Override
@@ -36,6 +38,8 @@ public class ScienceDataFragment extends ListDataBaseFragment<Science, Science.D
 
     @Override
     protected Map<String, String> getMap(Map<String, String> map) {
+        map.put("mid", "35");
+        map.put("catid", "107");
         return map;
     }
 

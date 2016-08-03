@@ -20,8 +20,13 @@ import com.shoudukejiguan.www.activity.ChildrenParkActivity;
 import com.shoudukejiguan.www.activity.ExhibitionActivity;
 import com.shoudukejiguan.www.activity.InteractionFeedbackActivity;
 import com.shoudukejiguan.www.activity.ServiceGuideActivity;
+import com.shoudukejiguan.www.api.ApiRequest;
+import com.shoudukejiguan.www.constant.ApiConstant;
+import com.shoudukejiguan.www.entity.GuideInfo;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by dengmingzhi on 16/7/20.
@@ -30,7 +35,7 @@ public abstract class PopMenu {
     Context ctx;
     int current;
     PopupWindow window;
-    static String json = new StringBuilder().append("{\"data\":").append("[{\"name\": \"新闻资讯\",")
+    String json = new StringBuilder().append("{\"data\":").append("[{\"name\": \"新闻资讯\",")
             .append("\"ID\": \"1000\",").append(" \"secMenu\":[]").append(" },")
             .append(" {\"name\": \"常设展览\",").append(" \"ID\": \"2000\",")
             .append(" \"secMenu\":[").append("{\"name\": \"三生主展\",")
@@ -80,7 +85,7 @@ public abstract class PopMenu {
         lv_content = (MaxListView) view.findViewById(R.id.lv_content);
         lv_main.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
                 switch (i) {
                     case 0:
                         skip(MoreNewsActivity.class);
@@ -94,10 +99,13 @@ public abstract class PopMenu {
                     case 4:
                     case 5:
                     case 7:
-                    case 8:
                     case 9:
                         current = i;
                         lv_content.setAdapter(new ContentAdapter(menu.data.get(i).secMenu));
+                        break;
+                    case 8:
+                        skip(ServiceGuideActivity.class);
+                        window.dismiss();
                         break;
                 }
 
@@ -125,9 +133,6 @@ public abstract class PopMenu {
                         break;
                     case 5:
                         intent = new Intent(ctx, CinemaActivity.class);//特效影院
-                        break;
-                    case 8:
-                        intent = new Intent(ctx, ServiceGuideActivity.class);//服务指南
                         break;
                     case 9:
                         intent = new Intent(ctx, InteractionFeedbackActivity.class);//互动反馈

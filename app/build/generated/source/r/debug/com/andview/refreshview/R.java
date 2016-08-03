@@ -26,22 +26,22 @@ public final class R {
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0e0005;
-		public static final int left_images = 0x7f0e0129;
-		public static final int right_text = 0x7f0e012d;
-		public static final int xrefreshview_footer_click_textview = 0x7f0e0127;
-		public static final int xrefreshview_footer_content = 0x7f0e0124;
-		public static final int xrefreshview_footer_hint_textview = 0x7f0e0126;
-		public static final int xrefreshview_footer_progressbar = 0x7f0e0125;
-		public static final int xrefreshview_header_arrow = 0x7f0e012a;
-		public static final int xrefreshview_header_hint_textview = 0x7f0e012e;
-		public static final int xrefreshview_header_ok = 0x7f0e012c;
-		public static final int xrefreshview_header_progressbar = 0x7f0e012b;
-		public static final int xrefreshview_header_text = 0x7f0e0128;
-		public static final int xrefreshview_header_time = 0x7f0e012f;
+		public static final int left_images = 0x7f0e012e;
+		public static final int right_text = 0x7f0e0132;
+		public static final int xrefreshview_footer_click_textview = 0x7f0e012c;
+		public static final int xrefreshview_footer_content = 0x7f0e0129;
+		public static final int xrefreshview_footer_hint_textview = 0x7f0e012b;
+		public static final int xrefreshview_footer_progressbar = 0x7f0e012a;
+		public static final int xrefreshview_header_arrow = 0x7f0e012f;
+		public static final int xrefreshview_header_hint_textview = 0x7f0e0133;
+		public static final int xrefreshview_header_ok = 0x7f0e0131;
+		public static final int xrefreshview_header_progressbar = 0x7f0e0130;
+		public static final int xrefreshview_header_text = 0x7f0e012d;
+		public static final int xrefreshview_header_time = 0x7f0e0134;
 	}
 	public static final class layout {
-		public static final int xrefreshview_footer = 0x7f04006b;
-		public static final int xrefreshview_header = 0x7f04006c;
+		public static final int xrefreshview_footer = 0x7f04006c;
+		public static final int xrefreshview_header = 0x7f04006d;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f080019;
