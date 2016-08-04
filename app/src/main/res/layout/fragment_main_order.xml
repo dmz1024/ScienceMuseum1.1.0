@@ -38,7 +38,7 @@
             android:paddingLeft="@dimen/size10"
             android:paddingRight="@dimen/size10"
             android:paddingTop="@dimen/size5"
-            android:text="2016-04-21"
+            android:text="选择日期"
             tools:TextImage_drawable="@mipmap/icon_calendar"
             tools:TextImage_height="@dimen/size12"
             tools:TextImage_seat="3"

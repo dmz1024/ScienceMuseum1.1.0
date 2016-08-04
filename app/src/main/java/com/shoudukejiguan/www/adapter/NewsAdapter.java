@@ -40,7 +40,7 @@ public class NewsAdapter extends ListBaseAdapter<News.Data, NewsAdapter.NewsHold
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ctx, WebViewActivity.class);
-                intent.putExtra("url", news.linkurl);
+                intent.putExtra("url", "http://keji.lovect.cn/app/show.php?mid=21&itemid=" + news.itemid);
                 ctx.startActivity(intent);
             }
         });

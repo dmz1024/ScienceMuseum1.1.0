@@ -160,6 +160,10 @@
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/fragment_education_opinion.xml"
     },
     {
+        "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/map.xml",
+        "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/map.xml"
+    },
+    {
         "merged": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/build/intermediates/res/merged/debug/layout/item_item_order.xml",
         "source": "/Users/dengmingzhi/Desktop/develop/android/kejiguan/ScienceMuseum/app/src/main/res/layout/item_item_order.xml"
     },

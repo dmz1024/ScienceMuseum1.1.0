@@ -10,6 +10,7 @@ import com.shoudukejiguan.www.api.ApiRequest;
 import com.shoudukejiguan.www.constant.ApiConstant;
 import com.shoudukejiguan.www.entity.GuideInfo;
 import com.shoudukejiguan.www.fragment.MapFragment;
+import com.shoudukejiguan.www.fragment.MapTestFragment;
 import com.shoudukejiguan.www.view.MyToast;
 
 import java.util.ArrayList;
@@ -41,9 +42,15 @@ public class ServiceGuideActivity extends BaseActivity {
                     final int count = data.size();
                     final List<Fragment> fragments = new ArrayList<>();
                     for (int i = 0; i < count; i++) {
-                        fragments.add(MapFragment.getInstance("https://www.baidu.com"));
+                        if (i != 0) {
+                            fragments.add(MapTestFragment.getInstance("http://keji.lovect.cn/app/show.php?mid=30&itemid=" + data.get(i).itemid));
+                        } else {
+                            fragments.add(MapTestFragment.getInstance("http://keji.lovect.cn/app/show.php?mid=30&itemid=" + data.get(i).itemid, true));
+                        }
+
                     }
 
+                    vp_content.setOffscreenPageLimit(count);
                     vp_content.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
                         @Override
                         public Fragment getItem(int position) {
@@ -74,7 +81,7 @@ public class ServiceGuideActivity extends BaseActivity {
                 map.put("size", Integer.MAX_VALUE + "");
                 return map;
             }
-        }.post("获取服务信息...");
+        }.post("获取服务列表...");
 
 
     }

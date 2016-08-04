@@ -62,6 +62,7 @@ public class RotationViewPager extends ViewPager {
      */
     public void setViews(List<View> views) {
         this.views = views;
+        handler.removeMessages(1);
         if (views != null && (viewCount = views.size()) > 0) {
             if (viewCount > 1) {
                 size = Integer.MAX_VALUE;

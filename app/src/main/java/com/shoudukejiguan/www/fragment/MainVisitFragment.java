@@ -18,20 +18,16 @@ public class MainVisitFragment extends MainBaseFragment {
     private String[] mTitles = {"地图导航", "馆内导览"};
 
     @Override
-    protected boolean isInit() {
-        return false;
-    }
-
-    @Override
     protected void initData() {
         MapManager manager = new MapManager(getContext());
         manager.setOnLocationListener(new MapManager.OnLocationListener() {
             @Override
             public void location(double latitude, double longitude) {
                 ArrayList<Fragment> mFragments = new ArrayList<>();
-                mFragments.add(MapFragment.getInstance("http://m.amap.com/navi/?start=" + longitude + "," + latitude + "&dest=116.393275,39.970341&destName=首都科学技术馆&key=d3f5d8b3b05231fa6a11375492310e3a"));
+                mFragments.add(MapTestFragment.getInstance("http://m.amap.com/navi/?start=" + longitude + "," + latitude + "&dest=116.393275,39.970341&destName=首都科学技术馆&key=d3f5d8b3b05231fa6a11375492310e3a",true,false));
                 mFragments.add(new GuestsFragment());
                 tl_tab.setTabData(mTitles, getActivity(), R.id.fg_visit, mFragments);
+
             }
 
             @Override
@@ -41,9 +37,12 @@ public class MainVisitFragment extends MainBaseFragment {
                 mFragments.add(MapFragment.getInstance("http://m.amap.com/navi/?start=116.393275,39.970341&dest=116.393275,39.970341&destName=首都科学技术馆&key=d3f5d8b3b05231fa6a11375492310e3a"));
                 mFragments.add(new GuestsFragment());
                 tl_tab.setTabData(mTitles, getActivity(), R.id.fg_visit, mFragments);
+
             }
         });
+
     }
+
 
     @Override
     protected void initView(View view) {
@@ -52,7 +51,7 @@ public class MainVisitFragment extends MainBaseFragment {
     }
 
     @Override
-    protected int getRid() {
+    protected int getViewId() {
         return R.layout.fragment_main_visit;
     }
 
@@ -61,4 +60,8 @@ public class MainVisitFragment extends MainBaseFragment {
         return false;
     }
 
+    @Override
+    protected boolean isSetRefreshListener() {
+        return false;
+    }
 }

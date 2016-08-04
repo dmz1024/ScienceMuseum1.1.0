@@ -1,5 +1,6 @@
 package com.shoudukejiguan.www.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +17,15 @@ import java.util.List;
  */
 public abstract class ListBaseAdapter<T extends Data, A extends RecyclerView.ViewHolder> extends BaseRecyclerAdapter<A> {
     protected List<T> list;
+    protected Context ctx;
 
     public ListBaseAdapter(List<T> list) {
         this.list = list;
+    }
+
+    public ListBaseAdapter(List<T> list,Context ctx) {
+        this.list = list;
+        this.ctx = ctx;
     }
 
     protected abstract void bindHolder(A holder, int position);

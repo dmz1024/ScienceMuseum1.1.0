@@ -68,7 +68,7 @@ public class MapFragment extends BaseFragment implements SwipeRefreshLayout.OnRe
             }
         });
         swipeRefreshLayout.setOnRefreshListener(this);
-        onRefresh();
+
         swipeRefreshLayout.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -84,7 +84,6 @@ public class MapFragment extends BaseFragment implements SwipeRefreshLayout.OnRe
     @Override
     public void onRefresh() {
         if (isRefresh) {
-            Log.d("这里", "哈哈");
             return;
         } else {
             isRefresh = true;

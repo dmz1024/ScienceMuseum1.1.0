@@ -61,64 +61,12 @@ public class MainIndexFragment extends MainBaseFragment {
     private boolean isFirstSao1Sao;
 
     @Override
-    protected boolean isInit() {
-
-        return true;
-    }
-
-    @Override
     protected void initData() {
         titleBar.setLeftImage(R.mipmap.icon_more);
-
-//        new APiHttp(ApiConstant.INDEX, null, getContext()) {
-//            @Override
-//            protected void success(String json) {
-//                Index index = new Gson().fromJson(json, Index.class);
-//                if (index.result == 0) {
-//                    Index.Data data = index.data;
-//                    List<Index.Ad> ads = data.ad;
-//                    List<String> adsList = new ArrayList<String>();
-//                    for (int i = 0; i < ads.size(); i++) {
-//                        adsList.add(ads.get(i).image_url);
-//                    }
-//                    layout_rotation.setUrls(adsList);
-//
-//                    List<Index.GoogGao> googGaos = data.googgao;
-//                    List<String> gGList = new ArrayList<String>();
-//                    for (int i = 0; i < googGaos.size(); i++) {
-//                        gGList.add(googGaos.get(i).title);
-//                    }
-//                    tip_notice.setTipList(gGList);
-//
-//                    List<IndexNews> newsList = new ArrayList<IndexNews>();
-//                    List<Index.News> newss = new ArrayList<Index.News>();
-//                    for (int i = 0; i < newss.size(); i++) {
-//                        Index.News news = newss.get(i);
-//                        IndexNews indexNews = new IndexNews(news.title, news.addtime);
-//                        newsList.add(indexNews);
-//                    }
-//                    lv_news.setAdapter(new IndexNewsAdapter(getContext(), newsList));
-//
-//                    List<String[]> exhibitionList = new ArrayList<String[]>();
-//                    List<Index.ZhanLan> zhanLans = new ArrayList<Index.ZhanLan>();
-//                    for (int i = 0; i < zhanLans.size(); i++) {
-//                        exhibitionList.add(new String[]{zhanLans.get(i).title, zhanLans.get(i).thumb});
-//                    }
-//                    exhibitionView(exhibitionList);
-//
-//                    educationView(data.jiaoyu);
-//
-//
-//                } else {
-//                    MyToast.showToast(index.msg);
-//                }
-//            }
-//        }.post();
-
         new ApiRequest<Index>(getActivity(), ApiConstant.INDEX, Index.class) {
             @Override
             protected void noNetWork() {
-
+                setStopRefresh();
             }
 
 
@@ -165,11 +113,12 @@ public class MainIndexFragment extends MainBaseFragment {
                 } else {
                     MyToast.showToast(index.msg);
                 }
+                setStopRefresh();
             }
 
             @Override
             protected void onErr() {
-
+                setStopRefresh();
             }
         }.post();
 
@@ -198,6 +147,11 @@ public class MainIndexFragment extends MainBaseFragment {
             }
         });
 
+    }
+
+    @Override
+    protected boolean isFirstInitData() {
+        return true;
     }
 
     @Override
@@ -239,6 +193,11 @@ public class MainIndexFragment extends MainBaseFragment {
         rl_film.setOnClickListener(this);
         rl_education.setOnClickListener(this);
 
+    }
+
+    @Override
+    protected int getViewId() {
+        return R.layout.fragment_main_index;
     }
 
 
@@ -288,11 +247,6 @@ public class MainIndexFragment extends MainBaseFragment {
      */
     private void moreNews() {
         skip(MoreNewsActivity.class);
-    }
-
-    @Override
-    protected int getRid() {
-        return R.layout.fragment_main_index;
     }
 
     @Override

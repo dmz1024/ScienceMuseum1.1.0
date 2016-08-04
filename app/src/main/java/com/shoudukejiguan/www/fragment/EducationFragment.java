@@ -15,7 +15,7 @@ import java.util.Map;
 public class EducationFragment extends ListDataBaseFragment<Education, Education.Data, EducationAdapter> {
     @Override
     protected EducationAdapter getAdapter(Context context, List<Education.Data> totalList) {
-        return new EducationAdapter(totalList);
+        return new EducationAdapter(totalList,getContext());
     }
 
     @Override

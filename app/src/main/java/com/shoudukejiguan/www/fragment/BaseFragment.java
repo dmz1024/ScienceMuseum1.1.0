@@ -1,7 +1,11 @@
 package com.shoudukejiguan.www.fragment;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
 
@@ -14,6 +18,8 @@ public class BaseFragment extends Fragment implements PopupWindow.OnDismissListe
     public void onDismiss() {
         backgroundAlpha(1f);
     }
+
+
 
     /**
      * 设置添加屏幕的背景透明度

@@ -19,17 +19,11 @@ public class MainOrderFragment extends MainBaseFragment {
     private int day;
 
     @Override
-    protected boolean isInit() {
-        return false;
-    }
-
-    @Override
     protected void initData() {
         Calendar c = Calendar.getInstance();
         year = c.get(Calendar.YEAR);
         month = c.get(Calendar.MONTH) + 1;
         day = c.get(Calendar.DAY_OF_MONTH);
-        tv_time.setText("选择日期");
         getChildFragmentManager().beginTransaction().add(R.id.fg_order, new OrderFragment()).commit();
     }
 
@@ -37,7 +31,11 @@ public class MainOrderFragment extends MainBaseFragment {
     protected void initView(View view) {
         tv_time = (TextImage) view.findViewById(R.id.tv_time);
         tv_time.setOnClickListener(this);
+    }
 
+    @Override
+    protected int getViewId() {
+        return R.layout.fragment_main_order;
     }
 
     @Override
@@ -46,10 +44,6 @@ public class MainOrderFragment extends MainBaseFragment {
         titleBar.setlLeftVisi(false);
     }
 
-    @Override
-    protected int getRid() {
-        return R.layout.fragment_main_order;
-    }
 
     @Override
     public void onClick(View view) {
@@ -85,5 +79,10 @@ public class MainOrderFragment extends MainBaseFragment {
         this.month = month;
         this.day = day;
         tv_time.setText(year + "-" + (month < 10 ? "0" + month : month) + "-" + (day < 10 ? "0" + day : day));
+    }
+
+    @Override
+    protected boolean isSetRefreshListener() {
+        return false;
     }
 }

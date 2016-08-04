@@ -15,7 +15,7 @@ import java.util.Map;
 public class StyleShowFragment extends ListDataBaseFragment<StyleShow, StyleShow.Data, StyleShowAdapter> {
     @Override
     protected StyleShowAdapter getAdapter(Context context, List<StyleShow.Data> totalList) {
-        return new StyleShowAdapter(totalList);
+        return new StyleShowAdapter(totalList, getContext());
     }
 
     @Override
@@ -30,8 +30,8 @@ public class StyleShowFragment extends ListDataBaseFragment<StyleShow, StyleShow
 
     @Override
     protected Map<String, String> getMap(Map<String, String> map) {
-        map.put("mid","27");
-        map.put("catid","50");
+        map.put("mid", "27");
+        map.put("catid", "50");
         return map;
     }
 }

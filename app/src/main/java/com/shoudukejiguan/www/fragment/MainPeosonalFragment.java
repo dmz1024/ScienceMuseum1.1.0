@@ -38,39 +38,26 @@ public class MainPeosonalFragment extends MainBaseFragment {
     private GridViewCenterAdapter mAdapter;
     private CircleImageView iv_img;
 
-    @Override
-    protected boolean isInit() {
-        return false;
-    }
 
     @Override
     protected void initData() {
         set();
         gv_menu.setAdapter(new GridViewCenterAdapter(getContext(), titles_menu, images_menu, R.layout.item_gv_ti));
         Glide.with(getActivity()).load("http://img5.duitang.com/uploads/item/201411/29/20141129233121_GQPWn.thumb.700_0.jpeg").into(iv_img);
+        setStopRefresh();
+    }
 
-        gv_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                switch (i) {
-                    case 0:
-                        skip(LoginActivity.class);
-                        break;
-                    case 1:
-                        ((MainActivity) getActivity()).onTabSelect(i);
-                        break;
-                    case 2:
-                        skip(MoreNewsActivity.class);
-                        break;
-                    case 3:
-                        ((MainActivity) getActivity()).onTabSelect(i - 1);
-                        break;
-
-                }
-
-            }
-        });
-
+    @Override
+    protected void initView(View view) {
+        gv_menu = (MaxGridView) view.findViewById(R.id.gv_menu);
+        gv_info = (MaxGridView) view.findViewById(R.id.gv_info);
+        view_set = view.findViewById(R.id.view_set);
+        view_set.setOnClickListener(this);
+        ll_progress = (LinearLayout) view.findViewById(R.id.ll_progress);
+        tv_level = (TextImage) view.findViewById(R.id.tv_level);
+        iv_img = (CircleImageView) view.findViewById(R.id.iv_img);
+        iv_img.setOnClickListener(this);
+        tv_level.setOnClickListener(this);
 
         gv_info.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -116,19 +103,34 @@ public class MainPeosonalFragment extends MainBaseFragment {
 
             }
         });
+
+
+        gv_menu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i) {
+                    case 0:
+                        skip(LoginActivity.class);
+                        break;
+                    case 1:
+                        ((MainActivity) getActivity()).onTabSelect(i);
+                        break;
+                    case 2:
+                        skip(MoreNewsActivity.class);
+                        break;
+                    case 3:
+                        ((MainActivity) getActivity()).onTabSelect(i - 1);
+                        break;
+
+                }
+
+            }
+        });
     }
 
     @Override
-    protected void initView(View view) {
-        gv_menu = (MaxGridView) view.findViewById(R.id.gv_menu);
-        gv_info = (MaxGridView) view.findViewById(R.id.gv_info);
-        view_set = view.findViewById(R.id.view_set);
-        view_set.setOnClickListener(this);
-        ll_progress = (LinearLayout) view.findViewById(R.id.ll_progress);
-        tv_level = (TextImage) view.findViewById(R.id.tv_level);
-        iv_img = (CircleImageView) view.findViewById(R.id.iv_img);
-        iv_img.setOnClickListener(this);
-        tv_level.setOnClickListener(this);
+    protected int getViewId() {
+        return R.layout.fragment_main_peosonal;
     }
 
     @Override
@@ -162,10 +164,6 @@ public class MainPeosonalFragment extends MainBaseFragment {
         gv_info.setAdapter(mAdapter = new GridViewCenterAdapter(getContext(), titles_info, images_info, R.layout.item_gv_ti));
     }
 
-    @Override
-    protected int getRid() {
-        return R.layout.fragment_main_peosonal;
-    }
 
     @Override
     protected boolean isTitleBarShow() {
